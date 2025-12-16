@@ -1,0 +1,2368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{4382737F-4CF6-6E6E-A7E0-911DB66C46CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWarn>0169;USG0001</NoWarn>
+    <DefineConstants>UNITY_6000_2_0;UNITY_6000_2;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_1_OR_NEWER;UNITY_6000_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_UNITY_CONSENT;ENABLE_UNITY_CLOUD_IDENTIFIERS;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_AMD;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLOUD_SERVICES_ENGINE_DIAGNOSTICS;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER;PLATFORM_SUPPORTS_WAIT_FOR_PRESENTATION;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;MAGICACLOTH2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.23</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorStyle>Legacy</UnityProjectGeneratorStyle>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>6000.2.0f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
+    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
+    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\doorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\dashSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\Objects Stats\objectStatsInfoTemplateData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\coinPocketSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\editControlPosition.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\objectiveStationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\rotatoryGear.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\arrowManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\eventOnTargetDetectedFaction.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\pathInfoValues.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\movableDoor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\preventCharacterCollisionOnTop.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryListManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\meleeShieldOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\wallRunningSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AINavMesh.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\playerCamera.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryBankSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\rewardPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveElementsOnSceneInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\closeCombatAIBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\playerPickupIconManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\enableOrDisableAIOnDistanceManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\shipInterfaceInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\craftingWorkbenchSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\wallSlideJumpSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\showPlayerInputValues.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\dragObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Game Manager\gameManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\weaponInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\homeMenu.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Decal\decalTypeInformation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\Objects Stats\objectStatButtonInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\flySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\inputActionManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Animator IK\OnAnimatorIKComponent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\laserDevice.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Elements On Scene\elementOnSceneInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\placeObjectInCameraEditorPositionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\setText.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\rollOnLandingSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\stopParticlesOnDisable.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\fadeObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\Physic Cables\Scripts\PhysicCableCon.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\playerInventoryCategoriesListManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\dualWieldMeleeWeaponObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\AIMountManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Turret\enemyLaser.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryCaptureManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\characterDamageReceiver.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\climbDetectionCollisionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\templateStatTypeComponent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\powersListManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponPartstToRemoveOnPickupCreation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\ammoOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\hologramDoor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Others\playerCullingSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Puzzles\puzzleSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\abilityPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\onEnableCheckSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleInteractionPanelSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\simpleDeviceStationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponRangeAttacksManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\States\setCharacterAffectedState.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\Shared Action System\sharedActionSystemRemoteActivator.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Experience System\playerExperienceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Elements On Scene\elementOnSceneManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\playerAbilitiesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\Grappling Hook System\grapplingHookSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Cutscene\cameraWaypointSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Quick Access System\inventoryQuickAccessSlotElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\laser.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Scriptable Objects\objectTransformData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\turretController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\objectiveEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\stairAdherenceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\pickUpsScreenInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\flyingTurretSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Panel Info System\infoPanelOnScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\upperBodyRotationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Scriptable Objects\inventoryListManagerData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\moveObjectSmoothlySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\playerPrefsCustomData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\simpleSniperSightSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\nonEssentialCharacterElementsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\craftingObjectButtonInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Audio\AudioElementHolderPlayer.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\launchTrayectory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\hoverCraftController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\flashlight.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\cameraEffect.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryObjectToEquipInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\footStepSurfaceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\slideZoneSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistancePlayerSkillsListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\moneyPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\meleeAIBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\skillPointPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\attachmentSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\quickPlayerModeChangeSystem.cs" />
+    <Compile Include="Assets\Retro Shaders Pro\Scripts\Shaders\CRTEffect.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\selectObjectManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\weaponAttachmentOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\playerStealthSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\healthPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\bowSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\audioSourceInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\artificialObjectGravity.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\dialogManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\teleportationPlatform.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapObjectInformation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom Orders\customOrderBehaviorToSwitchCharacter.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\throwGrenadeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\taserProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\Makinom_ORK\Scripts\GKC_ORKStat.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\crate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\followObjectPositionUpdateSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AIPatrolSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\multipleInteractionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\noiseMeshSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleLaserObjectDetectorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Elements On Scene\elementsOnSceneData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\characterAspectCustomizationUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\weaponAttachmentSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\localizationToolEditor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\remoteEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\putGear.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\Slice System\sliceSystemUtils.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\meleeShieldInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\playerTeleportSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\hoverBoardWayPoints.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\simpleWeaponSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\playerPrefsCustomInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceElementsOnSceneBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\dissolveProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\consumableInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\headExplodeExample.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\jetpackSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\brainwashAIState.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Quick Access System\inventoryQuickAccessSlotsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\activateActionOnCharactersOnScene.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\IKWeaponSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleHUDManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\remoteAnimatorEventTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\oxygenOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\useCustomAbilitySimpleAIAction.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCVendorConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\selectObjectManagerEditor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\States\Examples\characterSlowDownVelocity.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\simpleThrowFireWaveAbility.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\vehicleController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\customCharacterControllerBase.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\hiddenMeleeSurface.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\craftingSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\inputPanelUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\smartphoneDevice.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\playerGravitySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\removeGravityFromCharacterSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\friendListManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Others\setTransparentSurfacesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\AIFireWeaponsSystemBrain.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\IKWeaponInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryMenuIconElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\hoverBoardController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Close Combat\AICloseCombatSystemBrain.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\Radio\radioSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\gravityGun.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom Orders\characterToReceiveOrders.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\Physic Cables\Scripts\Liftable.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\objectiveMenuIconElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabPhysicalObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\armorClothStatsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\swimSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\airAttackToLandSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceWeaponListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\healthSliderInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleAnimationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Tutorial System\tutorialActivatorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AIWalkToPosition.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\UIElementsLocalizationManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\craftingBlueprintInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\scanElementInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\savePlayerWeaponsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\playerStatesManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\buildingAndFloorObjectInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\staminaOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Panel Info System\sliderInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\objectOnWater.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\dialogContentTemplate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryMenuPanelsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\interactionObjectMessage.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceWeaponAttachmentListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\slideSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\featuresManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom Orders\customOrderBehaviorToWait.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\carryPhysicallyObjectFromInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\projectilesOnCharacterBodyManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\GKCCharacterController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\setCanvasParentSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\moveDeviceToCamera.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\remotePlayerNavmeshOverrideSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\customCharacterControllerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\swimTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Faction\factionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\vendingMachine.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Projectiles Behaviors\removeGravityFromCharactersProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\craftingBlueprintInfoTemplate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\ammoPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Mobile\touchJoystick.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\AI Behavior Info.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\characterCustomizationManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\onDisableCheckSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\customActionOpenMenuSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryCaptureManagerTransparent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponSwayInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\padlockSystemPlayerManagement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\laserConnector.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\examineObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\armorClothInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom Orders\customOrderBehaviorToAttack.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCVehicleConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\spiderCharacterController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponTransformInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\GKCLoadingScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\UIMouseHoverEvent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\damageCharacterOnCollision.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\objectiveStationUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Turret\manageAITarget.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Turn Based Combat\turnBasedCombatActionsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\shootPowerSimpleAIAction.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\plasmaCutterSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\tagLayerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\Shared Action System\sharedActionZoneTrigger.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\attachmentIconInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Puzzles\pressObjectsInOrderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\Objects Stats\objectStatsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\Physic Cables\Scripts\PhysicCable.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\actionInputDelaySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Cutscene\pauseOrResumePlayerControllerAndCameraSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\pointAndClickLocalizationManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\portableClimbRopeTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\Slice System\cuttingModeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceMeleeWeaponListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\ragdollActivator.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\playerAbilitiesUIEditorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\fullArmorClothTemplateData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\filesChecker.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\Shared Action System\sharedActionButtonActivator.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\AITurnBasedCombatSystemBrain.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryCharacterCustomizationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\showMessageOnHUDSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\usingDevicesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\Objects Stats\objectStatsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\remoteEventSearcher.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\playerStatsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\doubleJumpAnimationTrigger.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\playerActionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\craftingStationSystem.cs" />
+    <Compile Include="Assets\Retro Shaders Pro\Demo\Scripts\River.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\waterSurfaceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\refractionCube.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\playerOptionsEditorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\craftingUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\languageLocalizationManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveTravelStationInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\climbRopeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\durabilityInfoOnMeleeWeapons.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\statType.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Audio\AudioElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventorySlotOptionsButtons.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\mechanismPart.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Audio\IExternalAudioPlayer.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\replaceMaterialSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\sceneSlot.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\throwObjectTrayectorySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\projectileSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\preventClickDrag.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Elements On Scene\elementOnScene.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\perfectDodgeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\pickUpElementInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Animator IK\simpleIKHand.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\characterDialogContentSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\surfaceToSlice.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\Objects Stats\objectsStatsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AIHealtSliderInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\GKCUIManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom Orders\customOrderBehaviorToFollow.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeAttackSurfaceInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\footStep.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Climb System\climbLedgeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCFireWeaponsConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\addPatrolSystemToAI.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\basicAnimatorController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\objectSignalForTargetToAI.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\externalControllerBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\craftingSocket.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\energyStationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Captures\cameraCaptureSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\applyDissolveOnArea.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\openStructure.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\AddPlayerSpawned.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\objectToUseMatchTargetSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\pressurePlate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\weaponLaser.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapTileBuilder.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\closeCombatSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\screenObjectivesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\eventObjectFoundOnCaptureSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vendor System\vendorCategorySlotPanelInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\eventInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\combineMeshSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\resetScrollRectOnEnable.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\addForceToObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponAnimatorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\attrackObjectsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vendor System\vendorUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\playerController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\AI\remoteVehicleNavmeshOverride.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\powersListElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\simpleBreakObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\playerDamageOnScreenInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\stealObjectFromCharacterSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\shakeCharacterBodyPartSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\powersAndAbilitiesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\wallRunningZoneSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\hoverBoardAnimationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\remoteEventSocket.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapZoneUnlocker.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\playerWeaponsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\inventoryLocalizationManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\abilitySlotElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vendor System\vendorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistancePlayerStatsListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Captures\captureSlot.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\meleeWeaponInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\turnBasedCombatAIBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeShieldObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\cameraStateInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponSlotElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryWeightManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\customNoiseSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\saveGameSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceBlendshapesListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\laserDotOnScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\editInputPanelInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\externalDamageProperties.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabObjects.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\applyEffectOnArea.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\Objects Stats\objectStatsSystemOnMeleeWeapons.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\spearProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\remotePlayerNavmeshOverride.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\editButtonInput.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleActionButton.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\weakSpotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\gravityBootsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Audio\AudioPlayer.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\spriteAnimatorSystem.cs" />
+    <Compile Include="Assets\Retro Shaders Pro\Scripts\Shaders\Settings\CRTSettings.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Experience System\objectExperienceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Experience System\experienceObtainedInfoPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\States\characterPropertiesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\zeroGravityRoomSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\simpleAimAndThrowObjectState.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\stopParticlesAtStart.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\headBob.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Pooling System\GKC_SimplePoolPreloadSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\enemyHackPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\particleCollisionDetection.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\jetpackFuelPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\rechargerStation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\shootFireWeaponSimpleAIAction.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Cutscene\simpleShowHideMouseCursor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\laserMine.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapCreator.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\freeClimbSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\customCharacterControllerBaseBuilder.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\animalAINavmesh.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\customActionOpenMenuWeaponAttachment.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\Slice System\runtimeShatterRecursive.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\airCraftController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\objectToPlaceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\weaponsAIBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\playerHUDManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Override System\overrideController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\enableOrDisableObjectsOnDistanceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\playerInputManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabObjectsPowerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\playerScreenObjectivesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\ignoreCollisionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\wolfCharacterController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Game Manager\prefabsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\damageHitReactionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\inputManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\laserVisionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\projectileInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\GKC_Utils.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\windOnObjectState.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\freeClimbZoneSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleCoinPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\gameLanguageSelector.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\parentAssignedSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\cameraAxisComponentsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\AI\vehicleAINavMesh.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveInventoryBankInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\craftingBlueprintInfoTemplateData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\moveObjectLateUpdate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\simpleInventoryContentManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\setGravity.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\savePlayerBlendshapesInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\damageInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Others\dynamicSplitScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistancePlayerOptionsListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\FloatingObjectSocket.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Puzzles\puzzleSystemPlayerManagement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom Orders\customOrderBehaviorToHide.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\savePlayerInventoryInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabObjectParent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\GKC_Triangulator_Utils.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Projectiles Behaviors\brainwashAIProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\interactionObjectsLocalizationManagerEditor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Powers Behaviors\changeGlobalGravityPower.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\zipline.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\extraCameraEffectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\playerInputPanelSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setRigidbodyStateSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\magicSpellActionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryManagerInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\climbRopeTriggerMatchSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\simpleFireWeaponsConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Tutorial System\tutorialInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\quickTravelStationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\clock.cs" />
+    <Compile Include="Assets\Game Kit Controller\Documentation\Integrations\UMA\UMA\UMAIgnoreTransformAndChilds.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\fakeProjectileTrailSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\touchButtonEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\craftingPlacementSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\attachmentInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\skillsLocalizationManagerEditor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\lockedCameraSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\shieldSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\climbRopeTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Ladder System\ladderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabObjectGenericModeMountPointSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Melee Combat System\AIMeleeCombatSystemBrain.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\characterCustomizationInventoryHelper.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\localizationFileLoader.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\skillsLocalizationManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\rotateObjectSmoothlySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\addMapObjectInformation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Character Builder\characterSettingsTemplate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleAudioPlay.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\animatorTriggerEvent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Powers Behaviors\useDevicesAtDistancePower.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\playerInputPauseSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\objectiveLogSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\SplineWalker.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\externalStatsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Game Manager\playerCharactersManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleSoundSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\checkIfCharacterUsingWeaponsToChangeMode.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleInterface.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\pressMultipleKeysActionInputSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\playerAbilitiesUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\weaponsAttachmentUIManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\laserAttachment.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\timeBullet.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\setCustomCharacterStateTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setInitialPositionAtGameStart.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\gravityObjectManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\UIElementsLocalizationManagerEditor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\electronicDevice.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setFixedRotation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\characterCustomizationInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabbedObjectMeleeAttackSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabbedObjectState.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Animator IK\IKSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\templateAbilitySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\handleVehicleAIBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\externalDialogTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryCategoryInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveMeleeWeaponsInfo.cs" />
+    <Compile Include="Assets\Retro Shaders Pro\Demo\Scripts\RandomSway.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\Shared Action System\sharedActionContent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\externalShakeInfoListElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\taskCounterSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\audioClipBip.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceTravelStationListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\gravityWallRunSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom Orders\customOrderBehaviorToShapeShiftCharacter.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Character Builder\buildPlayer.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\flyingController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Override System\overrideCameraController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\AIAbilitiesSystemBrain.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Skills System\playerSkillsUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\checkObjectOnTrigger.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Others\simpleMoveCameraToPosition.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\pixelCameraEffect.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Point And Click\pointAndClickElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\Physic Cables\Scripts\Connector.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Hide System\hideCharacterFixedPlaceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\Grappling Hook System\grapplingHookEffect.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\healthOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Climb System\autoGrabLedgeTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\changeAIAttackModeByDistance.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\powerPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\States\Examples\freezeCharacterState.cs" />
+    <Compile Include="Assets\Retro Shaders Pro\Demo\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Skills System\skillSlotPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\dropPickUpSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\characterStateIconSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleLensFlareSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\playerIdleSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\checkCharactersParentOnDestroy.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom Orders\customOrderBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\shieldOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\laserReceiver.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\solarSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Animator IK\handsOnMeleeWeaponIKSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\experiencePickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\health.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\Physic Cables\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\freeFallCharacterActivator.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\noiseReactionData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\railTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\applyDamage.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\damageOnScreenInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\Grappling Hook System\grapplingHookTarget.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\fullCraftingBlueprintInfoTemplateData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponRangeAttacksSystem.cs" />
+    <Compile Include="Assets\Retro Shaders Pro\Scripts\Shaders\Utility\RetroShaderUtility.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\AIPowersSystemBrain.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\Makinom_ORK\Scripts\PauseGameHandlerMakinom.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\objectiveManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\useAbilitySimpleAIAction.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\staminaPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\openInitialPopUpWindow.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\characterCustomizationBlendshapesHelper.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\putObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\moveCameraToDevice.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AIViewTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\pauseAnimationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\jumpPlatform.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\materialExtractionStationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveStatsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\inventoryWeightBagPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Turn Based Combat\turnBasedCombatTeamInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\slowObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\weaponAttachmentPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponAmmoUsingPlayerStat.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponTransformData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponAttackListInfoSocket.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\sliceObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\externalCameraShakeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabObjectEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabPhysicalObjectMeleeAttackSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Level Manager\travelStationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Captures\remoteEventOnCameraCaptureSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\dialogSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\solidCameraEffect.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Skills System\playerSkillsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\carController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\mainRiderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\simpleGameLanguageSelector.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\shieldPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\generalItemOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\screenActionInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceDialogContentListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\Scanner System\scannerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\hideBodyPartOnCharacterSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\eventObjectFoundOnRaycastSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\Shared Action System\sharedActionZone.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Character Builder\bodyMountPointsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\jetpackFuelOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\States\characterStateAffectedInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\externalControllerBehaviorManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\applyHealOnArea.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\paragliderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\laserPlayer.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\currencySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\securityCamera.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryBankManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\vehicleFuelPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Puzzles\placeObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\GKCSimpleRiderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\flamethrowerWeapon.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\inventoryExtraSpacePickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\healthElementInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Tutorial System\playerTutorialSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\manualDetonationMineObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\shootBowSimpleAIAction.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\bulletTimeFiringSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\oxygenPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\followObjectPositionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Audio\AudioElementHolder.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Hide System\hideFromEnemiesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\updateRigidbodyStateInsideRigidbodySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\setLaserRefractions.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\elevatorFloorsPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AIAroundManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\nanoBlade.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Head Track\pointToLook.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vendor System\vendorObjectSlotPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\SimpleFPSCounter.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleRaycastPlacementDetector.cs" />
+    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\mouseOperations.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\Makinom_ORK\Scripts\GKC_ORKStatsBridge.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\walkOnBalanceTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\randomEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponTransformInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\searchMeleeSurfaceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\outlineObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\meleeWeaponConsumableOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\otherPowers.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setCharacterAsChildSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\Shared Action System\sharedActionZoneManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Powers Behaviors\deviceToControlAtDistance.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\playerSphereModeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\deviceToActive.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\padlockSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AIHidePositionsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\saveGameSlot.cs" />
+    <Compile Include="Assets\Retro Shaders Pro\Scripts\FramerateLimiter.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\generalPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\menuPause.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\objectToUseArtificialGravitySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Turn Based Combat\turnBasedCombatSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleSetQuaternionRotation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\rotateObjects.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\simpleWaypointSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\energyPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\meleeWeaponConsumablePickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setCharacterParentOnMovingObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom Orders\customOrderBehaviorToBorrowWeapon.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setObjectScaleSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\dissolveObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\FloatingObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCConditionInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\emptyVehicleController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Faction\characterFactionManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Skills System\skillSlotPanelInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom Orders\customOrderBehaviorToUseAbility.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Turn Based Combat\turnBasedCombatTeamPositionsInfoData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\portableWalkOnBalanceTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\fallingPlatform.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\playerHealthBarManagementSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\energyOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\motorBikeController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\initialPopUpWindow.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Elements On Scene\elementOnSceneHelper.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\durabilityInfoOnMeleeShields.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponBuilder.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\durabilityInfoOnFireWeapons.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\craftingZoneSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\durabilityInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\setHealthCustomWeakSpotID.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleMoveObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\fullArmorClothTemplate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Pooling System\GKC_PoolingElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\saveGameInfoHelper.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\meleeWeaponConsumableInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCInventoryConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\Makinom_ORK\Scripts\GKC_ORKTransferMode.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\animatorTriggerEnterExitEvent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\setMissionSubObjectiveStateRemotelySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCCurrencyConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\applyPresetSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\staminaSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\characterAspectCustomizationTemplate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\particleTriggerDetection.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\languageElementChecker.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponShellSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\dynamicReticleSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\manualDetonationMineSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\weaponOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Override System\overrideInputManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\Slice System\simpleSliceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabObjectProperties.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\remoteEventActivator.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\dialogContentSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\damageScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Vehicles\vehicleCameraShake.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\setCameraFOVValue.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\simpleInventorySlotOptionsButton.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vendor System\vendorObjectSlotPanelInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\Objects Stats\objectStatsInfoTemplate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\vehicleGravityControl.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\materialExtractionStationUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\slowObjectsColor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\sleepingStateIconSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\pickUpIcon.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\gravityWallRunTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleRandomTextManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\mouseCursorController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\computerDevice.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\simpleUIButtonInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\languageElementDeviceChecker.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\showValuesOnScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Character Builder\ragdollBuilder.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\Physic Cables\Scripts\PhysicCableEditor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\grabObjectsStrengthPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\eventParameters.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\languageCheckerUIElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\sceneLoadSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\drainStatSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\friendListElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleLaser.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\inventoryLocalizationManagerEditor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\checkCollisionType.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\weaponPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\meleeShieldPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\healthBarManagementSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\noiseSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\completeDialogInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\cameraEffectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\playSoundOnCollision.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\statsSettingsTemplate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\characterAspectCustomizationTemplateData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\skidsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\armorSurfaceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\touchScreenPinchSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\missionLocalizationManagerEditor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\craftedObjectPlacedHelper.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\materialsZoneSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\slowDownTarget.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\pickUpObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveVendorInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryListElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\elevatorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveMissionsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\spawnObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\vehiclePassengerUnderwater.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\accessTerminal.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\Grappling Hook System\grapplingHookTargetsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\changeObjectColors.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\camera2_5dSplineZoneOptions.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\simpleLaser.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\External Audio Systems\Wwise\Scripts\WwiseExternalAudioPlayer.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleBuilder.cs" />
+    <Compile Include="Assets\Retro Shaders Pro\Demo\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\hitCombat.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapIconType.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\AIAimRotationManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\healerWeapon.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\bowHolderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\savePlayerOptionsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\openMenuSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Scriptable Objects\initialinventoryListData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Level Manager\levelManagerIngame.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\customAbilitySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\railSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\launchedObjects.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\plasmaCutterProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\playerShieldSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Powers Behaviors\changeObjectsPositionPower.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\characterActionSystemChecker.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\generalStatComponent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\examineObjectSystemPlayerManagement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\Shared Action System\sharedActionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\meleeWeaponPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\powersAIBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\consoleLogOnScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCMeleeConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Game Manager\basicSingleManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Documentation\Integrations\UMA\UMA\UMAIgnoreTransformAndChildsEditor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\destroyGameObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\playerComponentsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Hide System\hideCharacterFixedPlaceSystemPlayerManagement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\powerSlotElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\externalShakeListManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\externalShakeInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\gravitySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\footStepManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\armorClothPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleLamp.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\projectileImpactSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\addGrenadeToThrowAwayFromCharacter.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\checkCollisionToApplyDamage.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponsGrabbedManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Game Manager\switchCompanionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\updateCharacterGravityTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\AI\WaypointCircuit.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\Scanner System\simpleScannerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Crafting System\processStationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\playerWeaponSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vendor System\vendorCategorySlotPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\Istat.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Override System\objectToOverrideSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleLightingModifier.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Panel Info System\playerInfoPanelOnScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\applyDamageOnArea.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\IKDrivingSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\damageInScreen.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Animator IK\IKFootSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\customActionSystemTrigger.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Head Track\headTrackTarget.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Level Manager\travelStationPanelInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setObjectParentSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Powers Behaviors\pushObjectsPower.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\playSoundOnTriggerEnter.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\vehicleFuelOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\mapPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\sphereController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\AI\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Game Manager\mainManagerAdministrator.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistancePlayerMissionsListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryBankUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\customCameraEffect.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\explosiveBarrel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Vehicles\vehicleCameraController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceInventoryListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\simpleSwitch.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\simpleAIAction.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\pickupType.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\showGameInfoHud.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\ingameMenuPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Tutorial System\tutorialUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\findObjectivesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\touchButtonColorChangeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\simpleTurretRobot.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeCombatThrowReturnWeaponSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Animator IK\handsOnSurfaceIKSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\activateReactionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\healthManagement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\hackTerminal.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\damageOrHealTrigger.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Ladder System\playerLadderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\graphicQualitySettingsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Point And Click\playerNavMeshSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\changePlayerStateOnTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponAttackListInfoSocketEditor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\destroyableObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\Physic Cables\Scripts\IObjectHolder.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\JoystickData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Skills System\skillSettingsTemplate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\ignoreCollisionHelper.cs" />
+    <Compile Include="Assets\Retro Shaders Pro\Demo\Scripts\Hover.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\pointAndClickLocalizationManagerEditor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\cameraControllerManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\inputDoubleClickEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\oxygenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleBulletTimeOnCharacterEffect.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Turret\AITurret.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AINavMeshMoveInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\getInventoryObjectSystem.cs" />
+    <Compile Include="Assets\Retro Shaders Pro\Demo\Scripts\Rotate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Turn Based Combat\turnBasedCombatChararcterUIInfoObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\playerStateSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Scriptable Objects\objectTransformInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Pooling System\GKC_PoolingElementAI.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\wallSlideJumpZoneSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\chestSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\matchPlayerToTargetSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\regularVehicleOnWater.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\enableOrDisableObjectOnDistanceManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Override System\overrideElementControlSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Level Manager\travelStationUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AIWayPointPatrol.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Decal\decalManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\inventoryPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\dummyVehicleController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveSkillsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Checkpoint\checkpointSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\Slice System\sliceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\armorClothPieceTemplate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\boatController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\eventTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponListManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\genericRagdollBuilder.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\pickUpManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\walkOnBalanceSystem.cs" />
+    <Compile Include="Assets\Retro Shaders Pro\Demo\Scripts\GooseFlight.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setGameObjectActiveState.cs" />
+    <Compile Include="Assets\Game Kit Controller\Integrations\Makinom_ORK\Scripts\PausePlayerControllerAndCamera_ControlBehaviour.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\ammoInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\moveObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\waypointPlayerPathSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\Console Mode\consoleMode.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\customCharacterControllerManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\Radio\songsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponObjectInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Powers Behaviors\joinObjectsPower.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\camera2_5dZoneLimitSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\meleeWeaponOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\freeClimbSystemIK.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Pooling System\GKC_PoolingAIManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\objectToFollowOnThrowMeleeWeapon.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\fieldOfViewMeshSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\weaponAttachmentInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\vacuumGun.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\railMechanism.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Mobile\touchButtonListener.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\glossaryElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\BezierSpline.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Head Track\headTrack.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\objectiveIconInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\oneWayPlatformSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\closetSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\photoModeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\pickUpIconInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\objectOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\deviceStringAction.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\actionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\armorClothOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\missionLocalizationManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\persuasionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\securityCameraControl.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Puzzles\pianoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\waypointPlatform.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Localization System\interactionObjectsLocalizationManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\abilitiesAIBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\experienceMultiplierPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\spiderControllerInterface.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Turn Based Combat\turnBasedCombatUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\GKCRiderSocketSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Checkpoint\checkpointElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\objectDistributorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveGameInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Level Manager\travelStationPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\getObjectFromInventorySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\slowDownAllAIOnSceneSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleWeaponSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleDamageReceiver.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\setMapOrientationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Climb System\ledgeZoneSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\blackHoleProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponAttackInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Pooling System\GKC_PoolingSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Online System\GKC_PlayerPrefabSpawner.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Captures\cameraPerspectiveSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\simpleChainSaw.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\simpleObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleGUILayoutStateManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\arrowProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveDialogInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\abilityInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Others\setTransparentSurfaces.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\Grappling Hook System\objectToAttractWithGrapplingHook.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponTransformData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\rotatingPlatform.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeCombatAttackStartState.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Character Aspect Customization System\armorClothPieceTemplateData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\useInventoryObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Retro Shaders Pro\Shaders\Terrain\RetroTerrainLitInput.hlsl" />
+    <None Include="Assets\Game Kit Controller\Documentation\Integrations\UMA\UMA 2 Integration.txt" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\Terrain\RetroTerrainLitAdd.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Others\Transparent Diffuse Stipple.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Dissolve.shader" />
+    <None Include="Assets\Game Kit Controller\Documentation\CHARACTERS CROSSING THE GROUND FIX (Import External Packages Before Starting).txt" />
+    <None Include="Assets\Game Kit Controller\Shaders\Projector.shader" />
+    <None Include="Assets\Game Kit Controller\Documentation\Patreon Honorable Mention.txt" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\Skybox\RetroSkyboxCubemap.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroLit.shader" />
+    <None Include="Assets\Development\Shaders\Retro Base\RetroSGFunctions.hlsl" />
+    <None Include="Assets\OmniShade\Shaders\OmniShadeCore.cginc" />
+    <None Include="Assets\Game Kit Controller\Shaders\Glow Shader.shader" />
+    <None Include="Assets\OmniShade\Shaders\OmniShade.shader" />
+    <None Include="Assets\OmniShade\Shaders\OmniShade URP.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroDepthNormalsPass.hlsl" />
+    <None Include="Assets\Game Kit Controller\Documentation\Integrations\Universal AI\GKCUniversalAIDamageDetectionInterface.txt" />
+    <None Include="Assets\Game Kit Controller\Shaders\Others\See Through Surfaces 1.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\CRT Mesh\CRTSurfaceInput.hlsl" />
+    <None Include="Assets\Game Kit Controller\Shaders\additive.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroVertexLit.shader" />
+    <None Include="Assets\Retro Shaders Pro\Resources\Shaders\CRT.shader" />
+    <None Include="Assets\Mixamo Animations\Changed Folder\Ellen\Shaders\EyeLash.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroUnlit.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\Solid Shader.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\CRT Mesh\CRTDepthNormalsPass.hlsl" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroBilinear3Unlit.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Silhouette Only.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\Night Vision.shader" />
+    <None Include="Assets\Game Kit Controller\Documentation\Unity Bug on 2018.3 with Rigidbodies Fix.txt" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroGBufferPass.hlsl" />
+    <None Include="Assets\Game Kit Controller\Input\Default Input File 3-77g.txt" />
+    <None Include="Assets\Game Kit Controller\Shaders\Simple Blur Shader.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroBilinear3VertexLit.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\Terrain\RetroTerrainLitPasses.hlsl" />
+    <None Include="Assets\Game Kit Controller\Materials\Probuilder\pb_StandardVertexColor.shader" />
+    <None Include="Assets\OmniShade\Shaders\OmniShadeURP.cginc" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroBilinear3Lit.shader" />
+    <None Include="Assets\Mixamo Animations\Changed Folder\Ellen\Shaders\EyeBallsHD.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\Pixel Shader.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroShadowCasterPass.hlsl" />
+    <None Include="Assets\Game Kit Controller\Shaders\Others\Transparent Diffuse (Improved).shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\Terrain\RetroTerrainLitDepthNormalsPass.hlsl" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroDepthOnlyPass.hlsl" />
+    <None Include="Assets\Game Kit Controller\Shaders\laserShader.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Outlined.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\CRT Mesh\CRTMetaPass.hlsl" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\Terrain\RetroTerrainLitBase.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroMetaPass.hlsl" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroLit_OutLine.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\CRT Mesh\UnlitForwardPass.hlsl" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\SplitScreenMask.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\Drunk.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\CRT Mesh\CRTDepthOnlyPass.hlsl" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\Terrain\RetroTerrainLit.shader" />
+    <None Include="Assets\Mixamo Animations\Changed Folder\Ellen\Shaders\SculptedHair.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Others\See Through Surfaces 2.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\runShader.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Others\Cloak Shader.shader" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\CRT Mesh\CRTMesh.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\Oil Paint.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\textShader.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\Underwater Shader Effect.shader" />
+    <None Include="Assets\Game Kit Controller\Prefabs\Particles\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+    <None Include="Assets\Mixamo Animations\Changed Folder\Ellen\Shaders\ToonSkin.shader" />
+    <None Include="Assets\Game Kit Controller\Documentation\Readme.txt" />
+    <None Include="Assets\OmniShade\Shaders\ShaderLibrary\FoveatedRenderingKeywords.hlsl" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\Terrain\RetroTerrainLitBasemapGen.shader" />
+    <None Include="Assets\Game Kit Controller\Documentation\Old documentation\IMPORTANT ABOUT OLD DOCUMENTATION.txt" />
+    <None Include="Assets\Game Kit Controller\Input\Input File 3-77g.txt" />
+    <None Include="Assets\Retro Shaders Pro\Shaders\RetroSurfaceInput.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ContentLoadModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.ContentLoadModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GraphicsStateCollectionSerializerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.GraphicsStateCollectionSerializerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.HierarchyCoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.HierarchyCoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IdentifiersModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.IdentifiersModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputForUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputForUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InsightsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.InsightsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.MarshallingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.MarshallingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.MultiplayerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.MultiplayerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PropertiesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.PropertiesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ShaderVariantAnalyticsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.ShaderVariantAnalyticsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConsentModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConsentModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.AccessibilityModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.AccessibilityModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.AdaptivePerformanceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.AdaptivePerformanceModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.BuildProfileModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.BuildProfileModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.ClothModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.ClothModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.CoreBusinessMetricsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreBusinessMetricsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.DeviceSimulatorModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.DeviceSimulatorModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.DiagnosticsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.DiagnosticsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.EditorToolbarModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.EditorToolbarModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.EmbreeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.EmbreeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.GIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.GIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.GraphicsStateCollectionSerializerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphicsStateCollectionSerializerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.GridAndSnapModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.GridAndSnapModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.GridModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.GridModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.MultiplayerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.MultiplayerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.Physics2DModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.Physics2DModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.PhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.PresetsUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.PresetsUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.PropertiesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.PropertiesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.QuickSearchModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.QuickSearchModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SafeModeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.SafeModeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SceneViewModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneViewModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.ShaderFoundryModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.ShaderFoundryModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SketchUpModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.SketchUpModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SpriteMaskModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.SpriteMaskModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SpriteShapeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.SpriteShapeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SubstanceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.SubstanceModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TerrainModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.TerrainModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreFontEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreTextEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TextRenderingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TilemapModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.TilemapModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TreeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.TreeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UIAutomationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIAutomationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UIBuilderModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIBuilderModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UmbraModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.UmbraModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.VFXModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.VFXModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.VideoModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.VideoModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.XRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.XRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\PackageCache\com.unity.ext.nunit@031a54704bff\net40\unity-custom\nunit.framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Hashing">
+      <HintPath>Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.Tests\System.IO.Hashing\System.IO.Hashing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@6279e2b7c485\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@d78732e851eb\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.AppContext.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Buffers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Console.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Data.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Memory.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Http.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Numerics.Vectors.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.DispatchProxy.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.ILGeneration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.Lightweight.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\mscorlib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Numerics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Transactions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Windows.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Polybrush">
+      <HintPath>Library\ScriptAssemblies\Unity.Polybrush.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Formats.Fbx.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Formats.Fbx.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PPv2URPConverters">
+      <HintPath>Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Polybrush.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Polybrush.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Rendering.LightTransport.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rendering.LightTransport.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TerrainTools">
+      <HintPath>Library\ScriptAssemblies\Unity.TerrainTools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Autodesk.Fbx">
+      <HintPath>Library\ScriptAssemblies\Autodesk.Fbx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InputSystem.ForUI">
+      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.Center.Common">
+      <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Center.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Formats.Fbx.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Formats.Fbx.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.Center.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Center.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TerrainTools.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TerrainTools.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Rendering.LightTransport.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Rendering.LightTransport.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Autodesk.Fbx.Editor">
+      <HintPath>Library\ScriptAssemblies\Autodesk.Fbx.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Settings.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Settings.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="MagicaClothV2.csproj">
+      <Project>{49664CB8-B5C8-DA13-FF20-E60B1F79A152}</Project>
+      <Name>MagicaClothV2</Name>
+    </ProjectReference>
+    <ProjectReference Include="Rowlan.Tools.MagicaCloth2.Editor.csproj">
+      <Project>{6C731642-51DB-3428-063E-A2F89F67F070}</Project>
+      <Name>Rowlan.Tools.MagicaCloth2.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MagicaClothV2.Editor.csproj">
+      <Project>{BF483E00-F7A5-EF6A-C2F6-144AF1AF672B}</Project>
+      <Name>MagicaClothV2.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="OmniShade.csproj">
+      <Project>{B0D4388A-4055-64A3-5E98-F5F9193090F5}</Project>
+      <Name>OmniShade</Name>
+    </ProjectReference>
+    <ProjectReference Include="OmniShade.Editor.csproj">
+      <Project>{7DCDA113-CFCC-77BC-1C8A-1A2EF3C49287}</Project>
+      <Name>OmniShade.Editor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
