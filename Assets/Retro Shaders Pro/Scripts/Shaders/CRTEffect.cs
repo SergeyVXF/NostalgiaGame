@@ -15,6 +15,8 @@ namespace RetroShadersPro.URP
         {
             pass = new CRTRenderPass();
             name = "CRT";
+
+            Shader.SetGlobalInteger("_RetroPixelSize", 1);
         }
 
         public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
@@ -29,12 +31,19 @@ namespace RetroShadersPro.URP
 
                 renderer.EnqueuePass(pass);
             }
+
+            if(settings == null || !settings.showInSceneView.value || !settings.IsActive())
+            {
+                Shader.SetGlobalInteger("_RetroPixelSize", 1);
+            }
         }
 
         protected override void Dispose(bool disposing)
         {
             pass.Dispose();
             base.Dispose(disposing);
+
+            Shader.SetGlobalInteger("_RetroPixelSize", 1);
         }
 
         class CRTRenderPass : ScriptableRenderPass
@@ -146,14 +155,25 @@ namespace RetroShadersPro.URP
                 material.SetFloat("_ScrollSpeed", settings.scrollSpeed.value);
                 material.SetFloat("_RandomWear", settings.randomWear.value);
                 material.SetFloat("_AberrationStrength", settings.aberrationStrength.value);
-                material.SetTexture("_TrackingTex", trackingTex);
-                material.SetFloat("_TrackingSize", settings.trackingSize.value);
-                material.SetFloat("_TrackingStrength", settings.trackingStrength.value);
-                material.SetFloat("_TrackingSpeed", settings.trackingSpeed.value);
-                material.SetFloat("_TrackingJitter", settings.trackingJitter.value);
-                material.SetFloat("_TrackingColorDamage", settings.trackingColorDamage.value);
-                material.SetFloat("_TrackingLinesThreshold", settings.trackingLinesThreshold.value);
-                material.SetColor("_TrackingLinesColor", settings.trackingLinesColor.value);
+
+                if(settings.useTracking.value)
+                {
+                    material.EnableKeyword("_TRACKING_ON");
+
+                    material.SetTexture("_TrackingTex", trackingTex);
+                    material.SetFloat("_TrackingSize", settings.trackingSize.value);
+                    material.SetFloat("_TrackingStrength", settings.trackingStrength.value);
+                    material.SetFloat("_TrackingSpeed", settings.trackingSpeed.value);
+                    material.SetFloat("_TrackingJitter", settings.trackingJitter.value);
+                    material.SetFloat("_TrackingColorDamage", settings.trackingColorDamage.value);
+                    material.SetFloat("_TrackingLinesThreshold", settings.trackingLinesThreshold.value);
+                    material.SetColor("_TrackingLinesColor", settings.trackingLinesColor.value);
+                }
+                else
+                {
+                    material.DisableKeyword("_TRACKING_ON");
+                }
+
                 material.SetFloat("_Brightness", settings.brightness.value);
                 material.SetFloat("_Contrast", settings.contrast.value);
                 material.SetInteger("_Interlacing", frameCounter++ % 2);
@@ -196,16 +216,7 @@ namespace RetroShadersPro.URP
                     material.DisableKeyword("_CHROMATIC_ABERRATION_ON");
                 }
 
-                if (settings.trackingTexture.value == null ||
-                    (settings.trackingStrength.value < 0.001f && settings.trackingColorDamage.value < 0.001f &&
-                    settings.trackingLinesThreshold.value > 0.999f))
-                {
-                    material.DisableKeyword("_TRACKING_ON");
-                }
-                else
-                {
-                    material.EnableKeyword("_TRACKING_ON");
-                }
+                Shader.SetGlobalInteger("_RetroPixelSize", settings.pixelSize.value);
             }
 
 #if UNITY_6000_0_OR_NEWER

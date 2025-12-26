@@ -9,6 +9,11 @@
 TEXTURE2D(_BaseMap);
 SAMPLER(sampler_BaseMap);
 
+#ifdef _USE_REFLECTION_CUBEMAP
+TEXTURECUBE(_ReflectionCubemap);
+SAMPLER(sampler_ReflectionCubemap);
+#endif
+
 CBUFFER_START(UnityPerMaterial)
 float4 _BaseColor;
 float4 _BaseMap_TexelSize;
@@ -20,30 +25,42 @@ int _ColorBitDepth;
 float _ColorBitDepthOffset;
 float _AmbientLight;
 float _AffineTextureStrength;
+float _Glossiness;
+float4 _CubemapColor;
+float _CubemapRotation;
 float _Cutoff;
 CBUFFER_END
+
+// Pixel Size used for dithering, set by CRT effect (if one is active).
+int _RetroPixelSize = 1;
 
 #ifdef UNITY_DOTS_INSTANCING_ENABLED
 
 UNITY_DOTS_INSTANCING_START(MaterialPropertyMetadata)
 	UNITY_DOTS_INSTANCED_PROP(float4, _BaseColor)
-	UNITY_DOTS_INSTANCED_PROP(int, _ResolutionLimit)
-	UNITY_DOTS_INSTANCED_PROP(int, _SnapsPerUnit)
-	UNITY_DOTS_INSTANCED_PROP(int _ColorBitDepth)
-	UNITY_DOTS_INSTANCED_PROP(float, _ColorBitDepthOffset)
-	UNITY_DOTS_INSTANCED_PROP(float, _AmbientLight)
-	UNITY_DOTS_INSTANCED_PROP(float, _AffineTextureStrength)
-	UNITY_DOTS_INSTANCED_PROP(float, _Cutoff)
+	UNITY_DOTS_INSTANCED_PROP(int,    _ResolutionLimit)
+	UNITY_DOTS_INSTANCED_PROP(int,    _SnapsPerUnit)
+	UNITY_DOTS_INSTANCED_PROP(int,    _ColorBitDepth)
+	UNITY_DOTS_INSTANCED_PROP(float,  _ColorBitDepthOffset)
+	UNITY_DOTS_INSTANCED_PROP(float,  _AmbientLight)
+	UNITY_DOTS_INSTANCED_PROP(float,  _AffineTextureStrength)
+	UNITY_DOTS_INSTANCED_PROP(float,  _Glossiness)
+	UNITY_DOTS_INSTANCED_PROP(float4, _CubemapColor)
+	UNITY_DOTS_INSTANCED_PROP(float,  _CubemapRotation)
+	UNITY_DOTS_INSTANCED_PROP(float,  _Cutoff)
 UNITY_DOTS_INSTANCING_END(MaterialPropertyMetadata)
 
 #define _BaseColor				UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(float4, _BaseColor)
-#define _ResolutionLimit		UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(int, _ResolutionLimit)
-#define _SnapsPerUnit			UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(int, _SnapsPerUnit)
-#define _ColorBitDepth			UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(int _ColorBitDepth)
-#define _ColorBitDepthOffset	UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(float, _ColorBitDepthOffset)
-#define _AmbientLight			UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(float, _AmbientLight)
-#define _AffineTextureStrength	UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(float, _AffineTextureStrength)
-#define _Cutoff					UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(float, _Cutoff)
+#define _ResolutionLimit		UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(int,    _ResolutionLimit)
+#define _SnapsPerUnit			UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(int,    _SnapsPerUnit)
+#define _ColorBitDepth			UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(int,    _ColorBitDepth)
+#define _ColorBitDepthOffset	UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(float,  _ColorBitDepthOffset)
+#define _AmbientLight			UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(float,  _AmbientLight)
+#define _AffineTextureStrength	UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(float,  _AffineTextureStrength)
+#define _Glossiness				UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(float,  _Glossiness)
+#define _CubemapColor			UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(float4, _CubemapColor)
+#define _CubemapRotation		UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(float,  _CubemapRotation)
+#define _Cutoff					UNITY_ACCESS_DOTS_INSTANCED_PROP_WITH_DEFAULT(float,  _Cutoff)
 
 #endif
 

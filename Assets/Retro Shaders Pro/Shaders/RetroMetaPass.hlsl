@@ -20,10 +20,11 @@ struct v2f
     float4 color : COLOR;
 	float2 uv : TEXCOORD0;
 	float3 affineUV : TEXCOORD1;
+    float4 positionSS : TEXCOORD2;
 
 #ifdef EDITOR_VISUALIZATION
-	float2 vizUV : TEXCOORD2;
-	float4 lightCoord : TEXCOORD3;
+	float2 vizUV : TEXCOORD3;
+	float4 lightCoord : TEXCOORD4;
 #endif
 };
 
@@ -60,6 +61,8 @@ v2f metaVert(appdata v)
 	UnityEditorVizData(v.positionOS.xyz, v.uv0, v.uv1, v.uv2, o.vizUV, o.lightCoord);
 #endif
 	
+    o.positionSS = ComputeScreenPos(o.positionCS);
+	
     o.color = v.color;
 
 	return o;
@@ -73,7 +76,7 @@ float4 metaFrag(v2f i) : SV_TARGET
 	
     float2 uv = lerp(i.uv, i.affineUV.xy / i.affineUV.z, _AffineTextureStrength);
 
-#if _USE_POINT_FILTER_ON
+#if defined(_FILTERMODE_POINT)
 	float4 baseColor = _BaseColor * SAMPLE_TEXTURE2D_LOD(_BaseMap, sampler_PointRepeat, uv, lod) * i.color;
 #else
     float4 baseColor = _BaseColor * SAMPLE_TEXTURE2D_LOD(_BaseMap, sampler_LinearRepeat, uv, lod) * i.color;
@@ -88,7 +91,12 @@ float4 metaFrag(v2f i) : SV_TARGET
 
     float divisor = colorBitDepth - 1.0f;
 
-#ifdef _USE_DITHERING
+#if defined(_DITHERMODE_SCREEN)
+	float3 remainders = float3(frac(r), frac(g), frac(b));
+	float2 ditherUV = (i.positionSS.xy / i.positionSS.w) * _ScreenParams.xy / _RetroPixelSize;
+	float3 ditheredColor = saturate(dither(remainders, ditherUV));
+	ditheredColor = step(0.5f, ditheredColor);
+#elif defined(_DITHERMODE_TEXTURE)
 	float3 remainders = float3(frac(r), frac(g), frac(b));
 	float3 ditheredColor = saturate(dither(remainders, uv * _BaseMap_TexelSize.zw));
 	ditheredColor = step(0.5f, ditheredColor);

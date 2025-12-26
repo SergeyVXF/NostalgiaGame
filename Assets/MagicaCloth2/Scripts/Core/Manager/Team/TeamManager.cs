@@ -41,6 +41,7 @@ namespace MagicaCloth2
         public const int Flag_RestoreTransformOnlyOnec = 20; // Transform復元を一度のみ実行する(BoneClothのDisable時)
         public const int Flag_Tangent = 21; // 接線を計算する
         public const int Flag_ScaleSuspent = 22; // 極小スケールによる機能停止
+        public const int Flag_ProxyMeshLine = 23; // プロキシメッシュにLineデータが存在する
 
         // 以下セルフコリジョン
         // !これ以降の順番を変えないこと

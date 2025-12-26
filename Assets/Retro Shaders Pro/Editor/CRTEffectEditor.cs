@@ -11,155 +11,163 @@ namespace RetroShadersPro.URP
 #endif
     public class CRTEffectEditor : VolumeComponentEditor
     {
-        SerializedDataParameter showInSceneView;
-        const string showInSceneViewLabel = "Show in Scene View";
-        const string showInSceneViewTooltip = "Should the effect be visible in the Scene View?";
+        private SerializedDataParameter showInSceneView;
+        private readonly GUIContent showInSceneViewInfo = new("Show in Scene View",
+            "Should the effect be visible in the Scene View?");
 
-        SerializedDataParameter enabled;
-        const string enabledLabel = "Enabled";
-        const string enabledTooltip = "Should the effect be rendered?";
+        private SerializedDataParameter enabled;
+        private readonly GUIContent enabledInfo = new("Enabled",
+            "Should the effect be rendered?");
 
-        SerializedDataParameter renderPassEvent;
-        const string renderPassEventLabel = "Render Pass Event";
-        const string renderPassEventTooltip = "Choose where to insert this pass in URP's render loop.\n" +
+        private SerializedDataParameter renderPassEvent;
+        private readonly GUIContent renderPassEventInfo = new("Render Pass Event",
+            "Choose where to insert this pass in URP's render loop.\n" +
             "\nURP's internal post processing includes effects like bloom and color-correction, which may impact the appearance of the CRT effect.\n" +
-            "\nFor example, with the Before setting, high-intensity HDR colors will be impacted by Bloom.";
+            "\nFor example, with the Before setting, high-intensity HDR colors will be impacted by Bloom.");
 
-        SerializedDataParameter tintColor;
-        const string tintColorLabel = "Tint Color";
-        const string tintColorTooltip = "Tint applied to the entire screen.";
+        private SerializedDataParameter tintColor;
+        private readonly GUIContent tintColorInfo = new("Tint Color",
+            "Tint applied to the entire screen.");
 
-        SerializedDataParameter distortionStrength;
-        const string distortionStrengthLabel = "Distortion Strength";
-        const string distortionStrengthTooltip = "Strength of the barrel distortion. Values above zero cause CRT screen-like distortion; values below zero bulge outwards";
+        private SerializedDataParameter distortionStrength;
+        private readonly GUIContent distortionStrengthInfo = new("Distortion Strength",
+            "Strength of the barrel distortion. Values above zero cause CRT screen-like distortion; values below zero bulge outwards.");
 
-        SerializedDataParameter distortionSmoothing;
-        const string distortionSmoothingLabel = "Distortion Smoothing";
-        const string distortionSmoothingTooltip = "Amount of smoothing applied to edges of the distorted screen.";
+        private SerializedDataParameter distortionSmoothing;
+        private readonly GUIContent distortionSmoothingInfo = new("Distortion Smoothing",
+            "Amount of smoothing applied to edges of the distorted screen.");
 
-        SerializedDataParameter backgroundColor;
-        const string backgroundColorLabel = "Background Color";
-        const string backgroundColorTooltip = "Color of the area outside of the barrel-distorted 'screen'.";
+        private SerializedDataParameter backgroundColor;
+        private readonly GUIContent backgroundColorInfo = new("Background Color",
+            "Color of the area outside of the barrel-distorted 'screen'.");
 
-        SerializedDataParameter scaleParameters;
-        const string scaleParametersLabel = "Scale in Screen Space";
-        const string scaleParametersTooltip = "Enable if you want pixelation, scanline, and RGB effects to scale seamlessly with screen size.";
+        private SerializedDataParameter scaleParameters;
+        private readonly GUIContent scaleParametersInfo = new("Scale in Screen Space",
+            "Enable if you want pixelation, scanline, and RGB effects to scale seamlessly with screen size.");
 
-        SerializedDataParameter verticalReferenceResolution;
-        const string verticalReferenceResolutionLabel = "Reference Resolution (Vertical)";
-        const string verticalReferenceResolutionTooltip = "Base vertical resolution to use as a reference point for scaling properties." +
-            "\nIf the real screen resolution matches the reference, then no scaling is performed.";
+        private SerializedDataParameter verticalReferenceResolution;
+        private readonly GUIContent verticalReferenceResolutionInfo = new("Reference Resolution (Vertical)",
+            "Base vertical resolution to use as a reference point for scaling properties." +
+            "\nIf the real screen resolution matches the reference, then no scaling is performed.");
 
-        SerializedDataParameter forcePointFiltering;
-        const string forcePointFilteringLabel = "Force Point Filtering";
-        const string forcePointFilteringTooltip = "Should the effect use point filtering when rescaling?";
+        private SerializedDataParameter forcePointFiltering;
+        private readonly GUIContent forcePointFilteringInfo = new("Force Point Filtering",
+            "Should the effect use point filtering when rescaling?");
 
-        SerializedDataParameter rgbTex;
-        const string rgbTexLabel = "RGB Subpixel Texture";
-        const string rgbTexTooltip = "Small texture denoting the shape of the red, green, and blue subpixels." +
-            "\nFor best results, try and make sure the Pixel Size matches the dimensions of this texture.";
+        private SerializedDataParameter rgbTex;
+        private readonly GUIContent rgbTexInfo = new("RGB Subpixel Texture",
+            "Small texture denoting the shape of the red, green, and blue subpixels." +
+            "\nFor best results, make sure the texture dimensions are a multiple of the Pixel Size.");
 
-        SerializedDataParameter rgbStrength;
-        const string rgbStrengthLabel = "RGB Subpixel Strength";
-        const string rgbSubpixelTooltip = "How strongly the screen colors get multiplied with the subpixel texture.";
+        private SerializedDataParameter rgbStrength;
+        private readonly GUIContent rgbStrengthInfo = new("RGB Subpixel Strength",
+            "How strongly the screen colors get multiplied with the subpixel texture.");
 
-        SerializedDataParameter scanlineTex;
-        const string scanlineTexLabel = "Scanline Texture";
-        const string scanlineTexTooltip = "Small texture denoting the scanline pattern which scrolls over the screen.";
+        private SerializedDataParameter scanlineTex;
+        private readonly GUIContent scanlineTexInfo = new("Scanline Texture",
+            "Small texture denoting the scanline pattern which scrolls over the screen.");
 
-        SerializedDataParameter scanlineStrength;
-        const string scanlineStrengthLabel = "Scanline Strength";
-        const string scanlineStrengthTooltip = "How strongly the scanline texture is overlaid onto the screen.";
+        private SerializedDataParameter scanlineStrength;
+        private readonly GUIContent scanlineStrengthInfo = new("Scanline Strength",
+            "How strongly the scanline texture is overlaid onto the screen.");
 
-        SerializedDataParameter scanlineSize;
-        const string scanlineSizeLabel = "Scanline/RGB Size";
-        const string scanlineSizeTooltip = "The scanline and RGB textures cover this number of pixels." +
-            "\nFor best results, this should be a multiple of the Pixel Size.";
+        private SerializedDataParameter scanlineSize;
+        private readonly GUIContent scanlineSizeInfo = new("Scanline/RGB Size",
+            "The scanline and RGB textures cover this number of pixels." +
+            "\nFor best results, this should be a multiple of the Pixel Size.");
 
-        SerializedDataParameter scrollSpeed;
-        const string scrollSpeedLabel = "Scanline Scroll Speed";
-        const string scrollSpeedTooltip = "How quickly the scanlines scroll vertically over the screen.";
+        private SerializedDataParameter scrollSpeed;
+        private readonly GUIContent scrollSpeedInfo = new("Scanline Scroll Speed",
+            "How quickly the scanlines scroll vertically over the screen." +
+            "\nUse negative values to scroll upwards instead.");
 
-        SerializedDataParameter pixelSize;
-        const string pixelSizeLabel = "Pixel Size";
-        const string pixelSizeTooltip = "Size of each 'pixel' on the new image, after rescaling the source camera texture.";
+        private SerializedDataParameter pixelSize;
+        private readonly GUIContent pixelSizeInfo = new("Pixel Size",
+            "Size of each 'pixel' on the new image, after rescaling the source camera texture.");
 
-        SerializedDataParameter randomWear;
-        const string randomWearLabel = "Random Wear";
-        const string randomWearTooltip = "How strongly each texture line is offset horizontally.";
+        private SerializedDataParameter randomWear;
+        private readonly GUIContent randomWearInfo = new("Random Wear",
+            "How strongly each texture line is offset horizontally.");
 
-        SerializedDataParameter aberrationStrength;
-        const string aberrationStrengthLabel = "Aberration Strength";
-        const string aberrationStrengthTooltip = "Amount of color channel separation at the screen edges.";
+        private SerializedDataParameter aberrationStrength;
+        private readonly GUIContent aberrationStrengthInfo = new("Aberration Strength",
+            "Amount of color channel separation at the screen edges.");
 
-        SerializedDataParameter trackingTexture;
-        const string trackingTextureLabel = "Tracking Texture";
-        const string trackingTextureTooltip = "A control texture for VHS tracking artifacts." + 
-            "\nThe red channel of the texture contains the strength of the UV offsets." + 
+        private SerializedDataParameter useTracking;
+        private readonly GUIContent useTrackingInfo = new("Use VHS Tracking",
+            "Should the shader apply VHS tracking artifacts?");
+
+        private SerializedDataParameter trackingTexture;
+        private readonly GUIContent trackingTextureInfo = new("Tracking Texture",
+            "A control texture for VHS tracking artifacts." +
+            "\nThe red channel of the texture contains the strength of the UV offsets." +
             "\nThe green channel of the texture contains tracking line strength." +
-            "\nStrength values are centered around 0.5 (gray), and get stronger the closer you get to 0 or 1.";
+            "\nStrength values are centered around 0.5 (gray), and get stronger the closer you get to 0 or 1.");
 
-        SerializedDataParameter trackingSize;
-        const string trackingSizeLabel = "Tracking Size";
-        const string trackingSizeTooltip = "How many times the tracking texture is tiled on-screen.";
+        private SerializedDataParameter trackingSize;
+        private readonly GUIContent trackingSizeInfo = new("Tracking Size",
+            "How many times the tracking texture is tiled on-screen.");
 
-        SerializedDataParameter trackingStrength;
-        const string trackingStrengthLabel = "Tracking Strength";
-        const string trackingStrengthTooltip = "How strongly the tracking texture offsets screen UVs.";
+        private SerializedDataParameter trackingStrength;
+        private readonly GUIContent trackingStrengthInfo = new("Tracking Strength",
+            "How strongly the tracking texture offsets screen UVs.");
 
-        SerializedDataParameter trackingSpeed;
-        const string trackingSpeedLabel = "Tracking Speed";
-        const string trackingSpeedTooltip = "How quickly the tracking texture scrolls across the screen." +
-            "\nUse negative values to scroll upwards instead.";
+        private SerializedDataParameter trackingSpeed;
+        private readonly GUIContent trackingSpeedInfo = new("Tracking Speed",
+            "How quickly the tracking texture scrolls across the screen." +
+            "\nUse negative values to scroll upwards instead.");
 
-        SerializedDataParameter trackingJitter;
-        const string trackingJitterLabel = "Tracking Jitter";
-        const string trackingJitterTooltip = "How jittery the scrolling movement is.";
+        private SerializedDataParameter trackingJitter;
+        private readonly GUIContent trackingJitterInfo = new("Tracking Jitter",
+            "How jittery the scrolling movement is.");
 
-        SerializedDataParameter trackingColorDamage;
-        const string trackingColorDamageLabel = "Tracking Color Damage";
-        const string trackingColorDamageTooltip = "How strongly the chrominance of the image is distorted." + 
-            "\nThe distortion is applied in YIQ color space, to the I and Q channels (chrominance)." + 
-            "\nA value of 1 distorts colors back to the original chrominance.";
+        private SerializedDataParameter trackingColorDamage;
+        private readonly GUIContent trackingColorDamageInfo = new("Tracking Color Damage",
+            "How strongly the chrominance of the image is distorted." +
+            "\nThe distortion is applied in YIQ color space, to the I and Q channels (chrominance)." +
+            "\nA value of 1 distorts colors back to the original chrominance.");
 
-        SerializedDataParameter trackingLinesThreshold;
-        const string trackingLinesThresholdLabel = "Tracking Lines Threshold";
-        const string trackingLinesThresholdTooltip = "Higher threshold values mean fewer pixels are registered as tracking lines.";
+        private SerializedDataParameter trackingLinesThreshold;
+        private readonly GUIContent trackingLinesThresholdInfo = new("Tracking Lines Threshold",
+            "Higher threshold values mean fewer pixels are registered as tracking lines.");
 
-        SerializedDataParameter trackingLinesColor;
-        const string trackingLinesColorLabel = "Tracking Lines Color";
-        const string trackingLinesColorTooltip = "Color of the tracking lines. The alpha component acts as a global multiplier on strength.";
+        private SerializedDataParameter trackingLinesColor;
+        private readonly GUIContent trackingLinesColorInfo = new("Tracking Lines Color",
+            "Color of the tracking lines. The alpha component acts as a global multiplier on strength.");
 
-        SerializedDataParameter brightness;
-        const string brightnessLabel = "Brightness";
-        const string brightnessTooltip = "Global brightness adjustment control. 1 represents no change." +
-            "\nThis setting can be increased if other features darken your image too much.";
+        private SerializedDataParameter brightness;
+        private readonly GUIContent brightnessInfo = new("Brightness",
+            "Global brightness adjustment control. 1 represents no change." +
+            "\nThis setting can be increased if other features like RGB subpixels and scanlines darken your image too much.");
 
-        SerializedDataParameter contrast;
+        private SerializedDataParameter contrast;
         const string contrastLabel = "Contrast";
         const string contrastTooltip = "Global contrast modifier. 1 represents no change.";
+        private readonly GUIContent contrastInfo = new("Contrast",
+            "Global contrast modifier. 1 represents no change.");
 
-        SerializedDataParameter enableInterlacing;
-        const string interlacingLabel = "True Interlacing";
-        const string interlacingTooltip = "Should Unity render half of lines this frame, and the other half the next frame?";
+        private SerializedDataParameter enableInterlacing;
+        private readonly GUIContent enableInterlacingInfo = new("Interlaced Rendering",
+            "Should Unity render half of lines this frame, and the other half the next frame?");
 
-        private static GUIStyle _headerStyle;
-        private static GUIStyle headerStyle
+        private static GUIStyle _boxStyle;
+        private static GUIStyle BoxStyle
         {
             get
             {
-                if (_headerStyle == null)
+                return _boxStyle ?? (_boxStyle = new GUIStyle(EditorStyles.helpBox)
                 {
-                    _headerStyle = new GUIStyle(GUI.skin.label)
-                    {
-                        wordWrap = true,
-                        fontSize = 14,
-                        fontStyle = FontStyle.Bold,
-                        alignment = TextAnchor.MiddleLeft
-                    };
-                }
+                    padding = new RectOffset(10, 10, 5, 10)
+                });
+            }
+        }
 
-                return _headerStyle;
+        private static GUIStyle _labelStyle;
+        private static GUIStyle LabelStyle
+        {
+            get
+            {
+                return _labelStyle ?? (_labelStyle = new GUIStyle(EditorStyles.boldLabel));
             }
         }
 
@@ -185,6 +193,7 @@ namespace RetroShadersPro.URP
             randomWear = Unpack(o.Find(x => x.randomWear));
             aberrationStrength = Unpack(o.Find(x => x.aberrationStrength));
             distortionSmoothing = Unpack(o.Find(x => x.distortionSmoothing));
+            useTracking = Unpack(o.Find(x => x.useTracking));
             trackingTexture = Unpack(o.Find(x => x.trackingTexture));
             trackingSize = Unpack(o.Find(x => x.trackingSize));
             trackingStrength = Unpack(o.Find(x => x.trackingStrength));
@@ -209,64 +218,98 @@ namespace RetroShadersPro.URP
                 }
             }
 
-            EditorGUILayout.LabelField("Basic Settings", headerStyle);
+            GUILayout.Space(5);
 
-            PropertyField(showInSceneView, new GUIContent(showInSceneViewLabel, showInSceneViewTooltip));
-            PropertyField(enabled, new GUIContent(enabledLabel, enabledTooltip));
-            PropertyField(renderPassEvent, new GUIContent(renderPassEventLabel, renderPassEventTooltip));
+            EditorGUILayout.BeginVertical(BoxStyle);
+            EditorGUILayout.LabelField("Basic Settings", LabelStyle);
 
-            GUILayout.Space(8);
+            PropertyField(showInSceneView, showInSceneViewInfo);
+            PropertyField(enabled, enabledInfo);
+            PropertyField(renderPassEvent, renderPassEventInfo);
 
-            EditorGUILayout.LabelField("Resolution & Fidelity", headerStyle);
+            EditorGUILayout.EndVertical();
 
-            PropertyField(pixelSize, new GUIContent(pixelSizeLabel, pixelSizeTooltip));
-            PropertyField(scaleParameters, new GUIContent(scaleParametersLabel, scaleParametersTooltip));
-            PropertyField(verticalReferenceResolution, new GUIContent(verticalReferenceResolutionLabel, verticalReferenceResolutionTooltip));
-            PropertyField(forcePointFiltering, new GUIContent(forcePointFilteringLabel, forcePointFilteringTooltip));
-            PropertyField(enableInterlacing, new GUIContent(interlacingLabel, interlacingTooltip));
+            GUILayout.Space(5);
 
-            GUILayout.Space(8);
+            EditorGUILayout.BeginVertical(BoxStyle);
+            EditorGUILayout.LabelField("Resolution & Fidelity", LabelStyle);
 
-            EditorGUILayout.LabelField("Barrel Distortion", headerStyle);
+            PropertyField(pixelSize, pixelSizeInfo);
+            PropertyField(scaleParameters, scaleParametersInfo);
 
-            PropertyField(distortionStrength, new GUIContent(distortionStrengthLabel, distortionStrengthTooltip));
-            PropertyField(distortionSmoothing, new GUIContent(distortionSmoothingLabel, distortionSmoothingTooltip));
-            PropertyField(backgroundColor, new GUIContent(backgroundColorLabel, backgroundColorTooltip));
+            if (scaleParameters.value.boolValue)
+            {
+                EditorGUI.indentLevel++;
+                PropertyField(verticalReferenceResolution, verticalReferenceResolutionInfo);
+                EditorGUI.indentLevel--;
+            }
 
-            GUILayout.Space(8);
+            PropertyField(forcePointFiltering, forcePointFilteringInfo);
+            PropertyField(enableInterlacing, enableInterlacingInfo);
 
-            EditorGUILayout.LabelField("RGB Subpixels & Scanlines", headerStyle);
+            EditorGUILayout.EndVertical();
 
-            PropertyField(rgbTex, new GUIContent(rgbTexLabel, rgbTexTooltip));
-            PropertyField(rgbStrength, new GUIContent(rgbStrengthLabel, rgbSubpixelTooltip));
+            GUILayout.Space(5);
 
-            PropertyField(scanlineTex, new GUIContent(scanlineTexLabel, scanlineTexTooltip));
-            PropertyField(scanlineStrength, new GUIContent(scanlineStrengthLabel, scanlineStrengthTooltip));
-            PropertyField(scanlineSize, new GUIContent(scanlineSizeLabel, scanlineSizeTooltip));
-            PropertyField(scrollSpeed, new GUIContent(scrollSpeedLabel, scrollSpeedTooltip));
+            EditorGUILayout.BeginVertical(BoxStyle);
+            EditorGUILayout.LabelField("Barrel Distortion", LabelStyle);
 
-            GUILayout.Space(8);
+            PropertyField(distortionStrength, distortionStrengthInfo);
+            PropertyField(distortionSmoothing, distortionSmoothingInfo);
+            PropertyField(backgroundColor, backgroundColorInfo);
 
-            EditorGUILayout.LabelField("VHS Artifacts", headerStyle);
+            EditorGUILayout.EndVertical();
 
-            PropertyField(randomWear, new GUIContent(randomWearLabel, randomWearTooltip));
-            PropertyField(aberrationStrength, new GUIContent(aberrationStrengthLabel, aberrationStrengthTooltip));
-            PropertyField(trackingTexture, new GUIContent(trackingTextureLabel, trackingTextureTooltip));
-            PropertyField(trackingSize, new GUIContent(trackingSizeLabel, trackingSizeTooltip));
-            PropertyField(trackingStrength, new GUIContent(trackingStrengthLabel, trackingStrengthTooltip));
-            PropertyField(trackingSpeed, new GUIContent(trackingSpeedLabel, trackingSpeedTooltip));
-            PropertyField(trackingJitter, new GUIContent(trackingJitterLabel, trackingJitterTooltip));
-            PropertyField(trackingColorDamage, new GUIContent(trackingColorDamageLabel, trackingColorDamageTooltip));
-            PropertyField(trackingLinesThreshold, new GUIContent(trackingLinesThresholdLabel, trackingLinesThresholdTooltip));
-            PropertyField(trackingLinesColor, new GUIContent(trackingLinesColorLabel, trackingLinesColorTooltip));
+            GUILayout.Space(5);
 
-            GUILayout.Space(8);
+            EditorGUILayout.BeginVertical(BoxStyle);
+            EditorGUILayout.LabelField("RGB Subpixels & Scanlines", LabelStyle);
 
-            EditorGUILayout.LabelField("Color Adjustments", headerStyle);
+            PropertyField(rgbTex, rgbTexInfo);
+            PropertyField(rgbStrength, rgbStrengthInfo);
 
-            PropertyField(tintColor, new GUIContent(tintColorLabel, tintColorTooltip));
-            PropertyField(brightness, new GUIContent(brightnessLabel, brightnessTooltip));
-            PropertyField(contrast, new GUIContent(contrastLabel, contrastTooltip));
+            PropertyField(scanlineTex, scanlineTexInfo);
+            PropertyField(scanlineStrength, scanlineStrengthInfo);
+            PropertyField(scanlineSize, scanlineSizeInfo);
+            PropertyField(scrollSpeed, scrollSpeedInfo);
+
+            EditorGUILayout.EndVertical();
+
+            GUILayout.Space(5);
+
+            EditorGUILayout.BeginVertical(BoxStyle);
+            EditorGUILayout.LabelField("VHS Artifacts", LabelStyle);
+
+            PropertyField(randomWear, randomWearInfo);
+            PropertyField(aberrationStrength, aberrationStrengthInfo);
+            PropertyField(useTracking, useTrackingInfo);
+
+            if(useTracking.value.boolValue)
+            {
+                EditorGUI.indentLevel++;
+                PropertyField(trackingTexture, trackingTextureInfo);
+                PropertyField(trackingSize, trackingSizeInfo);
+                PropertyField(trackingStrength, trackingStrengthInfo);
+                PropertyField(trackingSpeed, trackingSpeedInfo);
+                PropertyField(trackingJitter, trackingJitterInfo);
+                PropertyField(trackingColorDamage, trackingColorDamageInfo);
+                PropertyField(trackingLinesThreshold, trackingLinesThresholdInfo);
+                PropertyField(trackingLinesColor, trackingLinesColorInfo);
+                EditorGUI.indentLevel--;
+            }
+
+            EditorGUILayout.EndVertical();
+
+            GUILayout.Space(5);
+
+            EditorGUILayout.BeginVertical(BoxStyle);
+            EditorGUILayout.LabelField("Color Adjustments", LabelStyle);
+
+            PropertyField(tintColor, tintColorInfo);
+            PropertyField(brightness, brightnessInfo);
+            PropertyField(contrast, contrastInfo);
+
+            EditorGUILayout.EndVertical();
         }
     }
 }

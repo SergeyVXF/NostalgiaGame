@@ -10,11 +10,20 @@ Shader "Retro Shaders Pro/Retro Lit"
 		_ColorBitDepthOffset("Bit Depth Offset", Range(0.0, 1.0)) = 0.0
 		_AmbientLight("Ambient Light Strength", Range(0.0, 1.0)) = 0.02
 		_AffineTextureStrength("Affine Texture Strength", Range(0.0, 1.0)) = 1.0
-		[Toggle] _USE_POINT_FILTER("Use Point Filtering", Float) = 1
+		_Glossiness("Glossiness", Range(1.0, 20.0)) = 5.0
+		_ReflectionCubemap("Reflection Cubemap", Cube) = "black" {}
+		_CubemapColor("Cubemap Color", Color) = (1, 1, 1, 1)
+		_CubemapRotation("Cubemap Rotation", Range(0.0, 360.0)) = 0
+
+		[KeywordEnum(Lit, TexelLit, VertexLit, Unlit)] _LightMode("Lighting Mode", Integer) = 1
+		[KeywordEnum(Bilinear, Point, N64)] _FilterMode("Filtering Mode", Integer) = 1
+		[KeywordEnum(Screen, Texture, Off)] _DitherMode("Dithering Mode", Integer) = 0
+		[KeywordEnum(Object, World, View, Off)] _SnapMode("Snapping Mode", Integer) = 2
+
 		[Toggle] _USE_AMBIENT_OVERRIDE("Ambient Light Override", Float) = 0
-		[Toggle] _USE_DITHERING("Use Dithering", Float) = 0
-		[Toggle] _USE_PIXEL_LIGHTING("Use Pixel Lighting", Float) = 1
 		[ToggleOff] _USE_VERTEX_COLORS("Use Vertex Colors", Float) = 0
+		[Toggle] _USE_SPECULAR_LIGHT("Use Specular Lighting", Float) = 0
+		[Toggle] _USE_REFLECTION_CUBEMAP("Use Reflection Cubemap", Float) = 0
 
 		[ToggleUI] _AlphaClip("Alpha Clip", Float) = 0.0
 		[HideInInspector] _Cutoff("Alpha Clip Threshold", Range(0.0, 1.0)) = 0.5
@@ -53,13 +62,23 @@ Shader "Retro Shaders Pro/Retro Lit"
 
 			return col - DITHER_THRESHOLDS[index];
 		}
+
+		// From: https://github.com/TwoTailsGames/Unity-Built-in-Shaders/blob/master/DefaultResourcesExtra/Skybox-Cubed.shader
+		float3 RotateAroundYInDegrees(float3 vertex, float degrees)
+		{
+			float alpha = degrees * PI / 180.0;
+			float sina, cosa;
+			sincos(alpha, sina, cosa);
+			float2x2 m = float2x2(cosa, -sina, sina, cosa);
+			return float3(mul(m, vertex.xz), vertex.y).xzy;
+		}
 		ENDHLSL
 
         Pass
         {
 			Tags
 			{
-				"LightMode" = "UniversalForward"
+				"LightMode" = "UniversalForwardOnly"
 			}
 
 			Blend[_SrcBlend][_DstBlend]
@@ -83,9 +102,14 @@ Shader "Retro Shaders Pro/Retro Lit"
 			#pragma multi_compile_fragment _ _SCREEN_SPACE_OCCLUSION
 			#pragma multi_compile_fragment _ _DBUFFER_MRT1 _DBUFFER_MRT2 _DBUFFER_MRT3
 			#pragma multi_compile_fragment _ _SHADOWS_SOFT
-			#pragma multi_compile _ _FORWARD_PLUS
 			#pragma multi_compile_fragment _ _LIGHT_LAYERS
 			#pragma multi_compile_fragment _ _LIGHT_COOKIES
+
+#if UNITY_VERSION >= 60010000
+			#pragma multi_compile _ _CLUSTER_LIGHT_LOOP
+#else
+			#pragma multi_compile _ _FORWARD_PLUS
+#endif
 
 			#pragma multi_compile _ EVALUATE_SH_MIXED EVALUATE_SH_VERTEX
 			#pragma multi_compile _ LIGHTMAP_SHADOW_MIXING
@@ -94,14 +118,82 @@ Shader "Retro Shaders Pro/Retro Lit"
 			#pragma multi_compile _ LIGHTMAP_ON
 			#pragma multi_compile _ DYNAMICLIGHTMAP_ON
 
+			#pragma shader_feature_local _LIGHTMODE_LIT _LIGHTMODE_TEXELLIT _LIGHTMODE_VERTEXLIT _LIGHTMODE_UNLIT
+			#pragma shader_feature_local_fragment _FILTERMODE_BILINEAR _FILTERMODE_POINT _FILTERMODE_N64
+			#pragma shader_feature_local_fragment _DITHERMODE_SCREEN _DITHERMODE_TEXTURE _DITHERMODE_OFF
+			#pragma shader_feature_local_vertex _SNAPMODE_OBJECT _SNAPMODE_WORLD _SNAPMODE_VIEW _SNAPMODE_OFF
 			#pragma shader_feature_local_fragment _ALPHATEST_ON
-			#pragma shader_feature_local_fragment _USE_POINT_FILTER_ON
-			#pragma shader_feature_local_fragment _USE_AMBIENT_OVERRIDE
-			#pragma shader_feature_local_fragment _USE_DITHERING
-			#pragma shader_feature_local_fragment _USE_PIXEL_LIGHTING
+			#pragma shader_feature_local _USE_AMBIENT_OVERRIDE
 			#pragma shader_feature_local_fragment _USE_VERTEX_COLORS
+			#pragma shader_feature_local _USE_SPECULAR_LIGHT
+			#pragma shader_feature_local_fragment _USE_REFLECTION_CUBEMAP
 
 			#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+
+			float3 calculateDiffuse(InputData inputData, float4 vertexColor)
+			{
+#ifndef _USE_AMBIENT_OVERRIDE
+				float3 ambientLight = SampleSHVertex(inputData.normalWS);
+#else
+				float3 ambientLight = _AmbientLight;
+#endif
+
+				Light light = GetMainLight(inputData.shadowCoord);
+
+				// Main light diffuse calculation.
+				float3 lightColor = light.color * light.distanceAttenuation * light.shadowAttenuation;
+				float lightAmount = saturate(dot(inputData.normalWS, light.direction));
+				float3 totalLighting = lightAmount * lightColor + ambientLight;
+
+#if defined(_ADDITIONAL_LIGHTS)
+				uint pixelLightCount = GetAdditionalLightsCount();
+
+				// Loop through all secondary lights.
+				LIGHT_LOOP_BEGIN(pixelLightCount)
+					light = GetAdditionalLight(lightIndex, inputData.positionWS, inputData.shadowMask);
+
+					// Secondary light diffuse calculation.
+					lightColor = light.color * light.distanceAttenuation * light.shadowAttenuation;
+					totalLighting += saturate(dot(light.direction, inputData.normalWS)) * lightColor;
+				LIGHT_LOOP_END
+#endif
+
+#if _USE_VERTEX_COLORS
+				totalLighting *= vertexColor.rgb;
+#endif
+
+				return totalLighting;
+			}
+
+			float3 calculateSpecular(InputData inputData)
+			{
+#ifndef _USE_SPECULAR_LIGHT
+				return 0.0f;
+#else
+				Light light = GetMainLight(inputData.shadowCoord);
+				float3 lightColor = light.color * light.distanceAttenuation * light.shadowAttenuation;
+
+				// Main light specular calculation.
+				float glossPower = pow(2.0f, _Glossiness);
+				float3 reflectedVector = reflect(-light.direction, inputData.normalWS);
+				float3 specularLighting = pow(saturate(dot(reflectedVector, inputData.viewDirectionWS)), glossPower) * lightColor;
+
+#if defined(_ADDITIONAL_LIGHTS)
+				uint pixelLightCount = GetAdditionalLightsCount();
+
+				// Loop through all secondary lights.
+				LIGHT_LOOP_BEGIN(pixelLightCount)
+					light = GetAdditionalLight(lightIndex, inputData.positionWS, inputData.shadowMask);
+					lightColor = light.color * light.distanceAttenuation * light.shadowAttenuation;
+
+					// Secondary light specular calculation.
+					reflectedVector = reflect(-light.direction, inputData.normalWS);
+					specularLighting += pow(saturate(dot(reflectedVector, inputData.viewDirectionWS)), glossPower) * lightColor;
+				LIGHT_LOOP_END
+#endif			
+				return specularLighting;
+#endif
+			}
 
             struct appdata
             {
@@ -119,13 +211,16 @@ Shader "Retro Shaders Pro/Retro Lit"
 				float4 positionCS : SV_POSITION;
 				float4 color : COLOR;
 				float2 uv : TEXCOORD0;
-				float3 affineUV : TEXCOORD1;
-				float fog : TEXCOORD2;
-				float3 normalWS : TEXCOORD3;
-				float3 positionWS : TEXCOORD4;
-				float3 viewWS : TEXCOORD5;
-				DECLARE_LIGHTMAP_OR_SH(staticLightmapUV, vertexSH, 6);
-				float2 dynamicLightmapUV : TEXCOORD7;
+				float4 affineUVAndFog : TEXCOORD1;
+				float3 normalWS : TEXCOORD2;
+				float3 positionWS : TEXCOORD3;
+				DECLARE_LIGHTMAP_OR_SH(staticLightmapUV, vertexSH, 4);
+				float2 dynamicLightmapUV : TEXCOORD5;
+				float4 positionSS : TEXCOORD6;
+#ifdef _LIGHTMODE_VERTEXLIT
+				float3 diffuseLightColor : TEXCOORD7;
+				float3 specularLightColor : TEXCOORD8;
+#endif
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 				UNITY_VERTEX_OUTPUT_STEREO
             };
@@ -137,20 +232,45 @@ Shader "Retro Shaders Pro/Retro Lit"
 				UNITY_TRANSFER_INSTANCE_ID(v, o);
 				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
+#if defined(_SNAPMODE_OBJECT)
+				float4 positionOS = floor(v.positionOS * _SnapsPerUnit) / _SnapsPerUnit;
+				o.positionCS = TransformObjectToHClip(positionOS.xyz);
+#elif defined(_SNAPMODE_WORLD)
+				float3 positionWS = TransformObjectToWorld(v.positionOS.xyz);
+				positionWS = floor(positionWS * _SnapsPerUnit) / _SnapsPerUnit;
+				o.positionCS = TransformWorldToHClip(positionWS);
+#elif defined(_SNAPMODE_VIEW)
 				float4 positionVS = mul(UNITY_MATRIX_MV, v.positionOS);
 				positionVS = floor(positionVS * _SnapsPerUnit) / _SnapsPerUnit;
 				o.positionCS = mul(UNITY_MATRIX_P, positionVS);
+#else
+				o.positionCS = TransformObjectToHClip(v.positionOS.xyz);
+#endif
 
 				o.uv = TRANSFORM_TEX(v.uv, _BaseMap);
-				o.affineUV = float3(TRANSFORM_TEX(v.uv, _BaseMap) * o.positionCS.w, o.positionCS.w);
-				o.fog = ComputeFogFactor(o.positionCS.z);
+				o.affineUVAndFog.xyz = float3(TRANSFORM_TEX(v.uv, _BaseMap) * o.positionCS.w, o.positionCS.w);
+				o.affineUVAndFog.w = ComputeFogFactor(o.positionCS.z);
 				o.normalWS = TransformObjectToWorldNormal(v.normalOS);
 				o.positionWS = TransformObjectToWorld(v.positionOS.xyz);
-				o.viewWS = GetWorldSpaceNormalizeViewDir(o.positionWS);
 				OUTPUT_SH(o.normalWS, o.vertexSH);
 				OUTPUT_LIGHTMAP_UV(v.staticLightmapUV, unity_LightmapST, o.staticLightmapUV);
 				o.dynamicLightmapUV = v.dynamicLightmapUV.xy * unity_DynamicLightmapST.xy + unity_DynamicLightmapST.zw;
+				o.positionSS = ComputeScreenPos(o.positionCS);
 				o.color = v.color;
+
+#ifdef _LIGHTMODE_VERTEXLIT
+				float3 viewWS = GetWorldSpaceNormalizeViewDir(o.positionWS);
+				InputData inputData = (InputData)0;
+				inputData.positionWS = o.positionWS;
+				inputData.normalWS = o.normalWS;
+				inputData.viewDirectionWS = viewWS;
+				inputData.shadowCoord = TransformWorldToShadowCoord(o.positionWS);
+				inputData.shadowMask = SAMPLE_SHADOWMASK(o.dynamicLightmapUV);
+				inputData.normalizedScreenSpaceUV = GetNormalizedScreenSpaceUV(o.positionCS);
+
+				o.diffuseLightColor = calculateDiffuse(inputData, v.color);
+				o.specularLightColor = calculateSpecular(inputData);
+#endif
 
 				return o;
 			}
@@ -178,12 +298,47 @@ Shader "Retro Shaders Pro/Retro Lit"
 				int lod = clamp(actualResolution - targetResolution, 0, 10);
 
 				// Apply affine texture mapping.
-				float2 uv = lerp(i.uv, i.affineUV.xy / i.affineUV.z, _AffineTextureStrength);
+				float2 uv = lerp(i.uv, i.affineUVAndFog.xy / i.affineUVAndFog.z, _AffineTextureStrength);
 
-#if _USE_POINT_FILTER_ON
-				float4 baseColor = _BaseColor * SAMPLE_TEXTURE2D_LOD(_BaseMap, sampler_PointRepeat, uv, lod);
-#else
+#if defined(_FILTERMODE_BILINEAR)
 				float4 baseColor = _BaseColor * SAMPLE_TEXTURE2D_LOD(_BaseMap, sampler_LinearRepeat, uv, lod);
+#elif defined(_FILTERMODE_N64)
+				// Calculate N64 3-point bilinear filtering.
+
+				float modifier = pow(2.0f, lod);
+				float4 targetTexelSize = float4(_BaseMap_TexelSize.xy * modifier, _BaseMap_TexelSize.zw / modifier);
+
+				// With thanks to: https://www.emutalk.net/threads/emulating-nintendo-64-3-sample-bilinear-filtering-using-shaders.54215/
+				float2 uvA = float2(targetTexelSize.x, 0.0f);
+				float2 uvB = float2(0.0f, targetTexelSize.y);
+				float2 uvC = float2(targetTexelSize.x, targetTexelSize.y);
+				float2 uvHalf = uvC * 0.5f;
+				float2 uvCenter = uv - uvHalf;
+
+				float4 baseColorMain = SAMPLE_TEXTURE2D_LOD(_BaseMap, sampler_PointRepeat, uvCenter, lod);
+				float4 baseColorA = SAMPLE_TEXTURE2D_LOD(_BaseMap, sampler_PointRepeat, uvCenter + uvA, lod);
+				float4 baseColorB = SAMPLE_TEXTURE2D_LOD(_BaseMap, sampler_PointRepeat, uvCenter + uvB, lod);
+				float4 baseColorC = SAMPLE_TEXTURE2D_LOD(_BaseMap, sampler_PointRepeat, uvCenter + uvC, lod);
+
+				float interpX = modf(uvCenter.x * targetTexelSize.z, targetTexelSize.z);
+				float interpY = modf(uvCenter.y * targetTexelSize.w, targetTexelSize.w);
+
+				if(uvCenter.x < 0.0f)
+				{
+					interpX = 1.0f - (interpX * -1.0f);
+				}
+
+				if(uvCenter.y < 0.0f)
+				{
+					interpY = 1.0f - (interpY * -1.0f);
+				}
+
+				float4 baseColor = (baseColorMain + interpX * (baseColorA - baseColorMain) + interpY * (baseColorB - baseColorMain)) * (1.0f - step(1.0f, interpX + interpY));
+				baseColor += (baseColorC + (1.0f - interpX) * (baseColorB - baseColorC) + (1.0f - interpY) * (baseColorA - baseColorC)) * step(1.0f, interpX + interpY);
+
+				baseColor *= _BaseColor;
+#else
+				float4 baseColor = _BaseColor * SAMPLE_TEXTURE2D_LOD(_BaseMap, sampler_PointRepeat, uv, lod);
 #endif
 
 #if _USE_VERTEX_COLORS
@@ -205,7 +360,12 @@ Shader "Retro Shaders Pro/Retro Lit"
 				float divisor = colorBitDepth - 1.0f;
 
 				// Apply dithering between posterized colors.
-#if _USE_DITHERING
+#if defined(_DITHERMODE_SCREEN)
+				float3 remainders = float3(frac(r), frac(g), frac(b));
+				float2 ditherUV = (i.positionSS.xy / i.positionSS.w) * _ScreenParams.xy / _RetroPixelSize;
+				float3 ditheredColor = saturate(dither(remainders, ditherUV));
+				ditheredColor = step(0.5f, ditheredColor);
+#elif defined(_DITHERMODE_TEXTURE)
 				float3 remainders = float3(frac(r), frac(g), frac(b));
 				float3 ditheredColor = saturate(dither(remainders, uv * _BaseMap_TexelSize.zw));
 				ditheredColor = step(0.5f, ditheredColor);
@@ -219,7 +379,7 @@ Shader "Retro Shaders Pro/Retro Lit"
 
 				// Find an offset vector in world space to snap lighting calcs to texel grid.
 				// With massive thanks to: https://discussions.unity.com/t/the-quest-for-efficient-per-texel-lighting/700574
-#if _USE_PIXEL_LIGHTING
+#ifdef _LIGHTMODE_TEXELLIT
 				float2 actualTexelSize = min(_ResolutionLimit, _BaseMap_TexelSize.zw);
 				float2 texelUV = floor(uv * actualTexelSize) / actualTexelSize + (0.5f / actualTexelSize);
 				float2 dUV = (texelUV - uv);
@@ -244,21 +404,35 @@ Shader "Retro Shaders Pro/Retro Lit"
 				float4 shadowCoord = TransformWorldToShadowCoord(positionWS);
 				float4 shadowMask = SAMPLE_SHADOWMASK(i.dynamicLightmapUV);
 
-				// Apply the main light.
-				Light light = GetMainLight(shadowCoord);
+				float3 normalWS = normalize(i.normalWS * facing);
 
-				float3 normalDir = normalize(i.normalWS * facing);
-				float lightAmount = saturate(dot(normalDir, light.direction) * light.distanceAttenuation * light.shadowAttenuation);
-#if _USE_AMBIENT_OVERRIDE
-				float3 lightColor = lerp(_AmbientLight, 1.0f, lightAmount) * light.color;
-#else
-				float3 lightColor = lerp(SampleSH(normalDir), 1.0f, lightAmount) * light.color;
-#endif
+				float3 viewWS = GetWorldSpaceNormalizeViewDir(positionWS);
+
+#if defined(_LIGHTMODE_LIT) || defined(_LIGHTMODE_TEXELLIT)
+				InputData inputData = (InputData)0;
+				inputData.positionWS = positionWS;
+				inputData.normalWS = normalWS;
+				inputData.viewDirectionWS = viewWS;
+				inputData.shadowCoord = shadowCoord;
+				inputData.normalizedScreenSpaceUV = GetNormalizedScreenSpaceUV(i.positionCS);
+
+				float3 diffuseLightColor = calculateDiffuse(inputData, i.color);
+				float3 specularLightColor = calculateSpecular(inputData);
 
 #if DYNAMICLIGHTMAP_ON
-				float3 bakedGI = SAMPLE_GI(i.staticLightmapUV, i.dynamicLightmapUV, i.vertexSH, normalDir);
+				float3 bakedGI = SAMPLE_GI(i.staticLightmapUV, i.dynamicLightmapUV, i.vertexSH, normalWS);
 #else
-				float3 bakedGI = SAMPLE_GI(i.staticLightmapUV, i.vertexSH, normalDir);
+				float3 bakedGI = SAMPLE_GI(i.staticLightmapUV, i.vertexSH, normalWS);
+#endif
+
+				diffuseLightColor += bakedGI;
+
+#elif defined(_LIGHTMODE_VERTEXLIT)
+				float3 diffuseLightColor = i.diffuseLightColor;
+				float3 specularLightColor = i.specularLightColor;
+#else
+				float3 diffuseLightColor = 1.0f;
+				float3 specularLightColor = 0.0f;
 #endif
 
 #ifdef _DBUFFER
@@ -266,57 +440,24 @@ Shader "Retro Shaders Pro/Retro Lit"
                 float metallic = 0;
                 float occlusion = 0;
                 float smoothness = 0;
-                float3 norm = normalDir;
+                float3 norm = normalWS;
                 ApplyDecal(i.positionCS, posterizedColor, specular, norm, metallic, occlusion, smoothness);
 #endif
 
-#ifdef _ADDITIONAL_LIGHTS
-
-				// Apply secondary lights.
-				uint pixelLightCount = GetAdditionalLightsCount();
-
-				InputData inputData = (InputData)0;
-				inputData.positionWS = positionWS;
-				inputData.normalWS = i.normalWS;
-				inputData.viewDirectionWS = GetWorldSpaceNormalizeViewDir(positionWS);
-				inputData.shadowCoord = shadowCoord;
-				inputData.normalizedScreenSpaceUV = GetNormalizedScreenSpaceUV(i.positionCS);
-
-#if USE_FORWARD_PLUS
-
-				// Apply secondary lights (Forward+ rendering).
-				for (uint lightIndex = 0; lightIndex < min(URP_FP_DIRECTIONAL_LIGHTS_COUNT, MAX_VISIBLE_LIGHTS); lightIndex++) 
-				{
-					FORWARD_PLUS_SUBTRACTIVE_LIGHT_CHECK
-
-					Light light = GetAdditionalLight(lightIndex, positionWS, shadowMask);
-
-					float3 color = saturate(dot(light.direction, normalDir)) * light.color;
-					color *= light.distanceAttenuation;
-					color *= light.shadowAttenuation;
-
-					lightColor += color;
-				}
+#ifdef _USE_REFLECTION_CUBEMAP
+				float3 reflectedVector = reflect(-viewWS, normalWS);
+				reflectedVector = RotateAroundYInDegrees(reflectedVector, _CubemapRotation);
+#ifdef _FILTERMODE_POINT
+				float4 cubemapLighting = SAMPLE_TEXTURECUBE_LOD(_ReflectionCubemap, sampler_PointClamp, reflectedVector, lod);
+#else
+				float4 cubemapLighting = SAMPLE_TEXTURECUBE_LOD(_ReflectionCubemap, sampler_LinearClamp, reflectedVector, lod);
 #endif
-
-				// Apply secondary lights (Forward rendering).
-				LIGHT_LOOP_BEGIN(pixelLightCount)
-					Light light = GetAdditionalLight(lightIndex, positionWS, shadowMask);
-
-					float3 color = saturate(dot(light.direction, normalDir)) * light.color;
-					color *= light.distanceAttenuation;
-					color *= light.shadowAttenuation;
-
-					lightColor += color;
-				LIGHT_LOOP_END
-			
+				posterizedColor += cubemapLighting.rgb * cubemapLighting.a * _CubemapColor.rgb * _CubemapColor.a;
 #endif
-
-				lightColor += bakedGI;
 
 				// Combine everything.
-				float3 finalColor = posterizedColor * lightColor;
-				finalColor = MixFog(finalColor, i.fog);
+				float3 finalColor = posterizedColor * diffuseLightColor + specularLightColor;
+				finalColor = MixFog(finalColor, i.affineUVAndFog.w);
 
 				return float4(finalColor, baseColor.a);
 			}
@@ -346,55 +487,11 @@ Shader "Retro Shaders Pro/Retro Lit"
 
 			#pragma multi_compile_vertex _ _CASTING_PUNCTUAL_LIGHT_SHADOW
 			#pragma shader_feature_local_fragment _ALPHATEST_ON
-			#pragma shader_feature_local _USE_POINT_FILTER_ON
+			#pragma shader_feature_local_fragment _FILTERMODE_BILINEAR _FILTERMODE_POINT _FILTERMODE_N64
 
 			#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl"
 			#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/CommonMaterial.hlsl"
 			#include "RetroShadowCasterPass.hlsl"
-			ENDHLSL
-		}
-
-		Pass
-		{
-			Name "GBuffer"
-
-			Tags
-			{
-				"LightMode" = "UniversalGBuffer"
-			}
-
-			ZWrite[_ZWrite]
-			ZTest LEqual
-			Cull[_Cull]
-
-			HLSLPROGRAM
-			#pragma target 4.5
-			#pragma exclude_renderers gles3 glcore
-
-			#pragma vertex gBufferVert
-			#pragma fragment gBufferFrag
-
-			#pragma multi_compile_instancing
-			#include_with_pragmas "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DOTS.hlsl"
-
-			#pragma multi_compile _ _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN
-			#pragma multi_compile _ SHADOWS_SHADOWMASK
-			#pragma multi_compile_fragment _ _SHADOWS_SOFT
-
-			#pragma multi_compile _ LIGHTMAP_ON
-			#pragma multi_compile _ DIRLIGHTMAP_COMBINED                       
-			#pragma multi_compile _ LIGHTMAP_SHADOW_MIXING
-			#pragma multi_compile _ DYNAMICLIGHTMAP_ON
-
-			#pragma multi_compile_fragment _ _GBUFFER_NORMALS_OCT
-
-			#pragma shader_feature_local_fragment _ALPHATEST_ON
-			#pragma shader_feature_local _USE_POINT_FILTER_ON
-			#pragma shader_feature_local _USE_DITHERING
-
-			#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
-			#include "RetroGBufferPass.hlsl"
-
 			ENDHLSL
 		}
 
@@ -420,7 +517,7 @@ Shader "Retro Shaders Pro/Retro Lit"
 			#include_with_pragmas "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DOTS.hlsl"
 
 			#pragma shader_feature_local_fragment _ALPHATEST_ON
-			#pragma shader_feature_local _USE_POINT_FILTER_ON
+			#pragma shader_feature_local_fragment _FILTERMODE_BILINEAR _FILTERMODE_POINT _FILTERMODE_N64
 
 			#include "RetroSurfaceInput.hlsl"
 			#include "RetroDepthOnlyPass.hlsl"
@@ -449,7 +546,7 @@ Shader "Retro Shaders Pro/Retro Lit"
 			#include_with_pragmas "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DOTS.hlsl"
 
 			#pragma shader_feature_local_fragment _ALPHATEST_ON
-			#pragma shader_feature_local _USE_POINT_FILTER_ON
+			#pragma shader_feature_local_fragment _FILTERMODE_BILINEAR _FILTERMODE_POINT _FILTERMODE_N64
 
 			#include "RetroDepthNormalsPass.hlsl"
 			ENDHLSL
@@ -472,8 +569,8 @@ Shader "Retro Shaders Pro/Retro Lit"
 			#pragma fragment metaFrag
 
 			#pragma shader_feature_local_fragment _ALPHATEST_ON
-			#pragma shader_feature_local _USE_POINT_FILTER_ON
-			#pragma shader_feature_local _USE_DITHERING
+			#pragma shader_feature_local_fragment _FILTERMODE_BILINEAR _FILTERMODE_POINT _FILTERMODE_N64
+			#pragma shader_feature_local_fragment _DITHERMODE_SCREEN _DITHERMODE_TEXTURE _DITHERMODE_OFF
 			#pragma shader_feature EDITOR_VISUALIZATION
 
 			#include "RetroMetaPass.hlsl"

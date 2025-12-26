@@ -7,160 +7,159 @@ namespace RetroShadersPro.URP
 {
     internal class CRTMeshShaderGUI : ShaderGUI
     {
-        MaterialProperty baseColorProp = null;
-        const string baseColorName = "_BaseColor";
-        const string baseColorLabel = "Base Color";
-        const string baseColorTooltip = "Albedo color of the object.";
+        private MaterialProperty baseColorProp = null;
+        private const string baseColorName = "_BaseColor";
+        private readonly GUIContent baseColorInfo = new("Base Color", 
+            "Albedo color of the object.");
 
-        MaterialProperty baseTexProp = null;
-        const string baseTexName = "_BaseMap";
-        const string baseTexLabel = "Base Texture";
-        const string baseTexTooltip = "Albedo texture of the object.";
+        private MaterialProperty baseTexProp = null;
+        private const string baseTexName = "_BaseMap";
+        private readonly GUIContent baseTexInfo = new("Base Texture", 
+            "Albedo texture of the object.");
 
-        MaterialProperty distortionStrengthProp = null;
-        const string distortionStrengthName = "_DistortionStrength";
-        const string distortionStrengthLabel = "Distortion Strength";
-        const string distortionStrengthTooltip = "Strength of the barrel distortion. Values above zero cause CRT screen-like distortion; values below zero bulge outwards";
+        private MaterialProperty distortionStrengthProp = null;
+        private const string distortionStrengthName = "_DistortionStrength";
+        private readonly GUIContent distortionStrengthInfo = new GUIContent("Distortion Strength", 
+            "Strength of the barrel distortion. Values above zero cause CRT screen-like distortion; values below zero bulge outwards");
 
-        MaterialProperty distortionSmoothingProp = null;
-        const string distortionSmoothingName = "_DistortionSmoothing";
-        const string distortionSmoothingLabel = "Distortion Smoothing";
-        const string distortionSmoothingTooltip = "Amount of smoothing applied to edges of the distorted screen.";
+        private MaterialProperty distortionSmoothingProp = null;
+        private const string distortionSmoothingName = "_DistortionSmoothing";
+        private readonly GUIContent distortionSmoothingInfo = new("Distortion Smoothing", 
+            "Amount of smoothing applied to edges of the distorted screen.");
 
-        MaterialProperty backgroundColorProp = null;
-        const string backgroundColorName = "_BackgroundColor";
-        const string backgroundColorLabel = "Background Color";
-        const string backgroundColorTooltip = "Color of the area outside of the barrel-distorted 'screen'.";
+        private MaterialProperty backgroundColorProp = null;
+        private const string backgroundColorName = "_BackgroundColor";
+        private readonly GUIContent backgroundColorInfo = new("Background Color", 
+            "Color of the area outside of the barrel-distorted 'screen'.");
 
-        MaterialProperty pixelSizeProp = null;
-        const string pixelSizeName = "_PixelSize";
-        const string pixelSizeLabel = "Pixel Size";
-        const string pixelSizeTooltip = "Size of each 'pixel' on the new image, after rescaling the source camera texture.";
+        private MaterialProperty pixelSizeProp = null;
+        private const string pixelSizeName = "_PixelSize";
+        private readonly GUIContent pixelSizeInfo = new("Pixel Size",
+            "Size of each 'pixel' on the new image, after rescaling the source camera texture.");
 
-        MaterialProperty forcePointFilteringProp = null;
-        const string forcePointFilteringName = "_POINT_FILTERING";
-        const string forcePointFilteringLabel = "Force Point Filtering";
-        const string forcePointFilteringTooltip = "Should the effect use point filtering when rescaling?";
+        private MaterialProperty forcePointFilteringProp = null;
+        private const string forcePointFilteringName = "_POINT_FILTERING";
+        private readonly GUIContent forcePointFilteringInfo = new("Force Point Filtering",
+            "Should the effect use point filtering when rescaling?");
 
-        MaterialProperty rgbTexProp = null;
-        const string rgbTexName = "_RGBTex";
-        const string rgbTexLabel = "RGB Subpixel Texture";
-        const string rgbTexTooltip = "Small texture denoting the shape of the red, green, and blue subpixels." +
-            "\nFor best results, try and make sure the Pixel Size matches the dimensions of this texture.";
+        private MaterialProperty rgbTexProp = null;
+        private const string rgbTexName = "_RGBTex";
+        private readonly GUIContent rgbTexInfo = new("RGB Subpixel Texture",
+            "Small texture denoting the shape of the red, green, and blue subpixels." +
+            "\nFor best results, try and make sure the Pixel Size matches the dimensions of this texture.");
 
-        MaterialProperty rgbStrengthProp = null;
-        const string rgbStrengthName = "_RGBStrength";
-        const string rgbStrengthLabel = "RGB Subpixel Strength";
-        const string rgbStrengthTooltip = "How strongly the screen colors get multiplied with the subpixel texture.";
+        private MaterialProperty rgbStrengthProp = null;
+        private const string rgbStrengthName = "_RGBStrength";
+        private readonly GUIContent rgbStrengthInfo = new("RGB Subpixel Strength",
+            "How strongly the screen colors get multiplied with the subpixel texture.");
 
-        MaterialProperty scanlineTexProp = null;
-        const string scanlineTexName = "_ScanlineTex";
-        const string scanlineTexLabel = "Scanline Texture";
-        const string scanlineTexTooltip = "Small texture denoting the scanline pattern which scrolls over the screen.";
+        private MaterialProperty scanlineTexProp = null;
+        private const string scanlineTexName = "_ScanlineTex";
+        private readonly GUIContent scanlineTexInfo = new("Scanline Texture",
+            "Small texture denoting the scanline pattern which scrolls over the screen.");
 
-        MaterialProperty scanlineStrengthProp = null;
-        const string scanlineStrengthName = "_ScanlineStrength";
-        const string scanlineStrengthLabel = "Scanline Strength";
-        const string scanlineStrengthTooltip = "How strongly the scanline texture is overlaid onto the screen.";
+        private MaterialProperty scanlineStrengthProp = null;
+        private const string scanlineStrengthName = "_ScanlineStrength";
+        private readonly GUIContent scanlineStrengthInfo = new("Scanline Strength",
+            "How strongly the scanline texture is overlaid onto the screen.");
 
-        MaterialProperty scanlineSizeProp = null;
-        const string scanlineSizeName = "_RGBPixelSize";
-        const string scanlineSizeLabel = "Scanline/RGB Size";
-        const string scanlineSizeTooltip = "The scanline and RGB textures cover this number of pixels." +
-            "\nFor best results, this should be a multiple of the Pixel Size.";
+        private MaterialProperty scanlineSizeProp = null;
+        private const string scanlineSizeName = "_RGBPixelSize";
+        private readonly GUIContent scanlineSizeInfo = new("Scanline/RGB Size",
+            "The scanline and RGB textures cover this number of pixels." +
+            "\nFor best results, this should be a multiple of the Pixel Size.");
 
-        MaterialProperty scrollSpeedProp = null;
-        const string scrollSpeedName = "_ScrollSpeed";
-        const string scrollSpeedLabel = "Scanline Scroll Speed";
-        const string scrollSpeedTooltip = "How quickly the scanlines scroll vertically over the screen.";
+        private MaterialProperty scrollSpeedProp = null;
+        private const string scrollSpeedName = "_ScrollSpeed";
+        private readonly GUIContent scrollSpeedInfo = new("Scanline Scroll Speed",
+            "How quickly the scanlines scroll vertically over the screen.");
 
-        MaterialProperty randomWearProp = null;
-        const string randomWearName = "_RandomWear";
-        const string randomWearLabel = "Random Wear";
-        const string randomWearTooltip = "How strongly each texture line is offset horizontally.";
+        private MaterialProperty randomWearProp = null;
+        private const string randomWearName = "_RandomWear";
+        private readonly GUIContent randomWearInfo = new("Random Wear",
+            "How strongly each texture line is offset horizontally.");
 
-        MaterialProperty aberrationStrengthProp = null;
-        const string aberrationStrengthName = "_AberrationStrength";
-        const string aberrationStrengthLabel = "Aberration Strength";
-        const string aberrationStrengthTooltip = "Amount of color channel separation at the screen edges.";
+        private MaterialProperty aberrationStrengthProp = null;
+        private const string aberrationStrengthName = "_AberrationStrength";
+        private readonly GUIContent aberrationStrengthInfo = new("Aberration Strength",
+            "Amount of color channel separation at the screen edges.");
 
-        const string useAberrationName = "_CHROMATIC_ABERRATION_ON";
+        private const string useAberrationName = "_CHROMATIC_ABERRATION_ON";
 
-        MaterialProperty trackingTextureProp = null;
-        const string trackingTextureName = "_TrackingTex";
-        const string trackingTextureLabel = "Tracking Texture";
-        const string trackingTextureTooltip = "A control texture for VHS tracking artifacts." +
+        private MaterialProperty trackingTextureProp = null;
+        private const string trackingTextureName = "_TrackingTex";
+        private readonly GUIContent trackingTextureInfo = new("Tracking Texture",
+            "A control texture for VHS tracking artifacts." +
             "\nThe red channel of the texture contains the strength of the UV offsets." +
             "\nThe green channel of the texture contains tracking line strength." +
-            "\nStrength values are centered around 0.5 (gray), and get stronger the closer you get to 0 or 1.";
+            "\nStrength values are centered around 0.5 (gray), and get stronger the closer you get to 0 or 1.");
 
-        MaterialProperty trackingSizeProp = null;
-        const string trackingSizeName = "_TrackingSize";
-        const string trackingSizeLabel = "Tracking Size";
-        const string trackingSizeTooltip = "How many times the tracking texture is tiled on-screen.";
+        private MaterialProperty trackingSizeProp = null;
+        private const string trackingSizeName = "_TrackingSize";
+        private readonly GUIContent trackingSizeInfo = new("Tracking Size",
+            "How many times the tracking texture is tiled on-screen.");
 
-        MaterialProperty trackingStrengthProp = null;
-        const string trackingStrengthName = "_TrackingStrength";
-        const string trackingStrengthLabel = "Tracking Strength";
-        const string trackingStrengthTooltip = "How strongly the tracking texture offsets screen UVs.";
+        private MaterialProperty trackingStrengthProp = null;
+        private const string trackingStrengthName = "_TrackingStrength";
+        private readonly GUIContent trackingStrengthInfo = new("Tracking Strength",
+            "How strongly the tracking texture offsets screen UVs.");
 
-        MaterialProperty trackingSpeedProp = null;
-        const string trackingSpeedName = "_TrackingSpeed";
-        const string trackingSpeedLabel = "Tracking Speed";
-        const string trackingSpeedTooltip = "How quickly the tracking texture scrolls across the screen." +
-            "\nUse negative values to scroll upwards instead.";
+        private MaterialProperty trackingSpeedProp = null;
+        private const string trackingSpeedName = "_TrackingSpeed";
+        private readonly GUIContent trackingSpeedInfo = new("Tracking Speed",
+            "How quickly the tracking texture scrolls across the screen." +
+            "\nUse negative values to scroll upwards instead.");
 
-        MaterialProperty trackingJitterProp = null;
-        const string trackingJitterName = "_TrackingJitter";
-        const string trackingJitterLabel = "Tracking Jitter";
-        const string trackingJitterTooltip = "How jittery the scrolling movement is.";
+        private MaterialProperty trackingJitterProp = null;
+        private string trackingJitterName = "_TrackingJitter";
+        private readonly GUIContent trackingJitterInfo = new("Tracking Jitter",
+            "How jittery the scrolling movement is.");
 
-        MaterialProperty trackingColorDamageProp = null;
-        const string trackingColorDamageName = "_TrackingColorDamage";
-        const string trackingColorDamageLabel = "Tracking Color Damage";
-        const string trackingColorDamageTooltip = "How strongly the chrominance of the image is distorted." +
+        private MaterialProperty trackingColorDamageProp = null;
+        private const string trackingColorDamageName = "_TrackingColorDamage";
+        private readonly GUIContent trackingColorDamageInfo = new("Tracking Color Damage",
+            "How strongly the chrominance of the image is distorted." +
             "\nThe distortion is applied in YIQ color space, to the I and Q channels (chrominance)." +
-            "\nA value of 1 distorts colors back to the original chrominance.";
+            "\nA value of 1 distorts colors back to the original chrominance.");
 
-        MaterialProperty trackingLinesThresholdProp = null;
-        const string trackingLinesThresholdName = "_TrackingLinesThreshold";
-        const string trackingLinesThresholdLabel = "Tracking Lines Threshold";
-        const string trackingLinesThresholdTooltip = "Higher threshold values mean fewer pixels are registered as tracking lines.";
+        private MaterialProperty trackingLinesThresholdProp = null;
+        private const string trackingLinesThresholdName = "_TrackingLinesThreshold";
+        private readonly GUIContent trackingLinesThresholdInfo = new("Tracking Lines Threshold",
+            "Higher threshold values mean fewer pixels are registered as tracking lines.");
 
-        MaterialProperty trackingLinesColorProp = null;
-        const string trackingLinesColorName = "_TrackingLinesColor";
-        const string trackingLinesColorLabel = "Tracking Lines Color";
-        const string trackingLinesColorTooltip = "Color of the tracking lines. The alpha component acts as a global multiplier on strength.";
+        private MaterialProperty trackingLinesColorProp = null;
+        private const string trackingLinesColorName = "_TrackingLinesColor";
+        private readonly GUIContent trackingLinesColorInfo = new("Tracking Lines Color",
+            "Color of the tracking lines. The alpha component acts as a global multiplier on strength.");
 
-        MaterialProperty brightnessProp = null;
-        const string brightnessName = "_Brightness";
-        const string brightnessLabel = "Brightness";
-        const string brightnessTooltip = "Global brightness adjustment control. 1 represents no change." +
-            "\nThis setting can be increased if other features darken your image too much.";
+        private MaterialProperty brightnessProp = null;
+        private const string brightnessName = "_Brightness";
+        private readonly GUIContent brightnessInfo = new("Brightness", "Global brightness adjustment control. 1 represents no change." +
+            "\nThis setting can be increased if other features darken your image too much.");
 
-        MaterialProperty contrastProp = null;
-        const string contrastName = "_Contrast";
-        const string contrastLabel = "Contrast";
-        const string contrastTooltip = "Global contrast modifier. 1 represents no change.";
+        private MaterialProperty contrastProp = null;
+        private const string contrastName = "_Contrast";
+        private readonly GUIContent contrastInfo = new("Contrast",
+            "Global contrast modifier. 1 represents no change.");
 
-        MaterialProperty alphaClipProp = null;
-        const string alphaClipName = "_AlphaClip";
-        const string alphaClipLabel = "Alpha Clip";
-        const string alphaClipTooltip = "Should the shader clip pixels based on alpha using a threshold value?";
+        private MaterialProperty alphaClipProp = null;
+        private const string alphaClipName = "_AlphaClip";
+        private readonly GUIContent alphaClipInfo = new("Alpha Clip",
+            "Should the shader clip pixels based on alpha using a threshold value?");
 
-        MaterialProperty alphaClipThresholdProp = null;
-        const string alphaClipThresholdName = "_Cutoff";
-        const string alphaClipThresholdLabel = "Threshold";
-        const string alphaClipThresholdTooltip = "The threshold value to use for alpha clipping.";
+        private MaterialProperty alphaClipThresholdProp = null;
+        private const string alphaClipThresholdName = "_Cutoff";
+        private readonly GUIContent alphaClipThresholdInfo = new("Threshold",
+            "The threshold value to use for alpha clipping.");
 
         private MaterialProperty cullProp;
         private const string cullName = "_Cull";
-        private const string cullLabel = "Render Face";
-        private const string cullTooltip = "Should Unity render Front, Back, or Both faces of the mesh?";
+        private readonly GUIContent cullInfo = new("Render Face",
+            "Should Unity render Front, Back, or Both faces of the mesh?");
 
         private const string surfaceTypeName = "_Surface";
-        private const string surfaceTypeLabel = "Surface Type";
-        private const string surfaceTypeTooltip = "Should the object be transparent or opaque?";
+        private readonly GUIContent surfaceTypeInfo = new("Surface Type",
+            "Should the object be transparent or opaque?");
 
         private const string alphaTestName = "_ALPHATEST_ON";
 
@@ -257,7 +256,7 @@ namespace RetroShadersPro.URP
             bool surfaceTypeChanged = false;
             EditorGUI.BeginChangeCheck();
             {
-                surfaceType = (SurfaceType)EditorGUILayout.EnumPopup(new GUIContent(surfaceTypeLabel, surfaceTypeTooltip), surfaceType);
+                surfaceType = (SurfaceType)EditorGUILayout.EnumPopup(surfaceTypeInfo, surfaceType);
             }
             if (EditorGUI.EndChangeCheck())
             {
@@ -267,7 +266,7 @@ namespace RetroShadersPro.URP
             // Display culling options.
             EditorGUI.BeginChangeCheck();
             {
-                renderFace = (RenderFace)EditorGUILayout.EnumPopup(cullLabel, renderFace);
+                renderFace = (RenderFace)EditorGUILayout.EnumPopup(cullInfo, renderFace);
             }
             if (EditorGUI.EndChangeCheck())
             {
@@ -294,7 +293,7 @@ namespace RetroShadersPro.URP
             // Display alpha clip options.
             EditorGUI.BeginChangeCheck();
             {
-                materialEditor.ShaderProperty(alphaClipProp, alphaClipLabel);
+                materialEditor.ShaderProperty(alphaClipProp, alphaClipInfo);
             }
             if (EditorGUI.EndChangeCheck())
             {
@@ -359,47 +358,47 @@ namespace RetroShadersPro.URP
             if (alphaClip)
             {
                 EditorGUI.indentLevel++;
-                materialEditor.ShaderProperty(alphaClipThresholdProp, alphaClipThresholdLabel);
+                materialEditor.ShaderProperty(alphaClipThresholdProp, alphaClipThresholdInfo);
                 EditorGUI.indentLevel--;
             }
         }
 
         private void DrawBasicProperties(Material material)
         {
-            materialEditor.ShaderProperty(baseColorProp, new GUIContent(baseColorLabel, baseColorTooltip));
-            materialEditor.ShaderProperty(baseTexProp, new GUIContent(baseTexLabel, baseTexTooltip));
+            materialEditor.ShaderProperty(baseColorProp, baseColorInfo);
+            materialEditor.ShaderProperty(baseTexProp, baseTexInfo);
 
-            materialEditor.ShaderProperty(pixelSizeProp, new GUIContent(pixelSizeLabel, pixelSizeTooltip));
+            materialEditor.ShaderProperty(pixelSizeProp, pixelSizeInfo);
 
             if (forcePointFilteringProp != null)
             {
-                materialEditor.ShaderProperty(forcePointFilteringProp, forcePointFilteringLabel);
+                materialEditor.ShaderProperty(forcePointFilteringProp, forcePointFilteringInfo);
             }
         }
 
         private void DrawDistortionProperties(Material material)
         {
-            materialEditor.ShaderProperty(distortionStrengthProp, new GUIContent(distortionStrengthLabel, distortionStrengthTooltip));
-            materialEditor.ShaderProperty(distortionSmoothingProp, new GUIContent(distortionSmoothingLabel, distortionSmoothingTooltip));
-            materialEditor.ShaderProperty(backgroundColorProp, new GUIContent(backgroundColorLabel, backgroundColorTooltip));
+            materialEditor.ShaderProperty(distortionStrengthProp, distortionStrengthInfo);
+            materialEditor.ShaderProperty(distortionSmoothingProp, distortionSmoothingInfo);
+            materialEditor.ShaderProperty(backgroundColorProp, backgroundColorInfo);
         }
 
         private void DrawRGBScanlineProperties(Material material)
         {
-            materialEditor.ShaderProperty(rgbTexProp, new GUIContent(rgbTexLabel, rgbTexTooltip));
-            materialEditor.ShaderProperty(rgbStrengthProp, new GUIContent(rgbStrengthLabel, rgbStrengthTooltip));
-            materialEditor.ShaderProperty(scanlineTexProp, new GUIContent(scanlineTexLabel, scanlineTexTooltip));
-            materialEditor.ShaderProperty(scanlineStrengthProp, new GUIContent(scanlineStrengthLabel, scanlineStrengthTooltip));
-            materialEditor.ShaderProperty(scanlineSizeProp, new GUIContent(scanlineSizeLabel, scanlineSizeTooltip));
-            materialEditor.ShaderProperty(scrollSpeedProp, new GUIContent(scrollSpeedLabel, scrollSpeedTooltip));
+            materialEditor.ShaderProperty(rgbTexProp, rgbTexInfo);
+            materialEditor.ShaderProperty(rgbStrengthProp, rgbStrengthInfo);
+            materialEditor.ShaderProperty(scanlineTexProp, scanlineTexInfo);
+            materialEditor.ShaderProperty(scanlineStrengthProp, scanlineStrengthInfo);
+            materialEditor.ShaderProperty(scanlineSizeProp, scanlineSizeInfo);
+            materialEditor.ShaderProperty(scrollSpeedProp, scrollSpeedInfo);
         }
 
         private void DrawVHSProperties(Material material)
         {
-            materialEditor.ShaderProperty(randomWearProp, new GUIContent(randomWearLabel, randomWearTooltip));
+            materialEditor.ShaderProperty(randomWearProp, randomWearInfo);
 
             EditorGUI.BeginChangeCheck();
-            materialEditor.ShaderProperty(aberrationStrengthProp, new GUIContent(aberrationStrengthLabel, aberrationStrengthTooltip));
+            materialEditor.ShaderProperty(aberrationStrengthProp, aberrationStrengthInfo);
             if (EditorGUI.EndChangeCheck())
             {
                 float aberrationStrength = material.GetFloat(aberrationStrengthName);
@@ -415,14 +414,14 @@ namespace RetroShadersPro.URP
             }
 
             EditorGUI.BeginChangeCheck();
-            materialEditor.ShaderProperty(trackingTextureProp, new GUIContent(trackingTextureLabel, trackingTextureTooltip));
-            materialEditor.ShaderProperty(trackingSizeProp, new GUIContent(trackingSizeLabel, trackingSizeTooltip));
-            materialEditor.ShaderProperty(trackingStrengthProp, new GUIContent(trackingStrengthLabel, trackingStrengthTooltip));
-            materialEditor.ShaderProperty(trackingSpeedProp, new GUIContent(trackingSpeedLabel, trackingSpeedTooltip));
-            materialEditor.ShaderProperty(trackingJitterProp, new GUIContent(trackingJitterLabel, trackingJitterTooltip));
-            materialEditor.ShaderProperty(trackingColorDamageProp, new GUIContent(trackingColorDamageLabel, trackingColorDamageTooltip));
-            materialEditor.ShaderProperty(trackingLinesThresholdProp, new GUIContent(trackingLinesThresholdLabel, trackingLinesThresholdTooltip));
-            materialEditor.ShaderProperty(trackingLinesColorProp, new GUIContent(trackingLinesColorLabel, trackingLinesColorTooltip));
+            materialEditor.ShaderProperty(trackingTextureProp, trackingTextureInfo);
+            materialEditor.ShaderProperty(trackingSizeProp, trackingSizeInfo);
+            materialEditor.ShaderProperty(trackingStrengthProp, trackingStrengthInfo);
+            materialEditor.ShaderProperty(trackingSpeedProp, trackingSpeedInfo);
+            materialEditor.ShaderProperty(trackingJitterProp, trackingJitterInfo);
+            materialEditor.ShaderProperty(trackingColorDamageProp, trackingColorDamageInfo);
+            materialEditor.ShaderProperty(trackingLinesThresholdProp, trackingLinesThresholdInfo);
+            materialEditor.ShaderProperty(trackingLinesColorProp, trackingLinesColorInfo);
             if (EditorGUI.EndChangeCheck())
             {
                 Texture trackingTexture = material.GetTexture(trackingTextureName);
@@ -445,8 +444,8 @@ namespace RetroShadersPro.URP
         
         private void DrawColorProperties(Material material)
         {
-            materialEditor.ShaderProperty(brightnessProp, new GUIContent(brightnessLabel, brightnessTooltip));
-            materialEditor.ShaderProperty(contrastProp, new GUIContent(contrastLabel, contrastTooltip));
+            materialEditor.ShaderProperty(brightnessProp, brightnessInfo);
+            materialEditor.ShaderProperty(contrastProp, contrastInfo);
         }
     }
 }

@@ -753,8 +753,10 @@ namespace MagicaCloth2
                     ref attributes,
                     ref positions,
                     ref rotations,
-                    ref vertexRootIndices
-
+                    ref vertexRootIndices,
+                    // temp
+                    ref tempVectorBufferA,
+                    ref tempRotationBufferA
                 );
 
                 // ■クロスシミュレーション後の頂点姿勢計算
@@ -777,7 +779,10 @@ namespace MagicaCloth2
                     ref baseLineFlags,
                     ref baseLineStartDataIndices,
                     ref baseLineDataCounts,
-                    ref baseLineData
+                    ref baseLineData,
+                    // temp
+                    ref tempVectorBufferA,
+                    ref tempRotationBufferA
                     );
                 VirtualMeshManager.SimulationPostProxyMeshUpdateTriangle(
                     new DataChunk(0, tdata.proxyTriangleChunk.dataLength),
@@ -1659,7 +1664,10 @@ namespace MagicaCloth2
             ref NativeArray<VertexAttribute> attributes,
             ref NativeArray<float3> positions,
             ref NativeArray<quaternion> rotations,
-            ref NativeArray<int> vertexRootIndices
+            ref NativeArray<int> vertexRootIndices,
+            // temp
+            ref NativeArray<float3> tempVectorBufferA,
+            ref NativeArray<quaternion> tempRotationBufferA
         )
         {
             //int pindex = tdata.particleChunk.startIndex;
@@ -1739,6 +1747,10 @@ namespace MagicaCloth2
                     rot = MathUtility.ToRotation(lw.c1.xyz, lw.c2.xyz);
                     rotations[vindex] = rot;
                 }
+
+                // BoneClothのベースライン姿勢制御のために基本姿勢をtempに保存
+                tempVectorBufferA[pindex] = pos;
+                tempRotationBufferA[pindex] = rot;
             }
         }
 

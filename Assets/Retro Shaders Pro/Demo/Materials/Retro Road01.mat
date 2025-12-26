@@ -12,13 +12,20 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _DITHERMODE_SCREEN
+  - _FILTERMODE_BILINEAR
+  - _LIGHTMODE_TEXELLIT
+  - _SNAPMODE_VIEW
   - _USE_AMBIENT_OVERRIDE
-  - _USE_PIXEL_LIGHTING
-  - _USE_POINT_FILTER_ON
   m_InvalidKeywords:
+  - _LIGHTINGMODE_LIT
   - _USE_AFFINE_TEXTURES_ON
   - _USE_AMBIENT_OVERRIDE_ON
+  - _USE_PIXEL_LIGHTING
   - _USE_PIXEL_LIGHTING_ON
+  - _USE_POINT_FILTER_ON
+  - _USE_VERTEX_COLORS_OFF
+  - _USE_VERTEX_SNAPPING_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -69,6 +76,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ReflectionCubemap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -87,7 +98,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints:
     - _ColorBitDepth: 64
+    - _DitherMode: 0
+    - _FilterMode: 0
+    - _LightMode: 1
+    - _LightingMode: 0
     - _ResolutionLimit: 64
+    - _SnapMode: 2
     - _SnapsPerUnit: 64
     m_Floats:
     - _AffineTextureStrength: 1
@@ -126,11 +142,16 @@ Material:
     - _USE_DITHERING: 0
     - _USE_PIXEL_LIGHTING: 1
     - _USE_POINT_FILTER: 1
+    - _USE_REFLECTION_CUBEMAP: 0
+    - _USE_SPECULAR_LIGHT: 0
+    - _USE_VERTEX_COLORS: 0
+    - _USE_VERTEX_SNAPPING: 1
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _CubemapColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

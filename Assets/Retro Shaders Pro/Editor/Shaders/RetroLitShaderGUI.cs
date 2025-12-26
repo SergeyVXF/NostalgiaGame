@@ -7,134 +7,169 @@ namespace RetroShadersPro.URP
 {
     internal class RetroLitShaderGUI : ShaderGUI
     {
-        MaterialProperty baseColorProp = null;
-        const string baseColorName = "_BaseColor";
-        const string baseColorLabel = "Base Color";
-        const string baseColorTooltip = "Albedo color of the object.";
+        private MaterialProperty baseColorProp = null;
+        private const string baseColorName = "_BaseColor";
+        private readonly GUIContent baseColorInfo = new("Base Color",
+            "Albedo color of the object.");
 
-        MaterialProperty baseTexProp = null;
-        const string baseTexName = "_BaseMap";
-        const string baseTexLabel = "Base Texture";
-        const string baseTexTooltip = "Albedo texture of the object.";
+        private MaterialProperty baseTexProp = null;
+        private const string baseTexName = "_BaseMap";
+        private readonly GUIContent baseTexInfo = new("Base Texture",
+            "Albedo texture of the object.");
 
-        MaterialProperty resolutionLimitProp = null;
-        const string resolutionLimitName = "_ResolutionLimit";
-        const string resolutionLimitLabel = "Resolution Limit";
-        const string resolutionLimitTooltip = "Limits the resolution of the texture to this value." + 
+        private MaterialProperty colorBitDepthProp = null;
+        private const string colorBitDepthName = "_ColorBitDepth";
+        private readonly GUIContent colorBitDepthInfo = new("Color Depth",
+            "Limits the total number of values used for each color channel.");
+
+        private MaterialProperty colorBitDepthOffsetProp = null;
+        private const string colorBitDepthOffsetName = "_ColorBitDepthOffset";
+        private readonly GUIContent colorBitDepthOffsetInfo = new("Color Depth Offset",
+            "Increase this value if the bit depth offset makes your object too dark.");
+
+        private MaterialProperty resolutionLimitProp = null;
+        private const string resolutionLimitName = "_ResolutionLimit";
+        private readonly GUIContent resolutionLimitInfo = new("Resolution Limit",
+            "Limits the resolution of the texture to this value." +
             "\nNote that this setting only snaps the resolution to powers of two." +
-            "\nAlso, make sure the Base Texture has mipmaps enabled.";
+            "\nAlso, make sure the Base Texture has mipmaps enabled.");
 
-        MaterialProperty snapsPerUnitProp = null;
-        const string snapsPerUnitName = "_SnapsPerUnit";
-        const string snapsPerUnitLabel = "Snaps Per Meter";
-        const string snapsPerUnitTooltip = "The mesh vertices snap to a limited number of points in space." +
-            "\nThis uses clip space, so the mesh may jitter when the camera rotates.";
-
-        MaterialProperty colorBitDepthProp = null;
-        const string colorBitDepthName = "_ColorBitDepth";
-        const string colorBitDepthLabel = "Color Depth";
-        const string colorBitDepthTooltip = "Limits the total number of values used for each color channel.";
-
-        MaterialProperty colorBitDepthOffsetProp = null;
-        const string colorBitDepthOffsetName = "_ColorBitDepthOffset";
-        const string colorBitDepthOffsetLabel = "Color Depth Offset";
-        const string colorBitDepthOffsetTooltip = "Increase this value if the bit depth offset makes your object too dark.";
-
-        MaterialProperty ambientLightProp = null;
-        const string ambientLightName = "_AmbientLight";
-        const string ambientLightLabel = "Ambient Light Strength";
-        const string ambientLightTooltip = "When the ambient light override is used, apply this much ambient light.";
-
-        MaterialProperty affineTextureStrengthProp = null;
-        const string affineTextureStrengthName = "_AffineTextureStrength";
-        const string affineTextureStrengthLabel = "Affine Texture Strength";
-        const string affineTextureStrengthTooltip = "How strongly the affine texture mapping effect is applied." + 
+        private MaterialProperty affineTextureStrengthProp = null;
+        private const string affineTextureStrengthName = "_AffineTextureStrength";
+        private readonly GUIContent affineTextureStrengthInfo = new("Affine Texture Strength",
+            "How strongly the affine texture mapping effect is applied." +
             "\nWhen this is set to 1, the shader uses affine texture mapping exactly like the PS1." +
-            "\nWhen this is set to 0, the shader uses perspective-correct texture mapping, like modern systems.";
+            "\nWhen this is set to 0, the shader uses perspective-correct texture mapping, like modern systems.");
 
-        MaterialProperty ambientToggleProp = null;
-        const string ambientToggleName = "_USE_AMBIENT_OVERRIDE";
-        const string ambientToggleLabel = "Ambient Light Override";
-        const string ambientToggleTooltip = "Should the object use Unity's default ambient light, or a custom override amount?";
+        private MaterialProperty filteringModeProp = null;
+        private const string filteringModeName = "_FilterMode";
+        private readonly GUIContent filteringModeInfo = new("Filtering Mode",
+            "Which kind of filtering should the shader use while sampling the base texture?" +
+            "\n  Bilinear: Blend between the nearest 4 pixels, which appears smooth." +
+            "\n  Point: Use nearest neighbor sampling, which appears blocky." +
+            "\n  N64: Use the limited 3-point sampling method from the Nintendo 64.");
 
-        MaterialProperty usePointFilteringProp = null;
-        const string usePointFilteringName = "_USE_POINT_FILTER";
-        const string usePointFilteringLabel = "Point Filtering";
-        const string usePointFilteringTooltip = "Should the shader use point filtering?";
+        private MaterialProperty ditheringModeProp = null;
+        private const string ditheringModeName = "_DitherMode";
+        private readonly GUIContent ditheringModeInfo = new("Dithering Mode",
+            "How should the shader dither colors which fall between color bit values?" +
+            "\n  Screen: Use screen-space coordinates for dithering." +
+            "\n    Note that this mode is driven by the pixel size in the CRT post process." +
+            "\n  Texture: Use the texture coordinates for dithering." +
+            "\n  Off: Don't use any dithering.");
 
-        MaterialProperty useDitheringProp = null;
-        const string useDitheringName = "_USE_DITHERING";
-        const string useDitheringLabel = "Enable Dithering";
-        const string useDitheringTooltip = "Should the shader use color dithering?";
+        private MaterialProperty useVertexColorProp = null;
+        private const string useVertexColorName = "_USE_VERTEX_COLORS";
+        private readonly GUIContent useVertexColorInfo = new("Use Vertex Colors",
+            "Should the base color of the object use vertex coloring?");
 
-        MaterialProperty usePixelLightingProp = null;
-        const string usePixelLightingName = "_USE_PIXEL_LIGHTING";
-        const string usePixelLightingLabel = "Texel-aligned Lighting";
-        const string usePixelLightingTooltip = "Should lighting and shadow calculations snap to the closest texel on the object's texture?";
+        private MaterialProperty snappingModeProp = null;
+        private const string snappingModeName = "_SnapMode";
+        private readonly GUIContent snappingModeInfo = new("Snapping Mode",
+            "Should the shader snap vertices to a limited number of points in space?" +
+            "\n  Object: Snap vertices relative to model coordinates." +
+            "\n  World: Snap vertices relative to the scene coordinates." +
+            "\n  View: Snap vertices relative to the camera coordinates." +
+            "\n  Off: Don't do any snapping.");
 
-        MaterialProperty useVertexColorProp = null;
-        const string useVertexColorName = "_USE_VERTEX_COLORS";
-        const string useVertexColorLabel = "Use Vertex Colors";
-        const string useVertexColorTooltip = "Should the base color of the object use vertex coloring?";
+        private MaterialProperty snapsPerUnitProp = null;
+        private const string snapsPerUnitName = "_SnapsPerUnit";
+        private readonly GUIContent snapsPerUnitInfo = new("Snaps Per Meter",
+            "The mesh vertices snap to a limited number of points in space.");
 
-        MaterialProperty useOutlineProp = null;
-        const string useOutlineName = "_USE_OUTLINE";
-        const string useOutlineLabel = "Enable Outline";
-        const string useOutlineTooltip = "Should the shader render an outline around the object?";
+        private MaterialProperty lightingModeProp = null;
+        private const string lightingModeName = "_LightMode";
+        private readonly GUIContent lightingModeInfo = new("Lighting Mode",
+            "Choose how the object should be lit." +
+            "\n  Lit: Use per-pixel lighting as standard." +
+            "\n  Texel Lit: Snap lighting and shadows to the closest texel on the object's texture." +
+            "\n  Vertex Lit: Use per-vertex lighting and interpolate light values for pixels." +
+            "\n  Unlit: Don't use lighting calculations (everything is always fully lit).");
 
-        MaterialProperty outlineColorProp = null;
-        const string outlineColorName = "_OutlineColor";
-        const string outlineColorLabel = "Outline Color";
-        const string outlineColorTooltip = "Color of the outline.";
+        private MaterialProperty ambientToggleProp = null;
+        private const string ambientToggleName = "_USE_AMBIENT_OVERRIDE";
+        private readonly GUIContent ambientToggleInfo = new("Ambient Light Override",
+            "Should the object use Unity's default ambient light, or a custom override amount?");
 
-        MaterialProperty outlineWidthProp = null;
-        const string outlineWidthName = "_OutlineWidth";
-        const string outlineWidthLabel = "Outline Width";
-        const string outlineWidthTooltip = "Thickness of the outline.";
+        private MaterialProperty ambientLightProp = null;
+        private const string ambientLightName = "_AmbientLight";
+        private readonly GUIContent ambientLightInfo = new("Ambient Light Strength",
+            "When the ambient light override is used, apply this much ambient light.");
 
-        MaterialProperty outlineWidthIndependentProp = null;
-        const string outlineWidthIndependentName = "_OutlineWidthIndependent";
-        const string outlineWidthIndependentLabel = "Outline Width Camera-Independent";
-        const string outlineWidthIndependentTooltip = "Should the outline width remain constant regardless of camera distance?";
+        private MaterialProperty useSpecularLightProp = null;
+        private const string useSpecularLightName = "_USE_SPECULAR_LIGHT";
+        private readonly GUIContent useSpecularLightInfo = new("Use Specular Lighting",
+            "Should the shader apply a specular highlight to the object?");
 
-        MaterialProperty outlineZPosProp = null;
-        const string outlineZPosName = "_OutlineZPos";
-        const string outlineZPosLabel = "Outline Z Offset";
-        const string outlineZPosTooltip = "Depth offset for the outline.";
+        private MaterialProperty glossinessProp = null;
+        private const string glossinessName = "_Glossiness";
+        private readonly GUIContent glossinessInfo = new("Glossiness",
+            "Gloss power value to use for specular lighting. The higher this value is, the smaller the highlight appears on the surface of the object.");
 
-        MaterialProperty outlineCompProp = null;
-        const string outlineCompName = "_OutlineComp";
-        const string outlineCompLabel = "Interior Outlines";
-        const string outlineCompTooltip = "Show or hide interior outlines.";
+        private MaterialProperty useReflectionCubemapProp = null;
+        private const string useReflectionCubemapName = "_USE_REFLECTION_CUBEMAP";
+        private readonly GUIContent useReflectionCubemapInfo = new("Use Reflection Cubemap",
+            "Should the shader overlay a cubemap which contains environmental reflections?");
 
-        MaterialProperty outlineGroupProp = null;
-        const string outlineGroupName = "_OutlineGroup";
-        const string outlineGroupLabel = "Outline Group";
-        const string outlineGroupTooltip = "Stencil group for outline rendering.";
+        private MaterialProperty reflectionCubemapProp = null;
+        private const string reflectionCubemapName = "_ReflectionCubemap";
+        private readonly GUIContent reflectionCubemapInfo = new("Reflection Cubemap",
+            "A cubemap which contains environmental reflections.");
 
-        MaterialProperty alphaClipProp = null;
-        const string alphaClipName = "_AlphaClip";
-        const string alphaClipLabel = "Alpha Clip";
-        const string alphaClipTooltip = "Should the shader clip pixels based on alpha using a threshold value?";
+        private MaterialProperty cubemapColorProp = null;
+        private const string cubemapColorName = "_CubemapColor";
+        private readonly GUIContent cubemapColorInfo = new("Cubemap Color",
+            "A color tint applied to the cubemap. The alpha channel acts as a strength multiplier.");
 
-        MaterialProperty alphaClipThresholdProp = null;
-        const string alphaClipThresholdName = "_Cutoff";
-        const string alphaClipThresholdLabel = "Threshold";
-        const string alphaClipThresholdTooltip = "The threshold value to use for alpha clipping.";
+        private MaterialProperty cubemapRotationProp = null;
+        private const string cubemapRotationName = "_CubemapRotation";
+        private readonly GUIContent cubemapRotationInfo = new("Cubemap Rotation",
+            "How much to rotate the reflection cubemap around the Y-axis, in degrees.");
+
+        private MaterialProperty alphaClipProp = null;
+        private const string alphaClipName = "_AlphaClip";
+        private readonly GUIContent alphaClipInfo = new("Alpha Clip",
+            "Should the shader clip pixels based on alpha using a threshold value?");
+
+        private MaterialProperty alphaClipThresholdProp = null;
+        private const string alphaClipThresholdName = "_Cutoff";
+        private readonly GUIContent alphaClipThresholdInfo = new("Threshold",
+            "The threshold value to use for alpha clipping.");
 
         private MaterialProperty cullProp;
         private const string cullName = "_Cull";
-        private const string cullLabel = "Render Face";
-        private const string cullTooltip = "Should Unity render Front, Back, or Both faces of the mesh?";
+        private readonly GUIContent cullInfo = new("Render Face",
+            "Should Unity render Front, Back, or Both faces of the mesh?");
 
         private const string surfaceTypeName = "_Surface";
-        private const string surfaceTypeLabel = "Surface Type";
-        private const string surfaceTypeTooltip = "Should the object be transparent or opaque?";
+        private readonly GUIContent surfaceTypeInfo = new("Surface Type",
+            "Should the object be transparent or opaque?");
 
         private const string alphaTestName = "_ALPHATEST_ON";
 
         private static readonly string[] surfaceTypeNames = Enum.GetNames(typeof(SurfaceType));
         private static readonly string[] renderFaceNames = Enum.GetNames(typeof(RenderFace));
+
+        private static GUIStyle _boxStyle;
+        private static GUIStyle BoxStyle
+        {
+            get
+            {
+                return _boxStyle ?? (_boxStyle = new GUIStyle(EditorStyles.helpBox)
+                {
+                    padding = new RectOffset(10, 10, 5, 10)
+                });
+            }
+        }
+
+        private static GUIStyle _labelStyle;
+        private static GUIStyle LabelStyle
+        {
+            get
+            {
+                return _labelStyle ?? (_labelStyle = new GUIStyle(EditorStyles.boldLabel));
+            }
+        }
 
         private enum SurfaceType
         {
@@ -161,23 +196,23 @@ namespace RetroShadersPro.URP
             baseColorProp = FindProperty(baseColorName, props, true);
             baseTexProp = FindProperty(baseTexName, props, true);
             resolutionLimitProp = FindProperty(resolutionLimitName, props, true);
+            snappingModeProp = FindProperty(snappingModeName, props, true);
             snapsPerUnitProp = FindProperty(snapsPerUnitName, props, true);
             colorBitDepthProp = FindProperty(colorBitDepthName, props, true);
             colorBitDepthOffsetProp = FindProperty(colorBitDepthOffsetName, props, true);
-            ambientLightProp = FindProperty(ambientLightName, props, false);
+            ambientLightProp = FindProperty(ambientLightName, props, true);
             affineTextureStrengthProp = FindProperty(affineTextureStrengthName, props, true);
-            ambientToggleProp = FindProperty(ambientToggleName, props, false);
-            usePointFilteringProp = FindProperty(usePointFilteringName, props, false);
-            useDitheringProp = FindProperty(useDitheringName, props, true);
-            usePixelLightingProp = FindProperty(usePixelLightingName, props, false);
-            useVertexColorProp = FindProperty(useVertexColorName, props, false);
-            useOutlineProp = FindProperty(useOutlineName, props, false);
-            outlineColorProp = FindProperty(outlineColorName, props, false);
-            outlineWidthProp = FindProperty(outlineWidthName, props, false);
-            outlineWidthIndependentProp = FindProperty(outlineWidthIndependentName, props, false);
-            outlineZPosProp = FindProperty(outlineZPosName, props, false);
-            outlineCompProp = FindProperty(outlineCompName, props, false);
-            outlineGroupProp = FindProperty(outlineGroupName, props, false);
+            ambientToggleProp = FindProperty(ambientToggleName, props, true);
+            filteringModeProp = FindProperty(filteringModeName, props, true);
+            ditheringModeProp = FindProperty(ditheringModeName, props, true);
+            lightingModeProp = FindProperty(lightingModeName, props, true);
+            useVertexColorProp = FindProperty(useVertexColorName, props, true);
+            useSpecularLightProp = FindProperty(useSpecularLightName, props, true);
+            glossinessProp = FindProperty(glossinessName, props, true);
+            useReflectionCubemapProp = FindProperty(useReflectionCubemapName, props, true);
+            reflectionCubemapProp = FindProperty(reflectionCubemapName, props, true);
+            cubemapColorProp = FindProperty(cubemapColorName, props, true);
+            cubemapRotationProp = FindProperty(cubemapRotationName, props, true);
 
             //surfaceTypeProp = FindProperty(kSurfaceTypeProp, props, false);
             cullProp = FindProperty(cullName, props, true);
@@ -201,7 +236,6 @@ namespace RetroShadersPro.URP
             {
                 materialScopeList.RegisterHeaderScope(new GUIContent("Surface Options"), 1u << 0, DrawSurfaceOptions);
                 materialScopeList.RegisterHeaderScope(new GUIContent("Retro Properties"), 1u << 1, DrawRetroProperties);
-                materialScopeList.RegisterHeaderScope(new GUIContent("Outline"), 1u << 2, DrawOutlineProperties);
                 firstTimeOpen = false;
             }
 
@@ -218,7 +252,7 @@ namespace RetroShadersPro.URP
             bool surfaceTypeChanged = false;
             EditorGUI.BeginChangeCheck();
             {
-                surfaceType = (SurfaceType)EditorGUILayout.EnumPopup(new GUIContent(surfaceTypeLabel, surfaceTypeTooltip), surfaceType);
+                surfaceType = (SurfaceType)EditorGUILayout.EnumPopup(surfaceTypeInfo, surfaceType);
             }
             if (EditorGUI.EndChangeCheck())
             {
@@ -228,7 +262,7 @@ namespace RetroShadersPro.URP
             // Display culling options.
             EditorGUI.BeginChangeCheck();
             {
-                renderFace = (RenderFace)EditorGUILayout.EnumPopup(cullLabel, renderFace);
+                renderFace = (RenderFace)EditorGUILayout.EnumPopup(cullInfo, renderFace);
             }
             if (EditorGUI.EndChangeCheck())
             {
@@ -255,7 +289,7 @@ namespace RetroShadersPro.URP
             // Display alpha clip options.
             EditorGUI.BeginChangeCheck();
             {
-                materialEditor.ShaderProperty(alphaClipProp, alphaClipLabel);
+                materialEditor.ShaderProperty(alphaClipProp, alphaClipInfo);
             }
             if (EditorGUI.EndChangeCheck())
             {
@@ -320,26 +354,80 @@ namespace RetroShadersPro.URP
             if (alphaClip)
             {
                 EditorGUI.indentLevel++;
-                materialEditor.ShaderProperty(alphaClipThresholdProp, alphaClipThresholdLabel);
+                materialEditor.ShaderProperty(alphaClipThresholdProp, alphaClipThresholdInfo);
                 EditorGUI.indentLevel--;
             }
         }
 
         private void DrawRetroProperties(Material material)
         {
-            materialEditor.ShaderProperty(baseColorProp, baseColorLabel);
-            materialEditor.ShaderProperty(baseTexProp, baseTexLabel);
-            materialEditor.ShaderProperty(resolutionLimitProp, resolutionLimitLabel);
-            materialEditor.ShaderProperty(snapsPerUnitProp, snapsPerUnitLabel);
-            materialEditor.ShaderProperty(colorBitDepthProp, colorBitDepthLabel);
-            materialEditor.ShaderProperty(colorBitDepthOffsetProp, colorBitDepthOffsetLabel);
-            materialEditor.ShaderProperty(affineTextureStrengthProp, new GUIContent(affineTextureStrengthLabel, affineTextureStrengthTooltip));
-            
-            //materialEditor.ShaderProperty(useDitheringProp, new GUIContent(useDitheringLabel, useDitheringTooltip));
+            EditorGUILayout.Space(5);
 
-            if (ambientLightProp != null)
+            EditorGUILayout.BeginVertical(BoxStyle);
+
+            EditorGUILayout.LabelField("Color & Texture Effects", LabelStyle);
+            EditorGUILayout.Space(5);
+
+            materialEditor.ShaderProperty(baseColorProp, baseColorInfo);
+            materialEditor.ShaderProperty(baseTexProp, baseTexInfo);
+            EditorGUILayout.Space(5);
+            materialEditor.ShaderProperty(colorBitDepthProp, colorBitDepthInfo);
+            materialEditor.ShaderProperty(colorBitDepthOffsetProp, colorBitDepthOffsetInfo);
+            EditorGUILayout.Space(5);
+            materialEditor.ShaderProperty(resolutionLimitProp, resolutionLimitInfo);
+            EditorGUILayout.Space(5);
+            materialEditor.ShaderProperty(affineTextureStrengthProp, affineTextureStrengthInfo);
+            EditorGUILayout.Space(5);
+            materialEditor.ShaderProperty(filteringModeProp, filteringModeInfo);
+            materialEditor.ShaderProperty(ditheringModeProp, ditheringModeInfo);
+            EditorGUILayout.Space(5);
+            materialEditor.ShaderProperty(useVertexColorProp, useVertexColorInfo);
+
+            bool vertexColors = material.GetFloat(useVertexColorName) >= 0.5f;
+
+            if (vertexColors)
             {
-                materialEditor.ShaderProperty(ambientToggleProp, ambientToggleLabel);
+                material.EnableKeyword(useVertexColorName);
+            }
+            else
+            {
+                material.DisableKeyword(useVertexColorName);
+            }
+
+            EditorGUILayout.EndVertical();
+
+            EditorGUILayout.Space(5);
+
+            EditorGUILayout.BeginVertical(BoxStyle);
+
+            EditorGUILayout.LabelField("Vertex Snapping", LabelStyle);
+            EditorGUILayout.Space(5);
+
+            materialEditor.ShaderProperty(snappingModeProp, snappingModeInfo);
+
+            if (material.GetInteger(snappingModeName) != 3) // Off.
+            {
+                EditorGUI.indentLevel++;
+                materialEditor.ShaderProperty(snapsPerUnitProp, snapsPerUnitInfo);
+                EditorGUI.indentLevel--;
+            }
+
+            EditorGUILayout.EndVertical();
+
+            EditorGUILayout.Space(5);
+
+            EditorGUILayout.BeginVertical(BoxStyle);
+
+            EditorGUILayout.LabelField("Lighting & Shadows", LabelStyle);
+            EditorGUILayout.Space(5);
+
+            materialEditor.ShaderProperty(lightingModeProp, lightingModeInfo);
+
+            int lightMode = material.GetInteger(lightingModeName);
+
+            if (lightMode != 3) // Unlit.
+            {
+                materialEditor.ShaderProperty(ambientToggleProp, ambientToggleInfo);
 
                 bool ambient = material.GetFloat(ambientToggleName) >= 0.5f;
 
@@ -348,132 +436,50 @@ namespace RetroShadersPro.URP
                     material.EnableKeyword(ambientToggleName);
 
                     EditorGUI.indentLevel++;
-                    materialEditor.ShaderProperty(ambientLightProp, ambientLightLabel);
+                    materialEditor.ShaderProperty(ambientLightProp, ambientLightInfo);
                     EditorGUI.indentLevel--;
                 }
                 else
                 {
                     material.DisableKeyword(ambientToggleName);
                 }
-            }
 
-            if (usePointFilteringProp != null)
-            {
-                materialEditor.ShaderProperty(usePointFilteringProp, usePointFilteringLabel);
-            }
+                materialEditor.ShaderProperty(useSpecularLightProp, useSpecularLightInfo);
 
-            if (useDitheringProp != null)
-            {
-                materialEditor.ShaderProperty(useDitheringProp, new GUIContent(useDitheringLabel, useDitheringTooltip));
+                bool useSpecularLighting = material.GetFloat(useSpecularLightName) >= 0.5f;
 
-                bool dither = material.GetFloat(useDitheringName) >= 0.5f;
-
-                if (dither)
+                if (useSpecularLighting)
                 {
-                    material.EnableKeyword(useDitheringName);
-                }
-                else
-                {
-                    material.DisableKeyword(useDitheringName);
-                }
-            }
+                    material.EnableKeyword(useSpecularLightName);
 
-            if(usePixelLightingProp != null)
-            {
-                materialEditor.ShaderProperty(usePixelLightingProp, new GUIContent(usePixelLightingLabel, usePixelLightingTooltip));
-
-                bool pixelLighting = material.GetFloat(usePixelLightingName) >= 0.5f;
-
-                if (pixelLighting)
-                {
-                    material.EnableKeyword(usePixelLightingName);
-                }
-                else
-                {
-                    material.DisableKeyword(usePixelLightingName);
-                }
-            }
-
-            if(useVertexColorProp != null)
-            {
-                materialEditor.ShaderProperty(useVertexColorProp, new GUIContent(useVertexColorLabel, useVertexColorTooltip));
-
-                bool vertexColors = material.GetFloat(useVertexColorName) >= 0.5f;
-
-                if (vertexColors)
-                {
-                    material.EnableKeyword(useVertexColorName);
-                }
-                else
-                {
-                    material.DisableKeyword(useVertexColorName);
-                }
-            }
-        }
-
-        private void DrawOutlineProperties(Material material)
-        {
-            if (useOutlineProp != null)
-            {
-                materialEditor.ShaderProperty(useOutlineProp, new GUIContent(useOutlineLabel, useOutlineTooltip));
-
-                bool outline = material.GetFloat(useOutlineName) >= 0.5f;
-
-                // Включаем/выключаем сам pass (как в OmniShade)
-                string outlinePassName = "SRPDefaultUnlit";
-                if (outline != material.GetShaderPassEnabled(outlinePassName))
-                {
-                    material.SetShaderPassEnabled(outlinePassName, outline);
-                }
-
-                if (outline)
-                {
-                    material.EnableKeyword("_USE_OUTLINE_ON");
-                }
-                else
-                {
-                    material.DisableKeyword("_USE_OUTLINE_ON");
-                }
-
-                if (outline)
-                {
                     EditorGUI.indentLevel++;
-                    if (outlineWidthProp != null)
-                    {
-                        materialEditor.ShaderProperty(outlineWidthProp, new GUIContent(outlineWidthLabel, outlineWidthTooltip));
-                    }
-                    if (outlineWidthIndependentProp != null)
-                    {
-                        materialEditor.ShaderProperty(outlineWidthIndependentProp, new GUIContent(outlineWidthIndependentLabel, outlineWidthIndependentTooltip));
-                        bool widthIndependent = material.GetFloat(outlineWidthIndependentName) >= 0.5f;
-                        if (widthIndependent)
-                        {
-                            material.EnableKeyword("_OUTLINEWIDTHINDEPENDENT_ON");
-                        }
-                        else
-                        {
-                            material.DisableKeyword("_OUTLINEWIDTHINDEPENDENT_ON");
-                        }
-                    }
-                    if (outlineColorProp != null)
-                    {
-                        materialEditor.ShaderProperty(outlineColorProp, new GUIContent(outlineColorLabel, outlineColorTooltip));
-                    }
-                    if (outlineZPosProp != null)
-                    {
-                        materialEditor.ShaderProperty(outlineZPosProp, new GUIContent(outlineZPosLabel, outlineZPosTooltip));
-                    }
-                    if (outlineCompProp != null)
-                    {
-                        materialEditor.ShaderProperty(outlineCompProp, new GUIContent(outlineCompLabel, outlineCompTooltip));
-                    }
-                    if (outlineGroupProp != null)
-                    {
-                        materialEditor.ShaderProperty(outlineGroupProp, new GUIContent(outlineGroupLabel, outlineGroupTooltip));
-                    }
+                    materialEditor.ShaderProperty(glossinessProp, glossinessInfo);
                     EditorGUI.indentLevel--;
                 }
+                else
+                {
+                    material.DisableKeyword(useSpecularLightName);
+                }
+
+                materialEditor.ShaderProperty(useReflectionCubemapProp, useReflectionCubemapInfo);
+
+                if(material.GetFloat(useReflectionCubemapName) >= 0.5f)
+                {
+                    material.EnableKeyword(useReflectionCubemapName);
+
+                    EditorGUI.indentLevel++;
+                    //materialEditor.ShaderProperty(reflectionCubemapProp, reflectionCubemapInfo);
+                    materialEditor.TexturePropertyWithHDRColor(reflectionCubemapInfo, reflectionCubemapProp, cubemapColorProp, true);
+                    materialEditor.ShaderProperty(cubemapRotationProp, cubemapRotationInfo);
+                    EditorGUI.indentLevel--;
+                }
+                else
+                {
+                    material.DisableKeyword(useReflectionCubemapName);
+                }
             }
+
+            EditorGUILayout.EndVertical();
         }
     }
 }

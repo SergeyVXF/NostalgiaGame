@@ -57,7 +57,7 @@ float4 metaFrag(v2f i) : SV_TARGET
     float4 baseColor = _BaseColor * SAMPLE_TEXTURE2D_LOD(_BaseMap, sampler_LinearRepeat, i.uv, 0);
 
     MetaInput metaInput;
-    metaInput.Albedo = baseColor;
+    metaInput.Albedo = baseColor.rgb;
     metaInput.Emission = 1;
 
 #ifdef EDITOR_VISUALIZATION

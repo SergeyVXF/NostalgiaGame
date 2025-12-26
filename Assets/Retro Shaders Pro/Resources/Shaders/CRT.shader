@@ -85,7 +85,8 @@
 
 				// Apply barrel distortion to UVs.
 				float2 originalUVs = i.texcoord - 0.5f;
-				float2 UVs = originalUVs * (1 + _DistortionStrength * length(originalUVs) * length(originalUVs)) + 0.5f;
+				float offset = length(originalUVs);
+				float2 UVs = originalUVs * (1 + _DistortionStrength * offset * offset) + 0.5f;
 
 				// Save UVs to use for barrel distortion later.
 				float2 distortedUVs = UVs;
@@ -104,7 +105,7 @@
 				float2 trackingUVs = float2(UVs.y * _TrackingSize + _Time.y * _TrackingSpeed + randomValue(_Time.xx) * _TrackingJitter, 0.5f);
 
 				// Get tracking amount.
-				float3 trackingSample = (SAMPLE_TEXTURE2D(_TrackingTex, sampler_LinearRepeat, trackingUVs) - 0.5f) * 2.0f;
+				float3 trackingSample = (SAMPLE_TEXTURE2D(_TrackingTex, sampler_LinearRepeat, trackingUVs).rgb - 0.5f) * 2.0f;
 				float trackingStrength = trackingSample.r;
 
 				// Offset UVs horizontally based on tracking amount.
@@ -122,23 +123,27 @@
 				float2 blueUVs = UVs - originalUVs * _AberrationStrength * _BlitTexture_TexelSize.xy;
 	#ifdef _POINT_FILTERING_ON
 				float red = SAMPLE_TEXTURE2D(_BlitTexture, sampler_PointClamp, redUVs).r;
-				float green = SAMPLE_TEXTURE2D(_BlitTexture, sampler_PointClamp, UVs).g;
+				float2 greenAlpha = SAMPLE_TEXTURE2D(_BlitTexture, sampler_PointClamp, UVs).ga;
 				float blue = SAMPLE_TEXTURE2D(_BlitTexture, sampler_PointClamp, blueUVs).b;
 	#else
 				float red = SAMPLE_TEXTURE2D(_BlitTexture, sampler_LinearClamp, redUVs).r;
-				float green = SAMPLE_TEXTURE2D(_BlitTexture, sampler_LinearClamp, UVs).g;
+				float2 greenAlpha = SAMPLE_TEXTURE2D(_BlitTexture, sampler_LinearClamp, UVs).ga;
 				float blue = SAMPLE_TEXTURE2D(_BlitTexture, sampler_LinearClamp, blueUVs).b;
 	#endif
-				float3 col = float3(red, green, blue);
+				float3 col = float3(red, greenAlpha.x, blue);
+				float alpha = greenAlpha.y;
 #else
 	#ifdef _POINT_FILTERING_ON
-				float3 col = SAMPLE_TEXTURE2D(_BlitTexture, sampler_PointClamp, UVs).rgb;
+				float4 sampleCol = SAMPLE_TEXTURE2D(_BlitTexture, sampler_PointClamp, UVs);
 	#else
-				float3 col = SAMPLE_TEXTURE2D(_BlitTexture, sampler_LinearClamp, UVs).rgb;
+				float4 sampleCol = SAMPLE_TEXTURE2D(_BlitTexture, sampler_LinearClamp, UVs);
 	#endif
+
+				float3 col = sampleCol.rgb;
+				float alpha = sampleCol.a;
 #endif
 
-				col *= _TintColor;
+				col *= _TintColor.rgb;
 
 				// Apply brightness and contrast modifiers.
 				col = saturate(col * _Brightness);
@@ -183,9 +188,9 @@
 				// Apply border to pixels outside barrel distortion 0-1 range.
 				//col = (UVs.x >= 0.0f && UVs.x <= 1.0f && UVs.y >= 0.0f && UVs.y <= 1.0f) ? col : _BackgroundColor;
 
-				col = lerp(_BackgroundColor, col, min(smoothedEdges.x, smoothedEdges.y));
+				col = lerp(_BackgroundColor.rgb, col, min(smoothedEdges.x, smoothedEdges.y));
 
-				return float4(col, 1.0f);
+				return float4(col, alpha);
             }
             ENDHLSL
         }

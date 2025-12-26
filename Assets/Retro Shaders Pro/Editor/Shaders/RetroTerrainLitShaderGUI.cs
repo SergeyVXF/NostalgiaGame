@@ -54,38 +54,41 @@ namespace RetroShadersPro.URP
         // Retro parameters.
         MaterialProperty resolutionLimit = null;
         const string resolutionLimitName = "_ResolutionLimit";
-        const string resolutionLimitLabel = "Resolution Limit";
-        const string resolutionLimitTooltip = "";
+        readonly GUIContent resolutionLimitInfo = new("Resolution Limit",
+            "Limits the resolution of the texture to this value." +
+            "\nNote that this setting only snaps the resolution to powers of two." +
+            "\nAlso, make sure the Base Texture has mipmaps enabled.");
 
         MaterialProperty snapsPerUnit = null;
         const string snapsPerUnitName = "_SnapsPerUnit";
-        const string snapsPerUnitLabel = "Snaps Per Unit";
-        const string snapsPerUnitTooltip = "";
+        readonly GUIContent snapsPerUnitInfo = new("Snaps Per Meter",
+            "The mesh vertices snap to a limited number of points in space." +
+            "\nThis uses view space, so the mesh may jitter when the camera rotates.");
 
         MaterialProperty colorBitDepth = null;
         const string colorBitDepthName = "_ColorBitDepth";
-        const string colorBitDepthLabel = "Color Bit Depth";
-        const string colorBitDepthTooltip = "";
+        readonly GUIContent colorBitDepthInfo = new("Color Depth",
+            "Limits the total number of values used for each color channel.");
 
         MaterialProperty colorBitDepthOffset = null;
         const string colorBitDepthOffsetName = "_ColorBitDepthOffset";
-        const string colorBitDepthOffsetLabel = "Color Bit Depth Offset";
-        const string colorBitDepthOffsetTooltip = "";
+        readonly GUIContent colorBitDepthOffsetInfo = new("Color Depth Offset",
+            "Increase this value if the bit depth offset makes your object too dark.");
 
         MaterialProperty usePointFilteringProp = null;
         const string usePointFilteringName = "_USE_POINT_FILTER";
-        const string usePointFilteringLabel = "Point Filtering";
-        const string usePointFilteringTooltip = "Should the shader use point filtering?";
+        readonly GUIContent usePointFilteringInfo = new("Point Filtering",
+            "Should the shader use nearest neighbor (point) filtering?");
 
         MaterialProperty useDitheringProp = null;
         const string useDitheringName = "_USE_DITHERING";
-        const string useDitheringLabel = "Enable Dithering";
-        const string useDitheringTooltip = "Should the shader use color dithering?";
+        readonly GUIContent useDitheringInfo = new("Enable Dithering",
+            "Should the shader use color dithering?");
 
         MaterialProperty usePixelLightingProp = null;
         const string usePixelLightingName = "_USE_PIXEL_LIGHTING";
-        const string usePixelLightingLabel = "Pixel-aligned Lighting";
-        const string usePixelLightingTooltip = "Should lighting and shadow calculations snap to the closest pixel on the object's texture?";
+        readonly GUIContent usePixelLightingInfo = new("Texel-aligned Lighting",
+            "Should lighting and shadow calculations snap to the closest texel on the object's texture?");
 
         // Per-pixel Normal (while instancing)
         MaterialProperty enableInstancedPerPixelNormal = null;
@@ -197,19 +200,19 @@ namespace RetroShadersPro.URP
             EditorGUILayout.Space();
 
             EditorGUI.indentLevel++;
-            materialEditorIn.ShaderProperty(resolutionLimit, new GUIContent(resolutionLimitLabel, resolutionLimitTooltip));
-            materialEditorIn.ShaderProperty(snapsPerUnit, new GUIContent(snapsPerUnitLabel, snapsPerUnitTooltip));
-            materialEditorIn.ShaderProperty(colorBitDepth, new GUIContent(colorBitDepthLabel, colorBitDepthTooltip));
-            materialEditorIn.ShaderProperty(colorBitDepthOffset, new GUIContent(colorBitDepthOffsetLabel, colorBitDepthOffsetTooltip));
+            materialEditorIn.ShaderProperty(resolutionLimit, resolutionLimitInfo);
+            materialEditorIn.ShaderProperty(snapsPerUnit, snapsPerUnitInfo);
+            materialEditorIn.ShaderProperty(colorBitDepth, colorBitDepthInfo);
+            materialEditorIn.ShaderProperty(colorBitDepthOffset, colorBitDepthOffsetInfo);
 
             if (usePointFilteringProp != null)
             {
-                materialEditorIn.ShaderProperty(usePointFilteringProp, usePointFilteringLabel);
+                materialEditorIn.ShaderProperty(usePointFilteringProp, usePointFilteringInfo);
             }
 
             if (useDitheringProp != null)
             {
-                materialEditorIn.ShaderProperty(useDitheringProp, new GUIContent(useDitheringLabel, useDitheringTooltip));
+                materialEditorIn.ShaderProperty(useDitheringProp, useDitheringInfo);
 
                 bool dither = material.GetFloat(useDitheringName) >= 0.5f;
 
@@ -225,7 +228,7 @@ namespace RetroShadersPro.URP
 
             if(usePixelLightingProp != null)
             {
-                materialEditorIn.ShaderProperty(usePixelLightingProp, new GUIContent(usePixelLightingLabel, usePixelLightingTooltip));
+                materialEditorIn.ShaderProperty(usePixelLightingProp, usePixelLightingInfo);
 
                 bool pixelLighting = material.GetFloat(usePixelLightingName) >= 0.5f;
 

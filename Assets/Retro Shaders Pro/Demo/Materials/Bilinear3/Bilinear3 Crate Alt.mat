@@ -8,12 +8,18 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Bilinear3 Crate Alt
-  m_Shader: {fileID: 4800000, guid: f6c9cb5866bf65f488a7ef3122a59f5f, type: 3}
+  m_Shader: {fileID: 4800000, guid: 71a090e9b5b488349913abe716bb7bc6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _DITHERMODE_SCREEN
+  - _FILTERMODE_N64
+  - _LIGHTMODE_TEXELLIT
+  - _SNAPMODE_VIEW
+  - _USE_SPECULAR_LIGHT
   m_InvalidKeywords:
   - _USE_POINT_FILTER_ON
+  - _USE_SPECULAR_LIGHT_ON
   - _USE_SPECULAR_ON
   - _USE_VERTEX_COLORS_OFF
   m_LightmapFlags: 4
@@ -84,7 +90,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints:
     - _ColorBitDepth: 64
+    - _DitherMode: 0
+    - _FilterMode: 2
+    - _LightMode: 1
     - _ResolutionLimit: 64
+    - _SnapMode: 2
     - _SnapsPerUnit: 64
     m_Floats:
     - _AffineTextureStrength: 0
@@ -105,7 +115,7 @@ Material:
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
-    - _Glossiness: 0
+    - _Glossiness: 6
     - _GlossyReflections: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
@@ -124,6 +134,7 @@ Material:
     - _USE_DITHERING: 0
     - _USE_POINT_FILTER: 1
     - _USE_SPECULAR: 1
+    - _USE_SPECULAR_LIGHT: 1
     - _USE_VERTEX_COLORS: 0
     - _WorkflowMode: 1
     - _ZWrite: 1

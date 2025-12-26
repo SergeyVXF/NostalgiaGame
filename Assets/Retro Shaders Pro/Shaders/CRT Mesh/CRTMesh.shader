@@ -170,7 +170,7 @@ Shader "Retro Shaders Pro/CRT (Mesh)"
 				float2 trackingUVs = float2(UVs.y * _TrackingSize + _Time.y * _TrackingSpeed + randomValue(_Time.xx) * _TrackingJitter, 0.5f);
 
 				// Get tracking amount.
-				float3 trackingSample = (SAMPLE_TEXTURE2D(_TrackingTex, sampler_LinearRepeat, trackingUVs) - 0.5f) * 2.0f;
+				float3 trackingSample = (SAMPLE_TEXTURE2D(_TrackingTex, sampler_LinearRepeat, trackingUVs).rgb - 0.5f) * 2.0f;
 				float trackingStrength = trackingSample.r;
 
 				// Offset UVs horizontally based on tracking amount.
@@ -242,7 +242,7 @@ Shader "Retro Shaders Pro/CRT (Mesh)"
 				float2 smoothedEdges = smoothstep(0.0f, _DistortionSmoothing, UVs.xy);
 				smoothedEdges *= (1.0f - smoothstep(1.0f - _DistortionSmoothing, 1.0f, UVs.xy));
 
-				col = lerp(_BackgroundColor, col, min(smoothedEdges.x, smoothedEdges.y));
+				col = lerp(_BackgroundColor.rgb, col, min(smoothedEdges.x, smoothedEdges.y));
 
 #ifdef _ALPHATEST_ON
 				clip(baseColor.a - _Cutoff);

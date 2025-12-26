@@ -61,7 +61,7 @@ float4 shadowPassFrag(v2f i) : SV_TARGET
 	int actualResolution = (int)log2(_BaseMap_TexelSize.zw);
 	int lod = actualResolution - targetResolution;
 
-#if _USE_POINT_FILTER_ON
+#if defined(_FILTERMODE_POINT)
 	float4 baseColor = _BaseColor * SAMPLE_TEXTURE2D_LOD(_BaseMap, sampler_PointRepeat, i.uv, lod);
 #else
 	float4 baseColor = _BaseColor * SAMPLE_TEXTURE2D_LOD(_BaseMap, sampler_LinearRepeat, i.uv, lod);

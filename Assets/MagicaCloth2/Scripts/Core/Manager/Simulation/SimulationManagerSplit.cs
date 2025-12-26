@@ -1929,6 +1929,14 @@ namespace MagicaCloth2
             [Unity.Collections.ReadOnly]
             public NativeArray<float3> realVelocityArray;
 
+            // temp
+            [NativeDisableParallelForRestriction]
+            [NativeDisableContainerSafetyRestriction]
+            public NativeArray<float3> tempVectorBufferA;
+            [NativeDisableParallelForRestriction]
+            [NativeDisableContainerSafetyRestriction]
+            public NativeArray<quaternion> tempRotationBufferA;
+
             // バッチ内のローカルチームインデックスごと
             // ワーカー分割
             public void Execute(int index)
@@ -1969,8 +1977,10 @@ namespace MagicaCloth2
                         ref attributes,
                         ref positions,
                         ref rotations,
-                        ref vertexRootIndices
-
+                        ref vertexRootIndices,
+                        // temp
+                        ref tempVectorBufferA,
+                        ref tempRotationBufferA
                     );
                 }
             }
@@ -2018,6 +2028,12 @@ namespace MagicaCloth2
             [Unity.Collections.ReadOnly]
             public NativeArray<ExBitFlag8> baseLineFlags;
 
+            // temp
+            [Unity.Collections.ReadOnly]
+            public NativeArray<float3> tempVectorBufferA;
+            [Unity.Collections.ReadOnly]
+            public NativeArray<quaternion> tempRotationBufferB;
+
             // バッチ内のローカルチームインデックスごと
             // ワーカー分割
             public void Execute(int index)
@@ -2061,7 +2077,10 @@ namespace MagicaCloth2
                         ref baseLineFlags,
                         ref baseLineStartDataIndices,
                         ref baseLineDataCounts,
-                        ref baseLineData
+                        ref baseLineData,
+                        // temp
+                        ref tempVectorBufferA,
+                        ref tempRotationBufferB
                         );
                 }
             }

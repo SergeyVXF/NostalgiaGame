@@ -8,13 +8,18 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Retro Black
-  m_Shader: {fileID: 4800000, guid: 44fcdb8bd0b79ce4394df616dae2fb51, type: 3}
+  m_Shader: {fileID: 4800000, guid: 71a090e9b5b488349913abe716bb7bc6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _DITHERMODE_SCREEN
+  - _FILTERMODE_POINT
+  - _LIGHTMODE_UNLIT
+  - _SNAPMODE_VIEW
+  m_InvalidKeywords:
   - _USE_AFFINE_TEXTURES_ON
   - _USE_POINT_FILTER_ON
-  m_InvalidKeywords: []
+  - _USE_VERTEX_COLORS_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -83,11 +88,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints:
     - _ColorBitDepth: 64
+    - _DitherMode: 0
+    - _FilterMode: 1
+    - _LightMode: 3
     - _ResolutionLimit: 64
+    - _SnapMode: 2
     - _SnapsPerUnit: 64
     m_Floats:
+    - _AffineTextureStrength: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
+    - _AmbientLight: 0.02
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
@@ -116,7 +127,10 @@ Material:
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _USE_AFFINE_TEXTURES: 1
+    - _USE_AMBIENT_OVERRIDE: 0
+    - _USE_DITHERING: 0
     - _USE_POINT_FILTER: 1
+    - _USE_VERTEX_COLORS: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:

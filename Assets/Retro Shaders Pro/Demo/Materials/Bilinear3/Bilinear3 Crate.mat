@@ -8,13 +8,18 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Bilinear3 Crate
-  m_Shader: {fileID: 4800000, guid: 587e7f2ff3e7432449c3903128c9520f, type: 3}
+  m_Shader: {fileID: 4800000, guid: 71a090e9b5b488349913abe716bb7bc6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _USE_POINT_FILTER_ON
+  - _DITHERMODE_SCREEN
+  - _FILTERMODE_N64
+  - _LIGHTMODE_TEXELLIT
+  - _SNAPMODE_VIEW
   m_InvalidKeywords:
+  - _USE_POINT_FILTER_ON
   - _USE_SPECULAR_ON
+  - _USE_VERTEX_COLORS_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -83,7 +88,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints:
     - _ColorBitDepth: 64
+    - _DitherMode: 0
+    - _FilterMode: 2
+    - _LightMode: 1
     - _ResolutionLimit: 64
+    - _SnapMode: 2
     - _SnapsPerUnit: 64
     m_Floats:
     - _AffineTextureStrength: 0.5
@@ -120,8 +129,11 @@ Material:
     - _Surface: 0
     - _USE_AFFINE_TEXTURES: 0
     - _USE_AMBIENT_OVERRIDE: 0
+    - _USE_DITHERING: 0
     - _USE_POINT_FILTER: 1
     - _USE_SPECULAR: 1
+    - _USE_SPECULAR_LIGHT: 0
+    - _USE_VERTEX_COLORS: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:

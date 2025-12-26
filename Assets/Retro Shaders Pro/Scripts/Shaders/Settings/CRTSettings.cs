@@ -24,11 +24,12 @@ namespace RetroShadersPro.URP
         public TextureParameter scanlineTex = new TextureParameter(null);
         public ClampedFloatParameter scanlineStrength = new ClampedFloatParameter(0.0f, 0.0f, 1.0f);
         public ClampedIntParameter scanlineSize = new ClampedIntParameter(8, 1, 64);
-        public ClampedFloatParameter scrollSpeed = new ClampedFloatParameter(0.0f, 0.0f, 10.0f);
+        public ClampedFloatParameter scrollSpeed = new ClampedFloatParameter(0.0f, -10.0f, 10.0f);
         public ClampedIntParameter pixelSize = new ClampedIntParameter(1, 1, 256);
         public ClampedFloatParameter randomWear = new ClampedFloatParameter(0.2f, 0.0f, 5.0f);
         public ClampedFloatParameter aberrationStrength = new ClampedFloatParameter(0.5f, 0.0f, 10.0f);
 
+        public BoolParameter useTracking = new BoolParameter(false);
         public TextureParameter trackingTexture = new TextureParameter(null);
         public ClampedFloatParameter trackingSize = new ClampedFloatParameter(1.0f, 0.1f, 2.0f);
         public ClampedFloatParameter trackingStrength = new ClampedFloatParameter(0.1f, 0.0f, 50.0f);
