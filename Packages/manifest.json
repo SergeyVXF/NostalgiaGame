@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "com.gamelovers.mcp-unity": "https://github.com/CoderGamester/mcp-unity.git",
+    "com.ivanmurzak.unity.mcp": "0.54.0",
+    "com.unity.2d.enhancers": "1.0.0",
+    "com.unity.ai.inference": "2.5.0",
     "com.unity.ai.navigation": "2.0.9",
     "com.unity.burst": "1.8.27",
     "com.unity.cinemachine": "3.1.5",
@@ -45,6 +48,21 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0"
-  }
+    "com.unity.modules.xr": "1.0.0",
+    "com.ivanmurzak.unity.mcp.animation": "1.1.5"
+  },
+  "scopedRegistries": [
+    {
+      "name": "package.openupm.com",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.ivanmurzak",
+        "extensions.unity",
+        "org.nuget.com.ivanmurzak",
+        "org.nuget.microsoft",
+        "org.nuget.system",
+        "org.nuget.r3"
+      ]
+    }
+  ]
 }
