@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639091858502592292
-    m_Hash: 1909959036
+      ticks: 639091891363523197
+    m_Hash: 811986246
   m_LockFileStatus:
     m_FilePath: D:/UnityProjects/Zelda/NostalgiaGame/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639091858575941990
-    m_Hash: 3459096899
+      ticks: 639091891411837400
+    m_Hash: 2473093921
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,539 +22,6 @@ m_LocalPackages:
 m_ProjectPath: D:/UnityProjects/Zelda/NostalgiaGame/Packages
 m_EditorVersion: 6000.2.0f1 (eed1c594c913)
 m_ResolvedPackages:
-- packageId: com.gamelovers.mcp-unity@https://github.com/CoderGamester/mcp-unity.git
-  testable: 0
-  isDirectDependency: 1
-  version: 1.2.0
-  source: 5
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.gamelovers.mcp-unity@d00cf93a48b9
-  assetPath: Packages/com.gamelovers.mcp-unity
-  name: com.gamelovers.mcp-unity
-  displayName: MCP Unity Server
-  author:
-    name: CoderGamester
-    email: 
-    url: 
-  category: 
-  type: library
-  description: The purpose of this package is to provide a MCP Unity Server for executing
-    Unity operations and request Editor information from AI MCP enabled hosts
-  errors: []
-  versions:
-    all: []
-    compatible: []
-    recommended: 
-    deprecated: []
-  dependencies:
-  - name: com.unity.nuget.newtonsoft-json
-    version: 3.2.1
-  - name: com.unity.editorcoroutines
-    version: 1.0.0
-  - name: com.unity.test-framework
-    version: 1.3.3
-  resolvedDependencies:
-  - name: com.unity.nuget.newtonsoft-json
-    version: 3.2.1
-  - name: com.unity.editorcoroutines
-    version: 1.0.0
-  - name: com.unity.test-framework
-    version: 1.5.1
-  - name: com.unity.ext.nunit
-    version: 2.0.5
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 0
-  entitlements:
-    licensingModel: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 0
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: d00cf93a48b9af4f6cfd04f52c697458064491d7
-    revision: HEAD
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: d00cf93a48b9af4f6cfd04f52c697458064491d7
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 
-    minimumUnityVersion: 2022.3.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.ivanmurzak.unity.mcp@0.54.0
-  testable: 0
-  isDirectDependency: 1
-  version: 0.54.0
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.ivanmurzak.unity.mcp@a66b864cef57
-  assetPath: Packages/com.ivanmurzak.unity.mcp
-  name: com.ivanmurzak.unity.mcp
-  displayName: "AI Game Developer \u2014 Unity MCP"
-  author:
-    name: Ivan Murzak
-    email: 
-    url: https://github.com/IvanMurzak
-  category: 
-  type: 
-  description: AI-powered bridge connecting LLMs and advanced AI agents to the Unity
-    Editor via the Model Context Protocol (MCP). Chat with AI to generate code, debug
-    errors, and automate game development tasks directly within your project.
-  errors: []
-  versions:
-    all:
-    - 0.1.0
-    - 0.2.0
-    - 0.2.1
-    - 0.2.2
-    - 0.2.3
-    - 0.2.4
-    - 0.3.0
-    - 0.4.0
-    - 0.5.0
-    - 0.5.1
-    - 0.6.0
-    - 0.6.1
-    - 0.6.2
-    - 0.7.0
-    - 0.7.1
-    - 0.7.2
-    - 0.7.3
-    - 0.7.4
-    - 0.7.5
-    - 0.8.0
-    - 0.8.1
-    - 0.8.2
-    - 0.8.3
-    - 0.9.0
-    - 0.9.1
-    - 0.10.0
-    - 0.11.0
-    - 0.12.0
-    - 0.13.0
-    - 0.13.1
-    - 0.14.0
-    - 0.14.1
-    - 0.14.2
-    - 0.15.0
-    - 0.16.0
-    - 0.16.1
-    - 0.16.2
-    - 0.17.0
-    - 0.17.1
-    - 0.17.2
-    - 0.18.0
-    - 0.18.1
-    - 0.19.0
-    - 0.20.0
-    - 0.21.0
-    - 0.22.0
-    - 0.22.1
-    - 0.23.0
-    - 0.24.0
-    - 0.24.1
-    - 0.25.0
-    - 0.25.1
-    - 0.26.0
-    - 0.27.0
-    - 0.28.0
-    - 0.29.0
-    - 0.29.1
-    - 0.30.0
-    - 0.30.1
-    - 0.30.2
-    - 0.31.0
-    - 0.32.0
-    - 0.33.0
-    - 0.33.1
-    - 0.34.0
-    - 0.35.0
-    - 0.35.1
-    - 0.35.2
-    - 0.36.0
-    - 0.36.1
-    - 0.36.2
-    - 0.36.3
-    - 0.37.0
-    - 0.38.0
-    - 0.38.1
-    - 0.39.0
-    - 0.39.1
-    - 0.39.2
-    - 0.40.0
-    - 0.40.1
-    - 0.41.0
-    - 0.41.1
-    - 0.42.0
-    - 0.43.0
-    - 0.43.1
-    - 0.44.0
-    - 0.45.0
-    - 0.45.1
-    - 0.46.0
-    - 0.46.1
-    - 0.46.2
-    - 0.46.3
-    - 0.46.4
-    - 0.46.5
-    - 0.47.0
-    - 0.47.1
-    - 0.48.0
-    - 0.48.1
-    - 0.49.0
-    - 0.49.1
-    - 0.50.0
-    - 0.50.1
-    - 0.51.0
-    - 0.51.1
-    - 0.51.2
-    - 0.51.3
-    - 0.51.4
-    - 0.51.5
-    - 0.51.6
-    - 0.52.0
-    - 0.53.0
-    - 0.53.1
-    - 0.54.0
-    compatible:
-    - 0.1.0
-    - 0.2.0
-    - 0.2.1
-    - 0.2.2
-    - 0.2.3
-    - 0.2.4
-    - 0.3.0
-    - 0.4.0
-    - 0.5.0
-    - 0.5.1
-    - 0.6.0
-    - 0.6.1
-    - 0.6.2
-    - 0.7.0
-    - 0.7.1
-    - 0.7.2
-    - 0.7.3
-    - 0.7.4
-    - 0.7.5
-    - 0.8.0
-    - 0.8.1
-    - 0.8.2
-    - 0.8.3
-    - 0.9.0
-    - 0.9.1
-    - 0.10.0
-    - 0.11.0
-    - 0.12.0
-    - 0.13.0
-    - 0.13.1
-    - 0.14.0
-    - 0.14.1
-    - 0.14.2
-    - 0.15.0
-    - 0.16.0
-    - 0.16.1
-    - 0.16.2
-    - 0.17.0
-    - 0.17.1
-    - 0.17.2
-    - 0.18.0
-    - 0.18.1
-    - 0.19.0
-    - 0.20.0
-    - 0.21.0
-    - 0.22.0
-    - 0.22.1
-    - 0.23.0
-    - 0.24.0
-    - 0.24.1
-    - 0.25.0
-    - 0.25.1
-    - 0.26.0
-    - 0.27.0
-    - 0.28.0
-    - 0.29.0
-    - 0.29.1
-    - 0.30.0
-    - 0.30.1
-    - 0.30.2
-    - 0.31.0
-    - 0.32.0
-    - 0.33.0
-    - 0.33.1
-    - 0.34.0
-    - 0.35.0
-    - 0.35.1
-    - 0.35.2
-    - 0.36.0
-    - 0.36.1
-    - 0.36.2
-    - 0.36.3
-    - 0.37.0
-    - 0.38.0
-    - 0.38.1
-    - 0.39.0
-    - 0.39.1
-    - 0.39.2
-    - 0.40.0
-    - 0.40.1
-    - 0.41.0
-    - 0.41.1
-    - 0.42.0
-    - 0.43.0
-    - 0.43.1
-    - 0.44.0
-    - 0.45.0
-    - 0.45.1
-    - 0.46.0
-    - 0.46.1
-    - 0.46.2
-    - 0.46.3
-    - 0.46.4
-    - 0.46.5
-    - 0.47.0
-    - 0.47.1
-    - 0.48.0
-    - 0.48.1
-    - 0.49.0
-    - 0.49.1
-    - 0.50.0
-    - 0.50.1
-    - 0.51.0
-    - 0.51.1
-    - 0.51.2
-    - 0.51.3
-    - 0.51.4
-    - 0.51.5
-    - 0.51.6
-    - 0.52.0
-    - 0.53.0
-    - 0.53.1
-    - 0.54.0
-    recommended: 
-    deprecated: []
-  dependencies:
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  - name: com.unity.test-framework
-    version: 1.1.33
-  - name: extensions.unity.playerprefsex
-    version: 2.1.3
-  - name: org.nuget.microsoft.aspnetcore.signalr.client
-    version: 10.0.3
-  - name: org.nuget.microsoft.aspnetcore.signalr.protocols.json
-    version: 10.0.3
-  - name: org.nuget.microsoft.bcl.memory
-    version: 10.0.3
-  - name: org.nuget.microsoft.codeanalysis.csharp
-    version: 4.14.0
-  - name: org.nuget.microsoft.extensions.caching.abstractions
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.dependencyinjection.abstractions
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.hosting.abstractions
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.logging
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.logging.abstractions
-    version: 10.0.3
-  - name: org.nuget.r3
-    version: 1.3.0
-  - name: org.nuget.system.text.json
-    version: 10.0.3
-  resolvedDependencies:
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.hierarchycore
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.test-framework
-    version: 1.5.1
-  - name: com.unity.ext.nunit
-    version: 2.0.5
-  - name: extensions.unity.playerprefsex
-    version: 2.1.3
-  - name: org.nuget.microsoft.aspnetcore.signalr.client
-    version: 10.0.3
-  - name: org.nuget.microsoft.aspnetcore.signalr.client.core
-    version: 10.0.3
-  - name: org.nuget.microsoft.aspnetcore.signalr.protocols.json
-    version: 10.0.3
-  - name: org.nuget.microsoft.aspnetcore.signalr.common
-    version: 10.0.3
-  - name: org.nuget.microsoft.aspnetcore.connections.abstractions
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.features
-    version: 10.0.3
-  - name: org.nuget.microsoft.bcl.asyncinterfaces
-    version: 10.0.3
-  - name: org.nuget.system.threading.tasks.extensions
-    version: 4.6.3
-  - name: org.nuget.system.runtime.compilerservices.unsafe
-    version: 6.1.2
-  - name: org.nuget.system.io.pipelines
-    version: 10.0.3
-  - name: org.nuget.system.buffers
-    version: 4.6.1
-  - name: org.nuget.system.memory
-    version: 4.6.3
-  - name: org.nuget.system.numerics.vectors
-    version: 4.6.1
-  - name: org.nuget.microsoft.extensions.options
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.dependencyinjection.abstractions
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.primitives
-    version: 10.0.3
-  - name: org.nuget.system.componentmodel.annotations
-    version: 5.0.0
-  - name: org.nuget.system.text.json
-    version: 10.0.3
-  - name: org.nuget.system.text.encodings.web
-    version: 10.0.3
-  - name: org.nuget.microsoft.bcl.timeprovider
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.dependencyinjection
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.logging
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.logging.abstractions
-    version: 10.0.3
-  - name: org.nuget.system.diagnostics.diagnosticsource
-    version: 10.0.3
-  - name: org.nuget.system.threading.channels
-    version: 10.0.3
-  - name: org.nuget.microsoft.aspnetcore.http.connections.client
-    version: 10.0.3
-  - name: org.nuget.microsoft.aspnetcore.http.connections.common
-    version: 10.0.3
-  - name: org.nuget.system.net.serversentevents
-    version: 10.0.3
-  - name: org.nuget.microsoft.bcl.memory
-    version: 10.0.3
-  - name: org.nuget.microsoft.codeanalysis.csharp
-    version: 4.14.0
-  - name: org.nuget.microsoft.codeanalysis.common
-    version: 4.14.0
-  - name: org.nuget.microsoft.codeanalysis.analyzers
-    version: 3.11.0
-  - name: org.nuget.system.collections.immutable
-    version: 9.0.0
-  - name: org.nuget.system.reflection.metadata
-    version: 9.0.0
-  - name: org.nuget.system.text.encoding.codepages
-    version: 7.0.0
-  - name: org.nuget.microsoft.extensions.caching.abstractions
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.hosting.abstractions
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.configuration.abstractions
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.diagnostics.abstractions
-    version: 10.0.3
-  - name: org.nuget.microsoft.extensions.fileproviders.abstractions
-    version: 10.0.3
-  - name: org.nuget.r3
-    version: 1.3.0
-  keywords:
-  - AI
-  - AI Integration
-  - MCP
-  - Unity MCP
-  registry:
-    id: scoped:project:package.openupm.com
-    name: package.openupm.com
-    url: https://package.openupm.com
-    scopes:
-    - com.ivanmurzak
-    - extensions.unity
-    - org.nuget.com.ivanmurzak
-    - org.nuget.microsoft
-    - org.nuget.system
-    - org.nuget.r3
-    isDefault: 0
-    capabilities: 0
-    configSource: 4
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 639091408140740000
-  documentationUrl: https://github.com/IvanMurzak/Unity-MCP/blob/main/README.md
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 0
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: a66b864cef571468c646ac16b2a41a48fd890f57
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 0.1.0
-    minimumUnityVersion: 2022.3.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
 - packageId: com.unity.2d.enhancers@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -5280,6 +4747,446 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
+- packageId: com.ivanmurzak.unity.mcp@0.54.0
+  testable: 0
+  isDirectDependency: 1
+  version: 0.54.0
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.ivanmurzak.unity.mcp@a66b864cef57
+  assetPath: Packages/com.ivanmurzak.unity.mcp
+  name: com.ivanmurzak.unity.mcp
+  displayName: "AI Game Developer \u2014 Unity MCP"
+  author:
+    name: Ivan Murzak
+    email: 
+    url: https://github.com/IvanMurzak
+  category: 
+  type: 
+  description: AI-powered bridge connecting LLMs and advanced AI agents to the Unity
+    Editor via the Model Context Protocol (MCP). Chat with AI to generate code, debug
+    errors, and automate game development tasks directly within your project.
+  errors: []
+  versions:
+    all:
+    - 0.1.0
+    - 0.2.0
+    - 0.2.1
+    - 0.2.2
+    - 0.2.3
+    - 0.2.4
+    - 0.3.0
+    - 0.4.0
+    - 0.5.0
+    - 0.5.1
+    - 0.6.0
+    - 0.6.1
+    - 0.6.2
+    - 0.7.0
+    - 0.7.1
+    - 0.7.2
+    - 0.7.3
+    - 0.7.4
+    - 0.7.5
+    - 0.8.0
+    - 0.8.1
+    - 0.8.2
+    - 0.8.3
+    - 0.9.0
+    - 0.9.1
+    - 0.10.0
+    - 0.11.0
+    - 0.12.0
+    - 0.13.0
+    - 0.13.1
+    - 0.14.0
+    - 0.14.1
+    - 0.14.2
+    - 0.15.0
+    - 0.16.0
+    - 0.16.1
+    - 0.16.2
+    - 0.17.0
+    - 0.17.1
+    - 0.17.2
+    - 0.18.0
+    - 0.18.1
+    - 0.19.0
+    - 0.20.0
+    - 0.21.0
+    - 0.22.0
+    - 0.22.1
+    - 0.23.0
+    - 0.24.0
+    - 0.24.1
+    - 0.25.0
+    - 0.25.1
+    - 0.26.0
+    - 0.27.0
+    - 0.28.0
+    - 0.29.0
+    - 0.29.1
+    - 0.30.0
+    - 0.30.1
+    - 0.30.2
+    - 0.31.0
+    - 0.32.0
+    - 0.33.0
+    - 0.33.1
+    - 0.34.0
+    - 0.35.0
+    - 0.35.1
+    - 0.35.2
+    - 0.36.0
+    - 0.36.1
+    - 0.36.2
+    - 0.36.3
+    - 0.37.0
+    - 0.38.0
+    - 0.38.1
+    - 0.39.0
+    - 0.39.1
+    - 0.39.2
+    - 0.40.0
+    - 0.40.1
+    - 0.41.0
+    - 0.41.1
+    - 0.42.0
+    - 0.43.0
+    - 0.43.1
+    - 0.44.0
+    - 0.45.0
+    - 0.45.1
+    - 0.46.0
+    - 0.46.1
+    - 0.46.2
+    - 0.46.3
+    - 0.46.4
+    - 0.46.5
+    - 0.47.0
+    - 0.47.1
+    - 0.48.0
+    - 0.48.1
+    - 0.49.0
+    - 0.49.1
+    - 0.50.0
+    - 0.50.1
+    - 0.51.0
+    - 0.51.1
+    - 0.51.2
+    - 0.51.3
+    - 0.51.4
+    - 0.51.5
+    - 0.51.6
+    - 0.52.0
+    - 0.53.0
+    - 0.53.1
+    - 0.54.0
+    compatible:
+    - 0.1.0
+    - 0.2.0
+    - 0.2.1
+    - 0.2.2
+    - 0.2.3
+    - 0.2.4
+    - 0.3.0
+    - 0.4.0
+    - 0.5.0
+    - 0.5.1
+    - 0.6.0
+    - 0.6.1
+    - 0.6.2
+    - 0.7.0
+    - 0.7.1
+    - 0.7.2
+    - 0.7.3
+    - 0.7.4
+    - 0.7.5
+    - 0.8.0
+    - 0.8.1
+    - 0.8.2
+    - 0.8.3
+    - 0.9.0
+    - 0.9.1
+    - 0.10.0
+    - 0.11.0
+    - 0.12.0
+    - 0.13.0
+    - 0.13.1
+    - 0.14.0
+    - 0.14.1
+    - 0.14.2
+    - 0.15.0
+    - 0.16.0
+    - 0.16.1
+    - 0.16.2
+    - 0.17.0
+    - 0.17.1
+    - 0.17.2
+    - 0.18.0
+    - 0.18.1
+    - 0.19.0
+    - 0.20.0
+    - 0.21.0
+    - 0.22.0
+    - 0.22.1
+    - 0.23.0
+    - 0.24.0
+    - 0.24.1
+    - 0.25.0
+    - 0.25.1
+    - 0.26.0
+    - 0.27.0
+    - 0.28.0
+    - 0.29.0
+    - 0.29.1
+    - 0.30.0
+    - 0.30.1
+    - 0.30.2
+    - 0.31.0
+    - 0.32.0
+    - 0.33.0
+    - 0.33.1
+    - 0.34.0
+    - 0.35.0
+    - 0.35.1
+    - 0.35.2
+    - 0.36.0
+    - 0.36.1
+    - 0.36.2
+    - 0.36.3
+    - 0.37.0
+    - 0.38.0
+    - 0.38.1
+    - 0.39.0
+    - 0.39.1
+    - 0.39.2
+    - 0.40.0
+    - 0.40.1
+    - 0.41.0
+    - 0.41.1
+    - 0.42.0
+    - 0.43.0
+    - 0.43.1
+    - 0.44.0
+    - 0.45.0
+    - 0.45.1
+    - 0.46.0
+    - 0.46.1
+    - 0.46.2
+    - 0.46.3
+    - 0.46.4
+    - 0.46.5
+    - 0.47.0
+    - 0.47.1
+    - 0.48.0
+    - 0.48.1
+    - 0.49.0
+    - 0.49.1
+    - 0.50.0
+    - 0.50.1
+    - 0.51.0
+    - 0.51.1
+    - 0.51.2
+    - 0.51.3
+    - 0.51.4
+    - 0.51.5
+    - 0.51.6
+    - 0.52.0
+    - 0.53.0
+    - 0.53.1
+    - 0.54.0
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.test-framework
+    version: 1.1.33
+  - name: extensions.unity.playerprefsex
+    version: 2.1.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.client
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.protocols.json
+    version: 10.0.3
+  - name: org.nuget.microsoft.bcl.memory
+    version: 10.0.3
+  - name: org.nuget.microsoft.codeanalysis.csharp
+    version: 4.14.0
+  - name: org.nuget.microsoft.extensions.caching.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.dependencyinjection.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.hosting.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.logging
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.logging.abstractions
+    version: 10.0.3
+  - name: org.nuget.r3
+    version: 1.3.0
+  - name: org.nuget.system.text.json
+    version: 10.0.3
+  resolvedDependencies:
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.test-framework
+    version: 1.5.1
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: extensions.unity.playerprefsex
+    version: 2.1.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.client
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.client.core
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.protocols.json
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.common
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.connections.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.features
+    version: 10.0.3
+  - name: org.nuget.microsoft.bcl.asyncinterfaces
+    version: 10.0.3
+  - name: org.nuget.system.threading.tasks.extensions
+    version: 4.6.3
+  - name: org.nuget.system.runtime.compilerservices.unsafe
+    version: 6.1.2
+  - name: org.nuget.system.io.pipelines
+    version: 10.0.3
+  - name: org.nuget.system.buffers
+    version: 4.6.1
+  - name: org.nuget.system.memory
+    version: 4.6.3
+  - name: org.nuget.system.numerics.vectors
+    version: 4.6.1
+  - name: org.nuget.microsoft.extensions.options
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.dependencyinjection.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.primitives
+    version: 10.0.3
+  - name: org.nuget.system.componentmodel.annotations
+    version: 5.0.0
+  - name: org.nuget.system.text.json
+    version: 10.0.3
+  - name: org.nuget.system.text.encodings.web
+    version: 10.0.3
+  - name: org.nuget.microsoft.bcl.timeprovider
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.dependencyinjection
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.logging
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.logging.abstractions
+    version: 10.0.3
+  - name: org.nuget.system.diagnostics.diagnosticsource
+    version: 10.0.3
+  - name: org.nuget.system.threading.channels
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.http.connections.client
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.http.connections.common
+    version: 10.0.3
+  - name: org.nuget.system.net.serversentevents
+    version: 10.0.3
+  - name: org.nuget.microsoft.bcl.memory
+    version: 10.0.3
+  - name: org.nuget.microsoft.codeanalysis.csharp
+    version: 4.14.0
+  - name: org.nuget.microsoft.codeanalysis.common
+    version: 4.14.0
+  - name: org.nuget.microsoft.codeanalysis.analyzers
+    version: 3.11.0
+  - name: org.nuget.system.collections.immutable
+    version: 9.0.0
+  - name: org.nuget.system.reflection.metadata
+    version: 9.0.0
+  - name: org.nuget.system.text.encoding.codepages
+    version: 7.0.0
+  - name: org.nuget.microsoft.extensions.caching.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.hosting.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.configuration.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.diagnostics.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.fileproviders.abstractions
+    version: 10.0.3
+  - name: org.nuget.r3
+    version: 1.3.0
+  keywords:
+  - AI
+  - AI Integration
+  - MCP
+  - Unity MCP
+  registry:
+    id: scoped:project:package.openupm.com
+    name: package.openupm.com
+    url: https://package.openupm.com
+    scopes:
+    - com.ivanmurzak
+    - extensions.unity
+    - org.nuget.com.ivanmurzak
+    - org.nuget.microsoft
+    - org.nuget.system
+    - org.nuget.r3
+    isDefault: 0
+    capabilities: 0
+    configSource: 4
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 639091408140740000
+  documentationUrl: https://github.com/IvanMurzak/Unity-MCP/blob/main/README.md
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
+  fingerprint: a66b864cef571468c646ac16b2a41a48fd890f57
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 0.1.0
+    minimumUnityVersion: 2022.3.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.ivanmurzak.unity.mcp.animation@1.1.5
   testable: 0
   isDirectDependency: 1
@@ -5562,46 +5469,240 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.modules.subsystems@1.0.0
+- packageId: com.ivanmurzak.unity.mcp.particlesystem@1.0.32
   testable: 0
-  isDirectDependency: 0
-  version: 1.0.0
-  source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems
-  assetPath: Packages/com.unity.modules.subsystems
-  name: com.unity.modules.subsystems
-  displayName: Subsystems
+  isDirectDependency: 1
+  version: 1.0.32
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.ivanmurzak.unity.mcp.particlesystem@fbbe1185b390
+  assetPath: Packages/com.ivanmurzak.unity.mcp.particlesystem
+  name: com.ivanmurzak.unity.mcp.particlesystem
+  displayName: AI Particle System
   author:
-    name: 
+    name: Ivan Murzak
     email: 
-    url: 
+    url: https://github.com/IvanMurzak
   category: 
-  type: module
-  description: 'The Subsystem module contains the definitions and runtime support
-    for general subsystems in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html'
+  type: 
+  description: "AI-powered tools for Unity ParticleSystem workflow. Inspect and modify
+    ParticleSystem components via natural language commands\u2014configure emission,
+    shape, velocity curves, color gradients, and all modules without manual inspector
+    navigation. Ideal for rapid prototyping and procedural effects generation. Built
+    on top of the AI Game Developer (Unity-MCP) platform."
   errors: []
   versions:
     all:
     - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 1.0.4
+    - 1.0.5
+    - 1.0.6
+    - 1.0.7
+    - 1.0.8
+    - 1.0.9
+    - 1.0.10
+    - 1.0.11
+    - 1.0.12
+    - 1.0.13
+    - 1.0.14
+    - 1.0.15
+    - 1.0.16
+    - 1.0.17
+    - 1.0.18
+    - 1.0.19
+    - 1.0.20
+    - 1.0.21
+    - 1.0.22
+    - 1.0.23
+    - 1.0.24
+    - 1.0.25
+    - 1.0.26
+    - 1.0.27
+    - 1.0.28
+    - 1.0.29
+    - 1.0.30
+    - 1.0.31
+    - 1.0.32
     compatible:
     - 1.0.0
-    recommended: 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 1.0.4
+    - 1.0.5
+    - 1.0.6
+    - 1.0.7
+    - 1.0.8
+    - 1.0.9
+    - 1.0.10
+    - 1.0.11
+    - 1.0.12
+    - 1.0.13
+    - 1.0.14
+    - 1.0.15
+    - 1.0.16
+    - 1.0.17
+    - 1.0.18
+    - 1.0.19
+    - 1.0.20
+    - 1.0.21
+    - 1.0.22
+    - 1.0.23
+    - 1.0.24
+    - 1.0.25
+    - 1.0.26
+    - 1.0.27
+    - 1.0.28
+    - 1.0.29
+    - 1.0.30
+    - 1.0.31
+    - 1.0.32
+    recommended: 
     deprecated: []
   dependencies:
-  - name: com.unity.modules.jsonserialize
+  - name: com.ivanmurzak.unity.mcp
+    version: 0.54.0
+  - name: com.unity.modules.particlesystem
     version: 1.0.0
   resolvedDependencies:
+  - name: com.ivanmurzak.unity.mcp
+    version: 0.54.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
-  keywords: []
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.test-framework
+    version: 1.5.1
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: extensions.unity.playerprefsex
+    version: 2.1.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.client
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.client.core
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.protocols.json
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.common
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.connections.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.features
+    version: 10.0.3
+  - name: org.nuget.microsoft.bcl.asyncinterfaces
+    version: 10.0.3
+  - name: org.nuget.system.threading.tasks.extensions
+    version: 4.6.3
+  - name: org.nuget.system.runtime.compilerservices.unsafe
+    version: 6.1.2
+  - name: org.nuget.system.io.pipelines
+    version: 10.0.3
+  - name: org.nuget.system.buffers
+    version: 4.6.1
+  - name: org.nuget.system.memory
+    version: 4.6.3
+  - name: org.nuget.system.numerics.vectors
+    version: 4.6.1
+  - name: org.nuget.microsoft.extensions.options
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.dependencyinjection.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.primitives
+    version: 10.0.3
+  - name: org.nuget.system.componentmodel.annotations
+    version: 5.0.0
+  - name: org.nuget.system.text.json
+    version: 10.0.3
+  - name: org.nuget.system.text.encodings.web
+    version: 10.0.3
+  - name: org.nuget.microsoft.bcl.timeprovider
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.dependencyinjection
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.logging
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.logging.abstractions
+    version: 10.0.3
+  - name: org.nuget.system.diagnostics.diagnosticsource
+    version: 10.0.3
+  - name: org.nuget.system.threading.channels
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.http.connections.client
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.http.connections.common
+    version: 10.0.3
+  - name: org.nuget.system.net.serversentevents
+    version: 10.0.3
+  - name: org.nuget.microsoft.bcl.memory
+    version: 10.0.3
+  - name: org.nuget.microsoft.codeanalysis.csharp
+    version: 4.14.0
+  - name: org.nuget.microsoft.codeanalysis.common
+    version: 4.14.0
+  - name: org.nuget.microsoft.codeanalysis.analyzers
+    version: 3.11.0
+  - name: org.nuget.system.collections.immutable
+    version: 9.0.0
+  - name: org.nuget.system.reflection.metadata
+    version: 9.0.0
+  - name: org.nuget.system.text.encoding.codepages
+    version: 7.0.0
+  - name: org.nuget.microsoft.extensions.caching.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.hosting.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.configuration.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.diagnostics.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.fileproviders.abstractions
+    version: 10.0.3
+  - name: org.nuget.r3
+    version: 1.3.0
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  keywords:
+  - unity
+  - particlesystem
+  - particle-system
+  - particles
+  - vfx
+  - visual-effects
+  - ai
+  - mcp
+  - natural-language
+  - procedural
+  - prototyping
+  - emission
+  - shape
+  - velocity
+  - gradient
+  - renderer
+  - editor-tooling
   registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
+    id: scoped:project:package.openupm.com
+    name: package.openupm.com
+    url: https://package.openupm.com
+    scopes:
+    - com.ivanmurzak
+    - extensions.unity
+    - org.nuget.com.ivanmurzak
+    - org.nuget.microsoft
+    - org.nuget.system
+    - org.nuget.r3
+    isDefault: 0
+    capabilities: 0
+    configSource: 4
     compliance:
       status: 0
       violations: []
@@ -5609,7 +5710,7 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 639091420067500000
   documentationUrl: 
   hasRepository: 0
   repository:
@@ -5632,602 +5733,238 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 
+  fingerprint: fbbe1185b3906c20e196c59c980a848058ba670c
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion: 2022.3.0a1
   compliance:
     status: 0
     violation:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.modules.hierarchycore@1.0.0
+- packageId: com.ivanmurzak.unity.mcp.probuilder@1.0.44
   testable: 0
-  isDirectDependency: 0
-  version: 1.0.0
-  source: 2
-  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.hierarchycore
-  assetPath: Packages/com.unity.modules.hierarchycore
-  name: com.unity.modules.hierarchycore
-  displayName: Hierarchy Core
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: module
-  description: 'Module that contains a high-performance hierarchy container. Scripting
-    API: https://docs.unity3d.com/ScriptReference/UnityEngine.HierarchyCoreModule.html'
-  errors: []
-  versions:
-    all:
-    - 1.0.0
-    compatible:
-    - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 0
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: 
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.searcher@4.9.3
-  testable: 0
-  isDirectDependency: 0
-  version: 4.9.3
+  isDirectDependency: 1
+  version: 1.0.44
   source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.searcher@1e17ce91558d
-  assetPath: Packages/com.unity.searcher
-  name: com.unity.searcher
-  displayName: Searcher
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.ivanmurzak.unity.mcp.probuilder@345d03cbfc87
+  assetPath: Packages/com.ivanmurzak.unity.mcp.probuilder
+  name: com.ivanmurzak.unity.mcp.probuilder
+  displayName: AI ProBuilder
   author:
-    name: 
+    name: Ivan Murzak
     email: 
-    url: 
+    url: https://github.com/IvanMurzak
   category: 
   type: 
-  description: General search window for use in the Editor. First target use is for
-    GraphView node search.
+  description: MCP Tools for ProBuilder - Enhance your Unity projects with AI-powered
+    ProBuilder tools using the MCP framework.
   errors: []
   versions:
     all:
-    - 4.0.0-preview
-    - 4.0.0
-    - 4.0.7-preview
-    - 4.0.7
-    - 4.0.8-preview
-    - 4.0.9
-    - 4.1.0-preview
-    - 4.1.0
-    - 4.2.0
-    - 4.3.0
-    - 4.3.1
-    - 4.3.2
-    - 4.6.0-preview
-    - 4.7.0-preview
-    - 4.9.1
-    - 4.9.2
-    - 4.9.3
-    - 4.9.4
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.4
+    - 1.0.5
+    - 1.0.6
+    - 1.0.7
+    - 1.0.8
+    - 1.0.9
+    - 1.0.10
+    - 1.0.11
+    - 1.0.12
+    - 1.0.13
+    - 1.0.14
+    - 1.0.15
+    - 1.0.16
+    - 1.0.17
+    - 1.0.18
+    - 1.0.19
+    - 1.0.20
+    - 1.0.21
+    - 1.0.22
+    - 1.0.23
+    - 1.0.24
+    - 1.0.25
+    - 1.0.26
+    - 1.0.27
+    - 1.0.28
+    - 1.0.29
+    - 1.0.30
+    - 1.0.31
+    - 1.0.32
+    - 1.0.33
+    - 1.0.34
+    - 1.0.35
+    - 1.0.36
+    - 1.0.37
+    - 1.0.38
+    - 1.0.39
+    - 1.0.40
+    - 1.0.41
+    - 1.0.42
+    - 1.0.43
+    - 1.0.44
     compatible:
-    - 4.9.2
-    - 4.9.3
-    - 4.9.4
-    recommended: 4.9.4
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords:
-  - search
-  - searcher
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638731478077990000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.searcher@4.9/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.searcher.git
-    revision: 6fad693b6604ae7175b59ebb4990d9a0b6c1d012
-    path: 
-  unityLifecycle:
-    version: 4.9.2
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 0
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"- Fixed a bug where spaces are removed when highlighted.\n-
-    Changed VisualSplitter to twoPaneSplitView and updated indentation"}'
-  assetStore:
-    productId: 
-  fingerprint: 1e17ce91558d1d9127554adc03d275f39a7466a2
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 4.9.2
-    minimumUnityVersion: 2019.1.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.render-pipelines.universal-config@17.0.3
-  testable: 0
-  isDirectDependency: 0
-  version: 17.0.3
-  source: 2
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d
-  assetPath: Packages/com.unity.render-pipelines.universal-config
-  name: com.unity.render-pipelines.universal-config
-  displayName: Universal Render Pipeline Config
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: Configuration files for the Universal Render Pipeline.
-  errors: []
-  versions:
-    all:
-    - 17.0.3
-    compatible:
-    - 17.0.3
-    recommended: 17.0.3
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.4
+    - 1.0.5
+    - 1.0.6
+    - 1.0.7
+    - 1.0.8
+    - 1.0.9
+    - 1.0.10
+    - 1.0.11
+    - 1.0.12
+    - 1.0.13
+    - 1.0.14
+    - 1.0.15
+    - 1.0.16
+    - 1.0.17
+    - 1.0.18
+    - 1.0.19
+    - 1.0.20
+    - 1.0.21
+    - 1.0.22
+    - 1.0.23
+    - 1.0.24
+    - 1.0.25
+    - 1.0.26
+    - 1.0.27
+    - 1.0.28
+    - 1.0.29
+    - 1.0.30
+    - 1.0.31
+    - 1.0.32
+    - 1.0.33
+    - 1.0.34
+    - 1.0.35
+    - 1.0.36
+    - 1.0.37
+    - 1.0.38
+    - 1.0.39
+    - 1.0.40
+    - 1.0.41
+    - 1.0.42
+    - 1.0.43
+    - 1.0.44
+    recommended: 
     deprecated: []
   dependencies:
-  - name: com.unity.render-pipelines.core
-    version: 17.0.3
+  - name: com.ivanmurzak.unity.mcp
+    version: 0.54.0
+  - name: com.unity.probuilder
+    version: 5.2.4
   resolvedDependencies:
-  - name: com.unity.render-pipelines.core
-    version: 17.2.0
-  - name: com.unity.burst
-    version: 1.8.27
-  - name: com.unity.mathematics
-    version: 1.3.3
-  - name: com.unity.modules.jsonserialize
+  - name: com.ivanmurzak.unity.mcp
+    version: 0.54.0
+  - name: com.unity.modules.uielements
     version: 1.0.0
-  - name: com.unity.ugui
-    version: 2.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.collections
-    version: 2.6.3
-  - name: com.unity.test-framework
-    version: 1.5.1
-  - name: com.unity.ext.nunit
-    version: 2.0.5
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.5
-  - name: com.unity.test-framework.performance
-    version: 3.1.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
   - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.terrain
-    version: 1.0.0
-  - name: com.unity.rendering.light-transport
-    version: 1.0.1
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 17.0.3
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 0
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: 8dc1aab4af1d718781689a36ed5231a35ad1a524
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 17.0.3
-    minimumUnityVersion: 6000.0.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.ugui@2.0.0
-  testable: 0
-  isDirectDependency: 0
-  version: 2.0.0
-  source: 2
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.ugui@423bc642aff1
-  assetPath: Packages/com.unity.ugui
-  name: com.unity.ugui
-  displayName: Unity UI
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: "Unity UI is a set of tools for developing user interfaces for games
-    and applications. It is a GameObject-based UI system that uses Components and
-    the Game View to arrange, position, and style user interfaces. \u200B You cannot
-    use Unity UI to create or change user interfaces in the Unity Editor."
-  errors: []
-  versions:
-    all:
-    - 2.0.0
-    compatible:
-    - 2.0.0
-    recommended: 2.0.0
-    deprecated: []
-  dependencies:
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  keywords:
-  - UI
-  - ugui
-  - Unity UI
-  - Canvas
-  - TextMeshPro
-  - TextMesh Pro
-  - Text
-  - TMP
-  - SDF
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 2.0.0
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: 423bc642aff1ba4fed4feef1d7b45461138cbb32
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 2.0.0
-    minimumUnityVersion: 2019.2.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.rendering.light-transport@1.0.1
-  testable: 0
-  isDirectDependency: 0
-  version: 1.0.1
-  source: 2
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.rendering.light-transport@2c9279f90d7c
-  assetPath: Packages/com.unity.rendering.light-transport
-  name: com.unity.rendering.light-transport
-  displayName: Unity Light Transport Library
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: Unity Light Transport Library exposes reusable code for writing light
-    transport algorithms such as raytracing or pathtracing
-  errors: []
-  versions:
-    all:
-    - 1.0.1
-    compatible:
-    - 1.0.1
-    recommended: 1.0.1
-    deprecated: []
-  dependencies:
-  - name: com.unity.collections
-    version: 2.2.0
-  - name: com.unity.mathematics
-    version: 1.2.4
-  - name: com.unity.modules.terrain
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.collections
-    version: 2.6.3
-  - name: com.unity.burst
-    version: 1.8.27
-  - name: com.unity.mathematics
-    version: 1.3.3
-  - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.test-framework
     version: 1.5.1
   - name: com.unity.ext.nunit
     version: 2.0.5
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.5
-  - name: com.unity.test-framework.performance
-    version: 3.1.0
-  - name: com.unity.modules.terrain
-    version: 1.0.0
-  keywords:
-  - raytracing
-  - pathtracing
-  - monte-carlo
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 1.0.1
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 0
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: 2c9279f90d7c8dfb6e76e3f90b6b3be1cafabfbc
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.1
-    minimumUnityVersion: 2023.3.0b1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.probuilder@6.0.8
-  testable: 0
-  isDirectDependency: 0
-  version: 6.0.8
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.probuilder@2e7e30b1490d
-  assetPath: Packages/com.unity.probuilder
-  name: com.unity.probuilder
-  displayName: ProBuilder
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: 'Build, edit, and texture custom geometry in Unity. Use ProBuilder
-    for in-scene level design, prototyping, collision meshes, all with on-the-fly
-    play-testing.
-
-
-    Advanced features include UV editing, vertex colors, parametric
-    shapes, and texture blending. With ProBuilder''s model export feature it''s easy
-    to tweak your levels in any external 3D modelling suite.'
-  errors: []
-  versions:
-    all:
-    - 3.0.0
-    - 3.0.1
-    - 3.0.2
-    - 3.0.3
-    - 3.0.6
-    - 3.0.8
-    - 3.0.9
-    - 3.10.1
-    - 4.0.2
-    - 4.0.3
-    - 4.0.4
-    - 4.0.5
-    - 4.1.0
-    - 4.1.2
-    - 4.2.1
-    - 4.2.2-preview.1
-    - 4.2.2-preview.2
-    - 4.2.3
-    - 4.2.4-preview.0
-    - 4.3.0-preview.0
-    - 4.3.0-preview.1
-    - 4.3.0-preview.2
-    - 4.3.0-preview.4
-    - 4.3.0-preview.6
-    - 4.3.0-preview.7
-    - 4.3.0-preview.8
-    - 4.3.0-preview.9
-    - 4.3.1
-    - 4.4.0-preview.1
-    - 4.4.0
-    - 4.5.0
-    - 4.5.2
-    - 5.0.0-pre.7
-    - 5.0.0-pre.10
-    - 5.0.1
-    - 5.0.3
-    - 5.0.4
-    - 5.0.6
-    - 5.0.7
-    - 5.1.0
-    - 5.1.1
-    - 5.2.0
-    - 5.2.2
-    - 5.2.3
-    - 5.2.4
-    - 6.0.1-pre.1
-    - 6.0.1-pre.2
-    - 6.0.1
-    - 6.0.2
-    - 6.0.3
-    - 6.0.4
-    - 6.0.5
-    - 6.0.6
-    - 6.0.7
-    - 6.0.8
-    - 6.0.9
-    compatible:
-    - 6.0.6
-    - 6.0.7
-    - 6.0.8
-    - 6.0.9
-    recommended: 6.0.9
-    deprecated: []
-  dependencies:
-  - name: com.unity.shadergraph
-    version: 17.0.3
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.settings-manager
-    version: 1.0.3
-  resolvedDependencies:
+  - name: extensions.unity.playerprefsex
+    version: 2.1.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.client
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.client.core
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.protocols.json
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.signalr.common
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.connections.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.features
+    version: 10.0.3
+  - name: org.nuget.microsoft.bcl.asyncinterfaces
+    version: 10.0.3
+  - name: org.nuget.system.threading.tasks.extensions
+    version: 4.6.3
+  - name: org.nuget.system.runtime.compilerservices.unsafe
+    version: 6.1.2
+  - name: org.nuget.system.io.pipelines
+    version: 10.0.3
+  - name: org.nuget.system.buffers
+    version: 4.6.1
+  - name: org.nuget.system.memory
+    version: 4.6.3
+  - name: org.nuget.system.numerics.vectors
+    version: 4.6.1
+  - name: org.nuget.microsoft.extensions.options
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.dependencyinjection.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.primitives
+    version: 10.0.3
+  - name: org.nuget.system.componentmodel.annotations
+    version: 5.0.0
+  - name: org.nuget.system.text.json
+    version: 10.0.3
+  - name: org.nuget.system.text.encodings.web
+    version: 10.0.3
+  - name: org.nuget.microsoft.bcl.timeprovider
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.dependencyinjection
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.logging
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.logging.abstractions
+    version: 10.0.3
+  - name: org.nuget.system.diagnostics.diagnosticsource
+    version: 10.0.3
+  - name: org.nuget.system.threading.channels
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.http.connections.client
+    version: 10.0.3
+  - name: org.nuget.microsoft.aspnetcore.http.connections.common
+    version: 10.0.3
+  - name: org.nuget.system.net.serversentevents
+    version: 10.0.3
+  - name: org.nuget.microsoft.bcl.memory
+    version: 10.0.3
+  - name: org.nuget.microsoft.codeanalysis.csharp
+    version: 4.14.0
+  - name: org.nuget.microsoft.codeanalysis.common
+    version: 4.14.0
+  - name: org.nuget.microsoft.codeanalysis.analyzers
+    version: 3.11.0
+  - name: org.nuget.system.collections.immutable
+    version: 9.0.0
+  - name: org.nuget.system.reflection.metadata
+    version: 9.0.0
+  - name: org.nuget.system.text.encoding.codepages
+    version: 7.0.0
+  - name: org.nuget.microsoft.extensions.caching.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.hosting.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.configuration.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.diagnostics.abstractions
+    version: 10.0.3
+  - name: org.nuget.microsoft.extensions.fileproviders.abstractions
+    version: 10.0.3
+  - name: org.nuget.r3
+    version: 1.3.0
+  - name: com.unity.probuilder
+    version: 6.0.8
   - name: com.unity.shadergraph
     version: 17.2.0
   - name: com.unity.render-pipelines.core
@@ -6236,26 +5973,14 @@ m_ResolvedPackages:
     version: 1.8.27
   - name: com.unity.mathematics
     version: 1.3.3
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
   - name: com.unity.ugui
     version: 2.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
   - name: com.unity.collections
     version: 2.6.3
-  - name: com.unity.test-framework
-    version: 1.5.1
-  - name: com.unity.ext.nunit
-    version: 2.0.5
   - name: com.unity.nuget.mono-cecil
     version: 1.11.5
   - name: com.unity.test-framework.performance
     version: 3.1.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
   - name: com.unity.modules.terrain
     version: 1.0.0
   - name: com.unity.rendering.light-transport
@@ -6265,446 +5990,60 @@ m_ResolvedPackages:
   - name: com.unity.settings-manager
     version: 2.1.0
   keywords:
-  - 3d
-  - model
-  - mesh
-  - modeling
-  - geometry
-  - shape
-  - cube
-  - blender
-  - max
-  - maya
-  - fbx
-  - obj
-  - level
-  - design
-  - block
-  - greybox
-  - graybox
-  - whitebox
-  - prototype
-  - probuilder
+  - ProBuilder
+  - AI
+  - AI Integration
+  - MCP
+  - Unity MCP
   registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
+    id: scoped:project:package.openupm.com
+    name: package.openupm.com
+    url: https://package.openupm.com
+    scopes:
+    - com.ivanmurzak
+    - extensions.unity
+    - org.nuget.com.ivanmurzak
+    - org.nuget.microsoft
+    - org.nuget.system
+    - org.nuget.r3
+    isDefault: 0
+    capabilities: 0
+    configSource: 4
     compliance:
       status: 0
       violations: []
   hideInEditor: 1
   entitlements:
-    licensingModel: 1
+    licensingModel: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638990129113600000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.probuilder@6.0/manual/index.html
-  hasRepository: 1
+  datePublishedTicks: 639091432033140000
+  documentationUrl: 
+  hasRepository: 0
   repository:
-    type: git
-    url: https://github.com/Unity-Technologies/com.unity.probuilder.git
-    revision: a03563897598df4cd41336d22491a2c270b181b5
-    path: 
-  unityLifecycle:
-    version: 6.0.6
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- [PBLD-240] Fixed a bug where buttons
-    for \"Create Cube\" and \"Create PolyShape\" appeared incorrectly on Light theme.\n-
-    [PBLD-258] Fixed an bug where clicking a highlighted edge might select a hidden
-    edge instead.\n- [PBLD-262] Fixed a bug in the deep cycling of face selection
-    where faces from hidden meshes would get prioritized"}'
-  assetStore:
-    productId: 
-  fingerprint: 2e7e30b1490d82f5c6facbc43d873df9e478f34b
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 6.0.6
-    minimumUnityVersion: 6000.0.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.polybrush@1.1.8
-  testable: 0
-  isDirectDependency: 0
-  version: 1.1.8
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.polybrush@9b4531013fbd
-  assetPath: Packages/com.unity.polybrush
-  name: com.unity.polybrush
-  displayName: Polybrush
-  author:
-    name: 
-    email: 
+    type: 
     url: 
-  category: 
-  type: assets
-  description: Mesh painting, sculpting, and geo-scattering tool for Unity.
-  errors: []
-  versions:
-    all:
-    - 1.0.0-preview.13
-    - 1.0.0-preview.16
-    - 1.0.0-preview.17
-    - 1.0.0
-    - 1.0.1-preview.1
-    - 1.0.1-preview.2
-    - 1.0.1
-    - 1.0.2-preview.1
-    - 1.0.2-preview.4
-    - 1.0.2
-    - 1.1.0-pre.1
-    - 1.1.2
-    - 1.1.3
-    - 1.1.4
-    - 1.1.5
-    - 1.1.6
-    - 1.1.8
-    - 1.2.0
-    - 1.2.1
-    compatible:
-    - 1.1.8
-    - 1.2.0
-    - 1.2.1
-    recommended: 1.1.8
-    deprecated: []
-  dependencies:
-  - name: com.unity.settings-manager
-    version: 2.0.1
-  resolvedDependencies:
-  - name: com.unity.settings-manager
-    version: 2.1.0
-  keywords:
-  - modeling
-  - sculpting
-  - push
-  - clay
-  - terrain
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638567250100000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.polybrush@1.1/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/polybrush.git
-    revision: 571b9c3665597c648dbe7c7dc7688804260a8ec0
+    revision: 
     path: 
   unityLifecycle:
-    version: 1.1.8
+    version: 
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
-    isDiscoverable: 1
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Bug Fixes\n\n- [POLBR-22] Fixed compilation errors
-    related to the use of FindObjectsByType in affected editors."}'
+  upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 9b4531013fbd4797d91318680619ee8780c62b91
+  fingerprint: 345d03cbfc8789af2c73a37be59faa760e201069
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.1.8
-    minimumUnityVersion: 2018.4.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.formats.fbx@5.1.5
-  testable: 0
-  isDirectDependency: 0
-  version: 5.1.5
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.formats.fbx@86d1698ebb13
-  assetPath: Packages/com.unity.formats.fbx
-  name: com.unity.formats.fbx
-  displayName: FBX Exporter
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: "The FBX Exporter package enables round-trip workflows between Unity
-    and 3D modeling software. Send geometry, Lights, Cameras, and animation from
-    Unity to Autodesk\xAE Maya\xAE, Autodesk\xAE Maya LT\u2122, or Autodesk\xAE 3ds
-    Max\xAE, and back to Unity again, with minimal effort."
-  errors: []
-  versions:
-    all:
-    - 2.0.1-preview.2
-    - 2.0.1-preview.3
-    - 2.0.1-preview.4
-    - 2.0.1-preview.5
-    - 2.0.1-preview.11
-    - 2.0.2-preview.1
-    - 2.0.3-preview.3
-    - 3.0.0-preview.2
-    - 3.0.1-preview.2
-    - 3.1.0-preview.1
-    - 3.2.0-preview.2
-    - 3.2.1-preview.2
-    - 4.0.0-pre.1
-    - 4.0.0-pre.4
-    - 4.0.1
-    - 4.1.0-pre.2
-    - 4.1.0
-    - 4.1.1
-    - 4.1.2
-    - 4.1.3
-    - 4.2.0-pre.1
-    - 4.2.0
-    - 4.2.1
-    - 5.0.0-pre.1
-    - 5.0.0
-    - 5.1.0-pre.1
-    - 5.1.0
-    - 5.1.1
-    - 5.1.2
-    - 5.1.3
-    - 5.1.4
-    - 5.1.5
-    compatible:
-    - 5.1.1
-    - 5.1.2
-    - 5.1.3
-    - 5.1.4
-    - 5.1.5
-    recommended: 5.1.5
-    deprecated: []
-  dependencies:
-  - name: com.autodesk.fbx
-    version: 5.1.1
-  - name: com.unity.timeline
-    version: 1.7.1
-  resolvedDependencies:
-  - name: com.autodesk.fbx
-    version: 5.1.1
-  - name: com.unity.timeline
-    version: 1.8.7
-  - name: com.unity.modules.audio
-    version: 1.0.0
-  - name: com.unity.modules.director
-    version: 1.0.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
-  - name: com.unity.modules.particlesystem
-    version: 1.0.0
-  keywords:
-  - fbx
-  - animation
-  - modeling
-  - maya
-  - max
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638943355400520000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.formats.fbx@5.1/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/com.unity.formats.fbx.git
-    revision: e66daf94f83107f6865415b6d5cb964083b986d2
-    path: 
-  unityLifecycle:
-    version: 5.1.1
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Changed\n- Updated the APIs used around EntityId"}'
-  assetStore:
-    productId: 
-  fingerprint: 86d1698ebb13fe759bd88af11aa0aec308c8c3a0
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 5.1.1
-    minimumUnityVersion: 2020.3.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.terrain-tools@5.3.1
-  testable: 0
-  isDirectDependency: 0
-  version: 5.3.1
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.terrain-tools@dbe886685ae0
-  assetPath: Packages/com.unity.terrain-tools
-  name: com.unity.terrain-tools
-  displayName: Terrain Tools
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: "The Terrain Tools package adds additional Terrain sculpting brushes
-    and tools to Unity. This add-on toolset is suitable if you require more control
-    over the appearance of your Terrain, and want to streamline Terrain workflows.
-    It\u2019s also useful when you want to make more complex-looking Terrain, or
-    author Terrain Texture data in external digital content creation tools."
-  errors: []
-  versions:
-    all:
-    - 1.1.2-preview
-    - 1.1.4-preview
-    - 2.0.0-preview
-    - 2.0.1-preview
-    - 2.0.2-preview
-    - 3.0.0-preview
-    - 3.0.1-preview
-    - 3.0.2-preview.2
-    - 3.0.2-preview.3
-    - 4.0.0-pre.2
-    - 4.0.0
-    - 4.0.3
-    - 4.0.5
-    - 5.0.0-pre.2
-    - 5.0.0-pre.3
-    - 5.0.0-pre.4
-    - 5.0.1
-    - 5.0.2
-    - 5.0.3
-    - 5.0.4
-    - 5.0.5
-    - 5.0.6
-    - 5.1.0-pre.1
-    - 5.1.0
-    - 5.1.1
-    - 5.1.2
-    - 5.2.1
-    - 5.3.0
-    - 5.3.1
-    - 5.3.2
-    compatible:
-    - 5.3.0
-    - 5.3.1
-    - 5.3.2
-    recommended: 5.3.2
-    deprecated: []
-  dependencies:
-  - name: com.unity.modules.terrain
-    version: 1.0.0
-  - name: com.unity.modules.terrainphysics
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.terrain
-    version: 1.0.0
-  - name: com.unity.modules.terrainphysics
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  keywords:
-  - Terrain
-  - Brush
-  - Toolbox
-  - Mask
-  - Filter
-  - Noise
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638945299159600000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.terrain-tools@5.3/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/TerrainTools.git
-    revision: f524285f995b4a3c5a2add416d96dc392285d183
-    path: 
-  unityLifecycle:
-    version: 5.3.0
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed:\n- [WBTR-153] Fixed error where opacity
-    icon for tool overlay could not be found\n- [WBTRB-154] Fixed an issue where
-    an error was thrown when scattering details when the Editor has Vulkan set as
-    its Graphics API.\n\n### Changed:\n- [WBTR-155] Inspector for the details tool
-    no longer displays an empty target distribution box when no details have been
-    added to the Terrain"}'
-  assetStore:
-    productId: 
-  fingerprint: dbe886685ae0766dad124ea40242cd733fb31432
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 5.3.0
-    minimumUnityVersion: 6000.0.0a1
+    minimumPackageVersion: 1.0.0
+    minimumUnityVersion: 2022.3.0a1
   compliance:
     status: 0
     violation:
@@ -6794,1159 +6133,6 @@ m_ResolvedPackages:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.5.1
-    minimumUnityVersion: 2022.3.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.nuget.mono-cecil@1.11.5
-  testable: 0
-  isDirectDependency: 1
-  version: 1.11.5
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.nuget.mono-cecil@d78732e851eb
-  assetPath: Packages/com.unity.nuget.mono-cecil
-  name: com.unity.nuget.mono-cecil
-  displayName: Mono Cecil
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: 'The mono cecil library from https://www.nuget.org/packages/Mono.Cecil/
-
-
-    This
-    package is intended for internal Unity use only. Most Unity users will be better
-    suited using the existing community tooling.
-
-    To avoid assembly clashes,
-    please use this package if you intend to use Mono.Cecil.'
-  errors: []
-  versions:
-    all:
-    - 0.1.6-preview.2
-    - 1.0.0-preview.1
-    - 1.10.0-preview.1
-    - 1.10.1-preview.1
-    - 1.10.1
-    - 1.10.2
-    - 1.11.4
-    - 1.11.5
-    - 1.11.6
-    compatible:
-    - 1.11.5
-    - 1.11.6
-    recommended: 1.11.6
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638729992509040000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.nuget.mono-cecil@1.11/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
-    revision: ab40507b5d82f57a4f34b6d0eacca1d6b170341d
-    path: 
-  unityLifecycle:
-    version: 1.11.5
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 0
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"* This is a verified release of the com.unity.nuget.mono-cecil
-    with embedded dlls of mono-cecil\n* Updated Cecil to 0.11.5 with a grafted patch
-    from this bug fix PR (https://github.com/jbevain/cecil/pull/914)"}'
-  assetStore:
-    productId: 
-  fingerprint: d78732e851eb42273c8e4d97993d3a94b207e570
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.11.5
-    minimumUnityVersion: 2019.4.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.test-framework.performance@3.1.0
-  testable: 0
-  isDirectDependency: 0
-  version: 3.1.0
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.test-framework.performance@92d1d09a72ed
-  assetPath: Packages/com.unity.test-framework.performance
-  name: com.unity.test-framework.performance
-  displayName: Performance testing API
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: Package that extends Unity Test Framework package. Adds performance
-    testing capabilities and collects configuration metadata.
-  errors: []
-  versions:
-    all:
-    - 0.1.27-preview
-    - 0.1.29-preview
-    - 0.1.31-preview
-    - 0.1.33-preview
-    - 0.1.34-preview
-    - 0.1.36-preview
-    - 0.1.37-preview
-    - 0.1.39-preview
-    - 0.1.40-preview
-    - 0.1.41-preview
-    - 0.1.42-preview
-    - 0.1.44-preview
-    - 0.1.45-preview
-    - 0.1.47-preview
-    - 0.1.48-preview
-    - 0.1.49-preview
-    - 0.1.50-preview
-    - 1.0.4-preview
-    - 1.0.6-preview
-    - 1.0.9-preview
-    - 1.1.2-preview
-    - 1.2.0-preview
-    - 1.2.1-preview
-    - 1.2.3-preview
-    - 1.2.5-preview
-    - 1.2.6-preview
-    - 1.3.0-preview
-    - 1.3.1-preview
-    - 1.3.2-preview
-    - 1.3.3-preview
-    - 2.0.1-preview
-    - 2.0.2-preview
-    - 2.0.3-preview
-    - 2.0.6-preview
-    - 2.0.7-preview
-    - 2.0.8-preview
-    - 2.0.9-preview
-    - 2.1.0-preview
-    - 2.2.0-preview
-    - 2.3.1-preview
-    - 2.4.1-preview
-    - 2.5.1-preview
-    - 2.6.0-preview
-    - 2.7.0-preview
-    - 2.8.0-preview
-    - 2.8.1-preview
-    - 3.0.0-pre.1
-    - 3.0.0-pre.2
-    - 3.0.1
-    - 3.0.2
-    - 3.0.3
-    - 3.1.0
-    - 3.2.0
-    - 3.2.1
-    compatible:
-    - 3.1.0
-    - 3.2.0
-    - 3.2.1
-    recommended: 3.1.0
-    deprecated: []
-  dependencies:
-  - name: com.unity.test-framework
-    version: 1.1.33
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.test-framework
-    version: 1.5.1
-  - name: com.unity.ext.nunit
-    version: 2.0.5
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  keywords:
-  - performance
-  - test
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638792643567670000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework.performance@3.1/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.test-framework.performance.git
-    revision: 6126c0ee357019ed762100ffeca520029274e869
-    path: 
-  unityLifecycle:
-    version: 3.1.0
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Added\n- Added an optional command-line argument
-    \"perfTestResults\" to control the target location of performance test run results
-    file.\n### Fixed\n- Warmup cycles no longer record GC measurements.\n- Setup
-    and Cleanup cycles no longer contribute to GC measurements."}'
-  assetStore:
-    productId: 
-  fingerprint: 92d1d09a72ed696fa23fd76c675b29d211664b50
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 3.1.0
-    minimumUnityVersion: 2020.3.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.splines@2.8.1
-  testable: 0
-  isDirectDependency: 0
-  version: 2.8.1
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.splines@b909627b5095
-  assetPath: Packages/com.unity.splines
-  name: com.unity.splines
-  displayName: Splines
-  author:
-    name: 
-    email: 
-    url: 
-  category: Tool
-  type: 
-  description: Work with curves and paths. Use the Splines package to generate objects
-    and behaviors along paths, create trajectories, and draw shapes.
-  errors: []
-  versions:
-    all:
-    - 0.1.0-preview.1
-    - 1.0.0-pre.5
-    - 1.0.0-pre.7
-    - 1.0.0-pre.8
-    - 1.0.0-pre.9
-    - 1.0.0
-    - 1.0.1
-    - 2.0.0-pre.2
-    - 2.0.0-pre.4
-    - 2.0.0
-    - 2.1.0
-    - 2.2.0
-    - 2.2.1
-    - 2.3.0
-    - 2.4.0
-    - 2.5.1
-    - 2.5.2
-    - 2.6.0
-    - 2.6.1
-    - 2.7.1
-    - 2.7.2
-    - 2.8.0
-    - 2.8.1
-    - 2.8.2
-    - 2.8.3
-    - 2.8.4
-    compatible:
-    - 2.8.1
-    - 2.8.2
-    - 2.8.3
-    - 2.8.4
-    recommended: 2.8.4
-    deprecated: []
-  dependencies:
-  - name: com.unity.mathematics
-    version: 1.2.1
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.settings-manager
-    version: 1.0.3
-  resolvedDependencies:
-  - name: com.unity.mathematics
-    version: 1.3.3
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.settings-manager
-    version: 2.1.0
-  keywords:
-  - spline
-  - curve
-  - path
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638822348021470000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.splines@2.8/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.splines.git
-    revision: ae2c33950924058f2912683d16e02268813ce44a
-    path: 
-  unityLifecycle:
-    version: 2.8.1
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Bug Fixes\n- [SPLB-345] Fixed a bug which was causing
-    null reference exceptions during shutdown in IL2CPP builds.\n- [SPLB-337] Fixed
-    a bug where `JoinSplinesOnKnots` would throw a null reference exception when
-    one of the splines was linked with another spline.\n- [SPLB-341] Fixed a bug
-    where changing the tangent mode on a knot on a prefab would not persist when
-    entering play mode.\n\n### Changed\n- Internal code cleanup to align with release
-    standards."}'
-  assetStore:
-    productId: 
-  fingerprint: b909627b5095061d48761597bbb8384d6f04e510
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 2.8.1
-    minimumUnityVersion: 2022.3.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.dt.app-ui@1.3.3
-  testable: 0
-  isDirectDependency: 0
-  version: 1.3.3
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.dt.app-ui@874541faca7e
-  assetPath: Packages/com.unity.dt.app-ui
-  name: com.unity.dt.app-ui
-  displayName: App UI
-  author:
-    name: 
-    email: 
-    url: 
-  category: UI
-  type: 
-  description: App UI is a versatile and customizable UI library for Unity that provides
-    essential building blocks for creating beautiful and responsive user interfaces.
-    With support for MVVM architecture, state management, and localization, App UI
-    simplifies app development while maintaining flexibility and extensibility. The
-    library includes a wide range of UI components, design tokens, and symbols, all
-    of which can be easily customized to fit your app's unique style and branding.
-  errors: []
-  versions:
-    all:
-    - 0.2.7
-    - 0.2.9
-    - 0.2.11
-    - 0.2.12
-    - 0.3.1
-    - 0.3.2
-    - 0.3.3
-    - 0.3.4
-    - 0.3.5
-    - 0.3.8
-    - 0.3.9
-    - 0.4.0
-    - 0.4.1
-    - 0.4.2
-    - 0.5.0
-    - 0.5.1
-    - 0.5.2
-    - 0.5.3
-    - 0.5.4
-    - 0.5.5
-    - 0.6.0
-    - 0.6.1
-    - 0.6.2
-    - 0.6.3
-    - 0.6.4
-    - 0.6.5
-    - 1.0.0-pre.1
-    - 1.0.0-pre.2
-    - 1.0.0-pre.3
-    - 1.0.0-pre.4
-    - 1.0.0-pre.5
-    - 1.0.0-pre.6
-    - 1.0.0-pre.7
-    - 1.0.0-pre.8
-    - 1.0.0-pre.9
-    - 1.0.0-pre.10
-    - 1.0.0-pre.11
-    - 1.0.0-pre.12
-    - 1.0.0-pre.13
-    - 1.0.0-pre.14
-    - 1.0.0-pre.15
-    - 1.0.1
-    - 1.0.2
-    - 1.0.3
-    - 1.0.4
-    - 1.0.5
-    - 1.0.6
-    - 1.1.0
-    - 1.1.1
-    - 1.2.0
-    - 1.2.1
-    - 1.3.1
-    - 1.3.2
-    - 1.3.3
-    - 1.3.4
-    - 1.3.5
-    - 1.3.6
-    - 2.0.0-pre.2
-    - 2.0.0-pre.3
-    - 2.0.0-pre.4
-    - 2.0.0-pre.5
-    - 2.0.0-pre.6
-    - 2.0.0-pre.7
-    - 2.0.0-pre.8
-    - 2.0.0-pre.9
-    - 2.0.0-pre.10
-    - 2.0.0-pre.11
-    - 2.0.0-pre.12
-    - 2.0.0-pre.13
-    - 2.0.0-pre.14
-    - 2.0.0-pre.15
-    - 2.0.0-pre.16
-    - 2.0.0-pre.17
-    - 2.0.0-pre.18
-    - 2.0.0-pre.19
-    - 2.0.0-pre.20
-    - 2.0.0-pre.21
-    - 2.0.0-pre.22
-    - 2.0.0
-    - 2.0.1
-    - 2.0.2
-    - 2.0.3
-    - 2.0.4
-    - 2.1.0-pre.1
-    - 2.1.0-pre.2
-    - 2.1.0-pre.3
-    - 2.1.0
-    - 2.1.1-pre.1
-    - 2.1.1
-    - 2.1.2
-    - 2.1.3
-    - 2.1.4
-    - 2.1.5
-    - 2.1.6
-    - 2.2.0-pre.1
-    - 2.2.0-pre.2
-    - 2.2.0-pre.3
-    - 2.2.0-pre.4
-    - 2.2.0-pre.5
-    - 2.2.0-pre.6
-    compatible:
-    - 1.3.1
-    - 1.3.2
-    - 1.3.3
-    - 1.3.4
-    - 1.3.5
-    - 1.3.6
-    - 2.0.0-pre.2
-    - 2.0.0-pre.3
-    - 2.0.0-pre.4
-    - 2.0.0-pre.5
-    - 2.0.0-pre.6
-    - 2.0.0-pre.7
-    - 2.0.0-pre.8
-    - 2.0.0-pre.9
-    - 2.0.0-pre.10
-    - 2.0.0-pre.11
-    - 2.0.0-pre.12
-    - 2.0.0-pre.13
-    - 2.0.0-pre.14
-    - 2.0.0-pre.15
-    - 2.0.0-pre.16
-    - 2.0.0-pre.17
-    - 2.0.0-pre.18
-    - 2.0.0-pre.19
-    - 2.0.0-pre.20
-    - 2.0.0-pre.21
-    - 2.0.0-pre.22
-    - 2.0.0
-    - 2.0.1
-    - 2.0.2
-    - 2.0.3
-    - 2.0.4
-    - 2.1.0-pre.1
-    - 2.1.0-pre.2
-    - 2.1.0-pre.3
-    - 2.1.0
-    - 2.1.1-pre.1
-    - 2.1.1
-    - 2.1.2
-    - 2.1.3
-    - 2.1.4
-    - 2.1.5
-    - 2.1.6
-    - 2.2.0-pre.1
-    - 2.2.0-pre.2
-    - 2.2.0-pre.3
-    - 2.2.0-pre.4
-    - 2.2.0-pre.5
-    - 2.2.0-pre.6
-    recommended: 1.3.6
-    deprecated: []
-  dependencies:
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.androidjni
-    version: 1.0.0
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  - name: com.unity.modules.screencapture
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.androidjni
-    version: 1.0.0
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.hierarchycore
-    version: 1.0.0
-  - name: com.unity.modules.screencapture
-    version: 1.0.0
-  - name: com.unity.modules.imageconversion
-    version: 1.0.0
-  keywords:
-  - app
-  - ui
-  - components
-  - runtime
-  - framework
-  - navigation
-  - dependency-injection
-  - mvvm
-  - undostack
-  - redux
-  - state-management
-  - dark-theme
-  - data-binding
-  - cloud
-  - unity
-  - app-ui
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 639009924599820000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.dt.app-ui@1.3/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/unity-app-ui.git
-    revision: af4fd5d813f0874e7ca330625217c32bbff636b3
-    path: 
-  unityLifecycle:
-    version: 1.3.1
-    nextVersion: 2.1.0-pre.2
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 0
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed columns size and added more info
-    in Storybook window.\n- Fixed the AppUI settings assets search and auto-assignation
-    before building a project.\n- Fixed code path activation for native plugins depending
-    on target platform\n\n### Added\n\n- Added support of CoreCLR for the migration
-    from Mono scripting backend for Unity 6.5+"}'
-  assetStore:
-    productId: 
-  fingerprint: 874541faca7e04c9245c1d454bf249d1c709c48c
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.3.1
-    minimumUnityVersion: 2021.3.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.nuget.newtonsoft-json@3.2.1
-  testable: 0
-  isDirectDependency: 0
-  version: 3.2.1
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.nuget.newtonsoft-json@74deb55db2a0
-  assetPath: Packages/com.unity.nuget.newtonsoft-json
-  name: com.unity.nuget.newtonsoft-json
-  displayName: Newtonsoft Json
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: library
-  description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
-    synced to version 13.0.2.
-
-
-    This package is used for advanced json serialization
-    and deserialization. Most Unity users will be better suited using the existing
-    json tools built into Unity.
-
-    To avoid assembly clashes, please use this
-    package if you intend to use Newtonsoft Json.'
-  errors: []
-  versions:
-    all:
-    - 1.0.0-preview.2
-    - 1.0.0-preview.3
-    - 1.0.0-preview.4
-    - 1.0.1-preview.1
-    - 1.1.2
-    - 2.0.0-preview
-    - 2.0.0-preview.1
-    - 2.0.0-preview.2
-    - 2.0.0
-    - 2.0.1-preview.1
-    - 2.0.2
-    - 3.0.1
-    - 3.0.2
-    - 3.1.0
-    - 3.2.0
-    - 3.2.1
-    - 3.2.2
-    compatible:
-    - 3.2.1
-    - 3.2.2
-    recommended: 3.2.2
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638186318800000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
-    revision: d8e49aef8979bef617144382052ec2f479645eaf
-    path: 
-  unityLifecycle:
-    version: 3.2.1
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 0
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"* Fixed Newtonsoft DLL when compiling with netstandard
-    2.0."}'
-  assetStore:
-    productId: 
-  fingerprint: 74deb55db2a0c29ddfda576608bcb86abbd13ee6
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 3.2.1
-    minimumUnityVersion: 2018.4.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.2d.common@11.0.1
-  testable: 0
-  isDirectDependency: 0
-  version: 11.0.1
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.2d.common@dd402daace1b
-  assetPath: Packages/com.unity.2d.common
-  name: com.unity.2d.common
-  displayName: 2D Common
-  author:
-    name: 
-    email: 
-    url: 
-  category: 2D
-  type: 
-  description: 2D Common is a package that contains shared functionalities that are
-    used by most of the other 2D packages.
-  errors: []
-  versions:
-    all:
-    - 1.0.9-preview.1
-    - 1.0.9-preview.2
-    - 1.0.10-preview
-    - 1.0.11-preview.1
-    - 1.1.0-preview.1
-    - 1.1.0-preview.2
-    - 1.2.0-preview.1
-    - 2.0.1
-    - 2.0.2
-    - 2.1.0
-    - 2.1.1
-    - 2.1.2
-    - 3.0.0
-    - 3.0.1
-    - 4.0.0
-    - 4.0.1
-    - 4.0.2
-    - 4.0.3
-    - 4.0.4
-    - 4.1.0
-    - 4.2.0
-    - 4.2.1
-    - 5.0.0-pre.1
-    - 5.0.0-pre.2
-    - 5.0.0
-    - 6.0.0-pre.2
-    - 6.0.0-pre.3
-    - 6.0.0-pre.4
-    - 6.0.0
-    - 6.0.1
-    - 6.0.2
-    - 6.0.3
-    - 6.0.4
-    - 6.0.5
-    - 6.0.6
-    - 6.0.7
-    - 6.0.8
-    - 6.1.0
-    - 7.0.0-pre.3
-    - 7.0.0-pre.4
-    - 7.0.0
-    - 7.0.1
-    - 7.0.2
-    - 7.0.3
-    - 8.0.0-pre.1
-    - 8.0.0-pre.2
-    - 8.0.0
-    - 8.0.1
-    - 8.0.2
-    - 8.0.3
-    - 8.0.4
-    - 8.1.0
-    - 8.1.1
-    - 9.0.0-pre.1
-    - 9.0.0-pre.2
-    - 9.0.0
-    - 9.0.1
-    - 9.0.2
-    - 9.0.3
-    - 9.0.4
-    - 9.0.5
-    - 9.0.6
-    - 9.0.7
-    - 9.1.0
-    - 9.1.1
-    - 10.0.0
-    - 11.0.0
-    - 11.0.1
-    - 12.0.0
-    - 12.0.1
-    - 12.0.2
-    - 13.0.0
-    - 13.0.1
-    - 14.0.0
-    compatible:
-    - 11.0.1
-    recommended: 11.0.1
-    deprecated: []
-  dependencies:
-  - name: com.unity.burst
-    version: 1.8.4
-  - name: com.unity.2d.sprite
-    version: 1.0.0
-  - name: com.unity.mathematics
-    version: 1.1.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.burst
-    version: 1.8.27
-  - name: com.unity.mathematics
-    version: 1.3.3
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.2d.sprite
-    version: 1.0.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.hierarchycore
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  keywords:
-  - 2d
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638840901264720000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.common@11.0/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 98a4faf22484a3679f8d6a3b60b5d07f5e652cd7
-    path: 
-  unityLifecycle:
-    version: 11.0.1
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 0
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Changed\n- Added support code for PolySpatial."}'
-  assetStore:
-    productId: 
-  fingerprint: dd402daace1b7dbeb70cb9e7ae044cc4b10f989a
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 11.0.1
-    minimumUnityVersion: 6000.2.0a9
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.ai.generators@1.0.0-pre.12
-  testable: 0
-  isDirectDependency: 0
-  version: 1.0.0-pre.12
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.ai.generators@bf6bfb1a644e
-  assetPath: Packages/com.unity.ai.generators
-  name: com.unity.ai.generators
-  displayName: Generators
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: Unity AI Generators is a package that provides tools for adding generative
-    AI to Unity asset workflows.
-  errors: []
-  versions:
-    all:
-    - 1.0.0-pre.2
-    - 1.0.0-pre.3
-    - 1.0.0-pre.4
-    - 1.0.0-pre.5
-    - 1.0.0-pre.6
-    - 1.0.0-pre.7
-    - 1.0.0-pre.8
-    - 1.0.0-pre.9
-    - 1.0.0-pre.10
-    - 1.0.0-pre.11
-    - 1.0.0-pre.12
-    - 1.0.0-pre.13
-    - 1.0.0-pre.14
-    - 1.0.0-pre.15
-    - 1.0.0-pre.16
-    - 1.0.0-pre.17
-    - 1.0.0-pre.18
-    - 1.0.0-pre.19
-    - 1.0.0-pre.20
-    - 1.5.0-pre.1
-    - 1.5.0-pre.2
-    - 1.6.0-pre.1
-    - 1.6.0-pre.2
-    - 1.6.0-pre.3
-    - 1.7.0-pre.1
-    compatible:
-    - 1.0.0-pre.2
-    - 1.0.0-pre.3
-    - 1.0.0-pre.4
-    - 1.0.0-pre.5
-    - 1.0.0-pre.6
-    - 1.0.0-pre.7
-    - 1.0.0-pre.8
-    - 1.0.0-pre.9
-    - 1.0.0-pre.10
-    - 1.0.0-pre.11
-    - 1.0.0-pre.12
-    - 1.0.0-pre.13
-    - 1.0.0-pre.14
-    - 1.0.0-pre.15
-    - 1.0.0-pre.16
-    - 1.0.0-pre.17
-    - 1.0.0-pre.18
-    - 1.0.0-pre.19
-    - 1.0.0-pre.20
-    - 1.6.0-pre.2
-    - 1.6.0-pre.3
-    - 1.7.0-pre.1
-    recommended: 
-    deprecated: []
-  dependencies:
-  - name: com.unity.ai.toolkit
-    version: 1.0.0-pre.12
-  - name: com.unity.mathematics
-    version: 1.3.2
-  - name: com.unity.nuget.newtonsoft-json
-    version: 3.2.1
-  resolvedDependencies:
-  - name: com.unity.ai.toolkit
-    version: 1.0.0-pre.12
-  - name: com.unity.nuget.newtonsoft-json
-    version: 3.2.1
-  - name: com.unity.mathematics
-    version: 1.3.3
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638842133890420000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ai.generators@1.0/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/UnityAIWorkflows.git
-    revision: c93aa122b88641251cbb8a94f553cd3299e2e2ea
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 1.0.0-pre.8
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed image generators not showing all
-    available aspect ratios.\n- Fixed clear reference button being active with nothing
-    to clear.\n- Fixed reference image dropdown style."}'
-  assetStore:
-    productId: 
-  fingerprint: bf6bfb1a644e9f27dcf426aaf0a8de2d10517aa7
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0-pre.2
-    minimumUnityVersion: 6000.2.0a9
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.settings-manager@2.1.0
-  testable: 0
-  isDirectDependency: 0
-  version: 2.1.0
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.settings-manager@41738c275190
-  assetPath: Packages/com.unity.settings-manager
-  name: com.unity.settings-manager
-  displayName: Settings Manager
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: A framework for making any serializable field a setting, complete
-    with a pre-built settings interface.
-  errors: []
-  versions:
-    all:
-    - 0.1.0-preview.4
-    - 0.1.0-preview.8
-    - 1.0.0
-    - 1.0.1
-    - 1.0.2
-    - 1.0.3
-    - 2.0.0
-    - 2.0.1
-    - 2.1.0
-    - 2.1.1
-    compatible:
-    - 2.1.0
-    - 2.1.1
-    recommended: 2.1.1
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638792046006940000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.settings-manager@2.1/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
-    revision: 6eb5ed85eaf3276cc09f0cc4fc3311c72f0fc196
-    path: 
-  unityLifecycle:
-    version: 2.1.0
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 0
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Changes\n\n- Enable Auto Reference on main assembly.\n\n###
-    Bug Fixes\n\n- [case: PBLD-56] Added tooltip to \"Options\" gear icon to specify
-    that context menu items are relevant only to the selected category."}'
-  assetStore:
-    productId: 
-  fingerprint: 41738c27519039c335849eb78949382f4d7a3544
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 2.1.0
     minimumUnityVersion: 2022.3.0a1
   compliance:
     status: 0
@@ -11056,46 +9242,213 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.editorcoroutines@1.0.0
+- packageId: com.unity.modules.subsystems@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.editorcoroutines@7d48783e7b8c
-  assetPath: Packages/com.unity.editorcoroutines
-  name: com.unity.editorcoroutines
-  displayName: Editor Coroutines
+  source: 2
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems
+  assetPath: Packages/com.unity.modules.subsystems
+  name: com.unity.modules.subsystems
+  displayName: Subsystems
   author:
     name: 
     email: 
     url: 
   category: 
-  type: asset
-  description: 'The editor coroutines package allows developers to start constructs
-    similar to Unity''s monobehaviour based coroutines within the editor using abitrary
-    objects. '
+  type: module
+  description: 'The Subsystem module contains the definitions and runtime support
+    for general subsystems in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html'
   errors: []
   versions:
     all:
-    - 0.0.1-preview.3
-    - 0.0.1-preview.4
-    - 0.0.1-preview.5
-    - 0.0.2-preview.1
-    - 0.1.0-preview.1
-    - 0.1.0-preview.2
     - 1.0.0
-    - 1.0.1
     compatible:
     - 1.0.0
-    - 1.0.1
-    recommended: 1.0.1
+    recommended: 1.0.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
+  fingerprint: 
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.0.0
+    minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.modules.hierarchycore@1.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.0
+  source: 2
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.hierarchycore
+  assetPath: Packages/com.unity.modules.hierarchycore
+  name: com.unity.modules.hierarchycore
+  displayName: Hierarchy Core
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: module
+  description: 'Module that contains a high-performance hierarchy container. Scripting
+    API: https://docs.unity3d.com/ScriptReference/UnityEngine.HierarchyCoreModule.html'
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    recommended: 1.0.0
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
+  fingerprint: 
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.0.0
+    minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.searcher@4.9.3
+  testable: 0
+  isDirectDependency: 0
+  version: 4.9.3
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.searcher@1e17ce91558d
+  assetPath: Packages/com.unity.searcher
+  name: com.unity.searcher
+  displayName: Searcher
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: General search window for use in the Editor. First target use is for
+    GraphView node search.
+  errors: []
+  versions:
+    all:
+    - 4.0.0-preview
+    - 4.0.0
+    - 4.0.7-preview
+    - 4.0.7
+    - 4.0.8-preview
+    - 4.0.9
+    - 4.1.0-preview
+    - 4.1.0
+    - 4.2.0
+    - 4.3.0
+    - 4.3.1
+    - 4.3.2
+    - 4.6.0-preview
+    - 4.7.0-preview
+    - 4.9.1
+    - 4.9.2
+    - 4.9.3
+    - 4.9.4
+    compatible:
+    - 4.9.2
+    - 4.9.3
+    - 4.9.4
+    recommended: 4.9.4
     deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords:
-  - coroutine
-  - coroutines
-  - editor
+  - search
+  - searcher
   registry:
     id: main
     name: 
@@ -11111,16 +9464,221 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637232611380000000
-  documentationUrl: 
+  datePublishedTicks: 638731478077990000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.searcher@4.9/manual/index.html
   hasRepository: 1
   repository:
     type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.editorcoroutines.git
-    revision: f67fc9992bbc7a553b17375de53a8b2db136528e
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.searcher.git
+    revision: 6fad693b6604ae7175b59ebb4990d9a0b6c1d012
     path: 
   unityLifecycle:
+    version: 4.9.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"- Fixed a bug where spaces are removed when highlighted.\n-
+    Changed VisualSplitter to twoPaneSplitView and updated indentation"}'
+  assetStore:
+    productId: 
+  fingerprint: 1e17ce91558d1d9127554adc03d275f39a7466a2
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 4.9.2
+    minimumUnityVersion: 2019.1.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.render-pipelines.universal-config@17.0.3
+  testable: 0
+  isDirectDependency: 0
+  version: 17.0.3
+  source: 2
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d
+  assetPath: Packages/com.unity.render-pipelines.universal-config
+  name: com.unity.render-pipelines.universal-config
+  displayName: Universal Render Pipeline Config
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Configuration files for the Universal Render Pipeline.
+  errors: []
+  versions:
+    all:
+    - 17.0.3
+    compatible:
+    - 17.0.3
+    recommended: 17.0.3
+    deprecated: []
+  dependencies:
+  - name: com.unity.render-pipelines.core
+    version: 17.0.3
+  resolvedDependencies:
+  - name: com.unity.render-pipelines.core
+    version: 17.2.0
+  - name: com.unity.burst
+    version: 1.8.27
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.jsonserialize
     version: 1.0.0
+  - name: com.unity.ugui
+    version: 2.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.collections
+    version: 2.6.3
+  - name: com.unity.test-framework
+    version: 1.5.1
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.5
+  - name: com.unity.test-framework.performance
+    version: 3.1.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.terrain
+    version: 1.0.0
+  - name: com.unity.rendering.light-transport
+    version: 1.0.1
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 17.0.3
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
+  fingerprint: 8dc1aab4af1d718781689a36ed5231a35ad1a524
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 17.0.3
+    minimumUnityVersion: 6000.0.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.ugui@2.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 2.0.0
+  source: 2
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.ugui@423bc642aff1
+  assetPath: Packages/com.unity.ugui
+  name: com.unity.ugui
+  displayName: Unity UI
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: "Unity UI is a set of tools for developing user interfaces for games
+    and applications. It is a GameObject-based UI system that uses Components and
+    the Game View to arrange, position, and style user interfaces. \u200B You cannot
+    use Unity UI to create or change user interfaces in the Unity Editor."
+  errors: []
+  versions:
+    all:
+    - 2.0.0
+    compatible:
+    - 2.0.0
+    recommended: 2.0.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  keywords:
+  - UI
+  - ugui
+  - Unity UI
+  - Canvas
+  - TextMeshPro
+  - TextMesh Pro
+  - Text
+  - TMP
+  - SDF
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 2.0.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -11134,54 +9692,480 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 7d48783e7b8cfcee5f8ef9ba787ed0d9dad4ebca
+  fingerprint: 423bc642aff1ba4fed4feef1d7b45461138cbb32
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 2018.1.0a1
+    minimumPackageVersion: 2.0.0
+    minimumUnityVersion: 2019.2.0a1
   compliance:
     status: 0
     violation:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.autodesk.fbx@5.1.1
+- packageId: com.unity.rendering.light-transport@1.0.1
   testable: 0
   isDirectDependency: 0
-  version: 5.1.1
-  source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.autodesk.fbx@5797ff6b31c7
-  assetPath: Packages/com.autodesk.fbx
-  name: com.autodesk.fbx
-  displayName: Autodesk FBX SDK for Unity
+  version: 1.0.1
+  source: 2
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.rendering.light-transport@2c9279f90d7c
+  assetPath: Packages/com.unity.rendering.light-transport
+  name: com.unity.rendering.light-transport
+  displayName: Unity Light Transport Library
   author:
-    name: Unity
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Unity Light Transport Library exposes reusable code for writing light
+    transport algorithms such as raytracing or pathtracing
+  errors: []
+  versions:
+    all:
+    - 1.0.1
+    compatible:
+    - 1.0.1
+    recommended: 1.0.1
+    deprecated: []
+  dependencies:
+  - name: com.unity.collections
+    version: 2.2.0
+  - name: com.unity.mathematics
+    version: 1.2.4
+  - name: com.unity.modules.terrain
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.collections
+    version: 2.6.3
+  - name: com.unity.burst
+    version: 1.8.27
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.test-framework
+    version: 1.5.1
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.5
+  - name: com.unity.test-framework.performance
+    version: 3.1.0
+  - name: com.unity.modules.terrain
+    version: 1.0.0
+  keywords:
+  - raytracing
+  - pathtracing
+  - monte-carlo
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 1.0.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
+  fingerprint: 2c9279f90d7c8dfb6e76e3f90b6b3be1cafabfbc
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.0.1
+    minimumUnityVersion: 2023.3.0b1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.probuilder@6.0.8
+  testable: 0
+  isDirectDependency: 0
+  version: 6.0.8
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.probuilder@2e7e30b1490d
+  assetPath: Packages/com.unity.probuilder
+  name: com.unity.probuilder
+  displayName: ProBuilder
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: 'Build, edit, and texture custom geometry in Unity. Use ProBuilder
+    for in-scene level design, prototyping, collision meshes, all with on-the-fly
+    play-testing.
+
+
+    Advanced features include UV editing, vertex colors, parametric
+    shapes, and texture blending. With ProBuilder''s model export feature it''s easy
+    to tweak your levels in any external 3D modelling suite.'
+  errors: []
+  versions:
+    all:
+    - 3.0.0
+    - 3.0.1
+    - 3.0.2
+    - 3.0.3
+    - 3.0.6
+    - 3.0.8
+    - 3.0.9
+    - 3.10.1
+    - 4.0.2
+    - 4.0.3
+    - 4.0.4
+    - 4.0.5
+    - 4.1.0
+    - 4.1.2
+    - 4.2.1
+    - 4.2.2-preview.1
+    - 4.2.2-preview.2
+    - 4.2.3
+    - 4.2.4-preview.0
+    - 4.3.0-preview.0
+    - 4.3.0-preview.1
+    - 4.3.0-preview.2
+    - 4.3.0-preview.4
+    - 4.3.0-preview.6
+    - 4.3.0-preview.7
+    - 4.3.0-preview.8
+    - 4.3.0-preview.9
+    - 4.3.1
+    - 4.4.0-preview.1
+    - 4.4.0
+    - 4.5.0
+    - 4.5.2
+    - 5.0.0-pre.7
+    - 5.0.0-pre.10
+    - 5.0.1
+    - 5.0.3
+    - 5.0.4
+    - 5.0.6
+    - 5.0.7
+    - 5.1.0
+    - 5.1.1
+    - 5.2.0
+    - 5.2.2
+    - 5.2.3
+    - 5.2.4
+    - 6.0.1-pre.1
+    - 6.0.1-pre.2
+    - 6.0.1
+    - 6.0.2
+    - 6.0.3
+    - 6.0.4
+    - 6.0.5
+    - 6.0.6
+    - 6.0.7
+    - 6.0.8
+    - 6.0.9
+    compatible:
+    - 6.0.6
+    - 6.0.7
+    - 6.0.8
+    - 6.0.9
+    recommended: 6.0.9
+    deprecated: []
+  dependencies:
+  - name: com.unity.shadergraph
+    version: 17.0.3
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 1.0.3
+  resolvedDependencies:
+  - name: com.unity.shadergraph
+    version: 17.2.0
+  - name: com.unity.render-pipelines.core
+    version: 17.2.0
+  - name: com.unity.burst
+    version: 1.8.27
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.ugui
+    version: 2.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.collections
+    version: 2.6.3
+  - name: com.unity.test-framework
+    version: 1.5.1
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.5
+  - name: com.unity.test-framework.performance
+    version: 3.1.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.terrain
+    version: 1.0.0
+  - name: com.unity.rendering.light-transport
+    version: 1.0.1
+  - name: com.unity.searcher
+    version: 4.9.3
+  - name: com.unity.settings-manager
+    version: 2.1.0
+  keywords:
+  - 3d
+  - model
+  - mesh
+  - modeling
+  - geometry
+  - shape
+  - cube
+  - blender
+  - max
+  - maya
+  - fbx
+  - obj
+  - level
+  - design
+  - block
+  - greybox
+  - graybox
+  - whitebox
+  - prototype
+  - probuilder
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638990129113600000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.probuilder@6.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.probuilder.git
+    revision: a03563897598df4cd41336d22491a2c270b181b5
+    path: 
+  unityLifecycle:
+    version: 6.0.6
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n\n- [PBLD-240] Fixed a bug where buttons
+    for \"Create Cube\" and \"Create PolyShape\" appeared incorrectly on Light theme.\n-
+    [PBLD-258] Fixed an bug where clicking a highlighted edge might select a hidden
+    edge instead.\n- [PBLD-262] Fixed a bug in the deep cycling of face selection
+    where faces from hidden meshes would get prioritized"}'
+  assetStore:
+    productId: 
+  fingerprint: 2e7e30b1490d82f5c6facbc43d873df9e478f34b
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 6.0.6
+    minimumUnityVersion: 6000.0.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.polybrush@1.1.8
+  testable: 0
+  isDirectDependency: 0
+  version: 1.1.8
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.polybrush@9b4531013fbd
+  assetPath: Packages/com.unity.polybrush
+  name: com.unity.polybrush
+  displayName: Polybrush
+  author:
+    name: 
     email: 
     url: 
   category: 
   type: assets
-  description: "This package provides Unity C# bindings to the Autodesk\xAE FBX\xAE
-    SDK."
+  description: Mesh painting, sculpting, and geo-scattering tool for Unity.
   errors: []
   versions:
     all:
-    - 2.0.0-preview
-    - 2.0.0-preview.4
-    - 2.0.0-preview.5
-    - 2.0.0-preview.6
-    - 2.0.0-preview.7
-    - 2.0.1-preview.1
-    - 3.0.0-preview.1
-    - 3.0.1-preview.1
+    - 1.0.0-preview.13
+    - 1.0.0-preview.16
+    - 1.0.0-preview.17
+    - 1.0.0
+    - 1.0.1-preview.1
+    - 1.0.1-preview.2
+    - 1.0.1
+    - 1.0.2-preview.1
+    - 1.0.2-preview.4
+    - 1.0.2
+    - 1.1.0-pre.1
+    - 1.1.2
+    - 1.1.3
+    - 1.1.4
+    - 1.1.5
+    - 1.1.6
+    - 1.1.8
+    - 1.2.0
+    - 1.2.1
+    compatible:
+    - 1.1.8
+    - 1.2.0
+    - 1.2.1
+    recommended: 1.1.8
+    deprecated: []
+  dependencies:
+  - name: com.unity.settings-manager
+    version: 2.0.1
+  resolvedDependencies:
+  - name: com.unity.settings-manager
+    version: 2.1.0
+  keywords:
+  - modeling
+  - sculpting
+  - push
+  - clay
+  - terrain
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638567250100000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.polybrush@1.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/polybrush.git
+    revision: 571b9c3665597c648dbe7c7dc7688804260a8ec0
+    path: 
+  unityLifecycle:
+    version: 1.1.8
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Bug Fixes\n\n- [POLBR-22] Fixed compilation errors
+    related to the use of FindObjectsByType in affected editors."}'
+  assetStore:
+    productId: 
+  fingerprint: 9b4531013fbd4797d91318680619ee8780c62b91
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.1.8
+    minimumUnityVersion: 2018.4.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.formats.fbx@5.1.5
+  testable: 0
+  isDirectDependency: 0
+  version: 5.1.5
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.formats.fbx@86d1698ebb13
+  assetPath: Packages/com.unity.formats.fbx
+  name: com.unity.formats.fbx
+  displayName: FBX Exporter
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: "The FBX Exporter package enables round-trip workflows between Unity
+    and 3D modeling software. Send geometry, Lights, Cameras, and animation from
+    Unity to Autodesk\xAE Maya\xAE, Autodesk\xAE Maya LT\u2122, or Autodesk\xAE 3ds
+    Max\xAE, and back to Unity again, with minimal effort."
+  errors: []
+  versions:
+    all:
+    - 2.0.1-preview.2
+    - 2.0.1-preview.3
+    - 2.0.1-preview.4
+    - 2.0.1-preview.5
+    - 2.0.1-preview.11
+    - 2.0.2-preview.1
+    - 2.0.3-preview.3
+    - 3.0.0-preview.2
+    - 3.0.1-preview.2
     - 3.1.0-preview.1
-    - 3.1.0-preview.2
+    - 3.2.0-preview.2
+    - 3.2.1-preview.2
     - 4.0.0-pre.1
-    - 4.0.0-pre.2
+    - 4.0.0-pre.4
     - 4.0.1
-    - 4.1.0-pre.1
+    - 4.1.0-pre.2
     - 4.1.0
     - 4.1.1
     - 4.1.2
+    - 4.1.3
     - 4.2.0-pre.1
     - 4.2.0
     - 4.2.1
@@ -11192,14 +10176,34 @@ m_ResolvedPackages:
     - 5.1.1
     - 5.1.2
     - 5.1.3
+    - 5.1.4
+    - 5.1.5
     compatible:
     - 5.1.1
     - 5.1.2
     - 5.1.3
-    recommended: 5.1.3
+    - 5.1.4
+    - 5.1.5
+    recommended: 5.1.5
     deprecated: []
-  dependencies: []
-  resolvedDependencies: []
+  dependencies:
+  - name: com.autodesk.fbx
+    version: 5.1.1
+  - name: com.unity.timeline
+    version: 1.7.1
+  resolvedDependencies:
+  - name: com.autodesk.fbx
+    version: 5.1.1
+  - name: com.unity.timeline
+    version: 1.8.7
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
   keywords:
   - fbx
   - animation
@@ -11221,13 +10225,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638464332400000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.autodesk.fbx@5.1/manual/index.html
+  datePublishedTicks: 638943355400520000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.formats.fbx@5.1/manual/index.html
   hasRepository: 1
   repository:
     type: git
-    url: https://github.com/Unity-Technologies/com.autodesk.fbx.git
-    revision: dccfc2a79ac7abfe7bd6f91f713f990f2fedd141
+    url: https://github.com/Unity-Technologies/com.unity.formats.fbx.git
+    revision: e66daf94f83107f6865415b6d5cb964083b986d2
     path: 
   unityLifecycle:
     version: 5.1.1
@@ -11235,17 +10239,16 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
-    isDiscoverable: 0
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"* Update FBX SDK to 2020.3.4.\n* Add support for Windows
-    ARM64."}'
+  upmReserved: '{"changelog":"### Changed\n- Updated the APIs used around EntityId"}'
   assetStore:
     productId: 
-  fingerprint: 5797ff6b31c7c66189bffe1adc9cbf0ad5a9cbbf
+  fingerprint: 86d1698ebb13fe759bd88af11aa0aec308c8c3a0
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 5.1.1
@@ -11256,149 +10259,84 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.timeline@1.8.7
+- packageId: com.unity.terrain-tools@5.3.1
   testable: 0
   isDirectDependency: 0
-  version: 1.8.7
+  version: 5.3.1
   source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.timeline@c58b4ee65782
-  assetPath: Packages/com.unity.timeline
-  name: com.unity.timeline
-  displayName: Timeline
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.terrain-tools@dbe886685ae0
+  assetPath: Packages/com.unity.terrain-tools
+  name: com.unity.terrain-tools
+  displayName: Terrain Tools
   author:
     name: 
     email: 
     url: 
   category: 
-  type: assets
-  description: Use Unity Timeline to create cinematic content, game-play sequences,
-    audio sequences, and complex particle effects.
+  type: 
+  description: "The Terrain Tools package adds additional Terrain sculpting brushes
+    and tools to Unity. This add-on toolset is suitable if you require more control
+    over the appearance of your Terrain, and want to streamline Terrain workflows.
+    It\u2019s also useful when you want to make more complex-looking Terrain, or
+    author Terrain Texture data in external digital content creation tools."
   errors: []
   versions:
     all:
-    - 1.2.0
-    - 1.2.1
-    - 1.2.2
-    - 1.2.3
-    - 1.2.4
-    - 1.2.5
-    - 1.2.6
-    - 1.2.7
-    - 1.2.9
-    - 1.2.10
-    - 1.2.11
-    - 1.2.12
-    - 1.2.13
-    - 1.2.14
-    - 1.2.15
-    - 1.2.16
-    - 1.2.17
-    - 1.2.18
-    - 1.3.0-preview.2
-    - 1.3.0-preview.3
-    - 1.3.0-preview.5
-    - 1.3.0-preview.6
-    - 1.3.0-preview.7
-    - 1.3.0
-    - 1.3.1
-    - 1.3.2
-    - 1.3.3
-    - 1.3.4
-    - 1.3.5
-    - 1.3.6
-    - 1.3.7
-    - 1.4.0-preview.1
-    - 1.4.0-preview.2
-    - 1.4.0-preview.3
-    - 1.4.0-preview.5
-    - 1.4.0-preview.6
-    - 1.4.0-preview.7
-    - 1.4.0
-    - 1.4.1
-    - 1.4.2
-    - 1.4.3
-    - 1.4.4
-    - 1.4.5
-    - 1.4.6
-    - 1.4.7
-    - 1.4.8
-    - 1.5.0-pre.2
-    - 1.5.0-preview.1
-    - 1.5.0-preview.2
-    - 1.5.0-preview.3
-    - 1.5.0-preview.4
-    - 1.5.0-preview.5
-    - 1.5.1-pre.1
-    - 1.5.1-pre.2
-    - 1.5.1-pre.3
-    - 1.5.2
-    - 1.5.4
-    - 1.5.5
-    - 1.5.6
-    - 1.5.7
-    - 1.6.0-pre.1
-    - 1.6.0-pre.3
-    - 1.6.0-pre.4
-    - 1.6.0-pre.5
-    - 1.6.1
-    - 1.6.2
-    - 1.6.3
-    - 1.6.4
-    - 1.6.5
-    - 1.7.0-pre.1
-    - 1.7.0-pre.2
-    - 1.7.0
-    - 1.7.1
-    - 1.7.2
-    - 1.7.3
-    - 1.7.4
-    - 1.7.5
-    - 1.7.6
-    - 1.7.7
-    - 1.8.0
-    - 1.8.1
-    - 1.8.2
-    - 1.8.3
-    - 1.8.4
-    - 1.8.5
-    - 1.8.6
-    - 1.8.7
-    - 1.8.8
-    - 1.8.9
-    - 1.8.10
-    - 1.8.11
+    - 1.1.2-preview
+    - 1.1.4-preview
+    - 2.0.0-preview
+    - 2.0.1-preview
+    - 2.0.2-preview
+    - 3.0.0-preview
+    - 3.0.1-preview
+    - 3.0.2-preview.2
+    - 3.0.2-preview.3
+    - 4.0.0-pre.2
+    - 4.0.0
+    - 4.0.3
+    - 4.0.5
+    - 5.0.0-pre.2
+    - 5.0.0-pre.3
+    - 5.0.0-pre.4
+    - 5.0.1
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+    - 5.0.5
+    - 5.0.6
+    - 5.1.0-pre.1
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.2.1
+    - 5.3.0
+    - 5.3.1
+    - 5.3.2
     compatible:
-    - 1.8.7
-    - 1.8.8
-    - 1.8.9
-    - 1.8.10
-    - 1.8.11
-    recommended: 1.8.11
+    - 5.3.0
+    - 5.3.1
+    - 5.3.2
+    recommended: 5.3.2
     deprecated: []
   dependencies:
-  - name: com.unity.modules.audio
+  - name: com.unity.modules.terrain
     version: 1.0.0
-  - name: com.unity.modules.director
-    version: 1.0.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
-  - name: com.unity.modules.particlesystem
+  - name: com.unity.modules.terrainphysics
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.audio
+  - name: com.unity.modules.terrain
     version: 1.0.0
-  - name: com.unity.modules.director
+  - name: com.unity.modules.terrainphysics
     version: 1.0.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
-  - name: com.unity.modules.particlesystem
+  - name: com.unity.modules.physics
     version: 1.0.0
   keywords:
-  - unity
-  - animation
-  - editor
-  - timeline
-  - tools
+  - Terrain
+  - Brush
+  - Toolbox
+  - Mask
+  - Filter
+  - Noise
   registry:
     id: main
     name: 
@@ -11414,16 +10352,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638524833900000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html
+  datePublishedTicks: 638945299159600000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.terrain-tools@5.3/manual/index.html
   hasRepository: 1
   repository:
     type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-    revision: d6432ca638481c3d0e4c01f87f9cdbe3c4b1d529
+    url: https://github.com/Unity-Technologies/TerrainTools.git
+    revision: f524285f995b4a3c5a2add416d96dc392285d183
     path: 
   unityLifecycle:
-    version: 1.8.7
+    version: 5.3.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -11434,60 +10372,216 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Added\n\n- Released ronl-workflow-custom-marker.md
-    Added a new workflow to the Timeline Workflows documentation:\n- Released ronl-workflow-custom-marker.md
-    The `Create a custom Notes marker` workflow demonstrates how to create a custom
-    marker for adding notes to Timeline instances. This workflow also demonstrates
-    how to change the default appearance of a custom marker with scripting and a
-    Unity Style Sheet (USS).\n\n### Fixed\n\n- Fixed bug where using , and . (<>)
-    to step frames in the Animation Window while the Timeline Window was linked would
-    sometimes not work. [IN-56667](https://unity3d.atlassian.net/servicedesk/customer/portal/2/IN-56667)\n-
-    When the Timeline and Animation windows are linked and the Timeline Window is
-    active, moving the playhead in the Timeline Window will cause the animation window
-    to repaint immediately."}'
+  upmReserved: '{"changelog":"### Fixed:\n- [WBTR-153] Fixed error where opacity
+    icon for tool overlay could not be found\n- [WBTRB-154] Fixed an issue where
+    an error was thrown when scattering details when the Editor has Vulkan set as
+    its Graphics API.\n\n### Changed:\n- [WBTR-155] Inspector for the details tool
+    no longer displays an empty target distribution box when no details have been
+    added to the Terrain"}'
   assetStore:
     productId: 
-  fingerprint: c58b4ee65782ad38338e29f7ee67787cb6998f04
+  fingerprint: dbe886685ae0766dad124ea40242cd733fb31432
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.8.7
-    minimumUnityVersion: 2019.3.0a1
+    minimumPackageVersion: 5.3.0
+    minimumUnityVersion: 6000.0.0a1
   compliance:
     status: 0
     violation:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.ext.nunit@2.0.5
+- packageId: com.unity.nuget.mono-cecil@1.11.5
   testable: 0
-  isDirectDependency: 0
-  version: 2.0.5
-  source: 2
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.ext.nunit@031a54704bff
-  assetPath: Packages/com.unity.ext.nunit
-  name: com.unity.ext.nunit
-  displayName: Custom NUnit
+  isDirectDependency: 1
+  version: 1.11.5
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.nuget.mono-cecil@d78732e851eb
+  assetPath: Packages/com.unity.nuget.mono-cecil
+  name: com.unity.nuget.mono-cecil
+  displayName: Mono Cecil
   author:
     name: 
     email: 
     url: 
-  category: Libraries
+  category: 
   type: 
-  description: A custom version of NUnit used by Unity Test Framework. Based on NUnit
-    version 3.5 and works with all platforms, il2cpp and Mono AOT.
+  description: 'The mono cecil library from https://www.nuget.org/packages/Mono.Cecil/
+
+
+    This
+    package is intended for internal Unity use only. Most Unity users will be better
+    suited using the existing community tooling.
+
+    To avoid assembly clashes,
+    please use this package if you intend to use Mono.Cecil.'
   errors: []
   versions:
     all:
-    - 2.0.5
+    - 0.1.6-preview.2
+    - 1.0.0-preview.1
+    - 1.10.0-preview.1
+    - 1.10.1-preview.1
+    - 1.10.1
+    - 1.10.2
+    - 1.11.4
+    - 1.11.5
+    - 1.11.6
     compatible:
-    - 2.0.5
-    recommended: 2.0.5
+    - 1.11.5
+    - 1.11.6
+    recommended: 1.11.6
     deprecated: []
   dependencies: []
   resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638729992509040000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.nuget.mono-cecil@1.11/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
+    revision: ab40507b5d82f57a4f34b6d0eacca1d6b170341d
+    path: 
+  unityLifecycle:
+    version: 1.11.5
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"* This is a verified release of the com.unity.nuget.mono-cecil
+    with embedded dlls of mono-cecil\n* Updated Cecil to 0.11.5 with a grafted patch
+    from this bug fix PR (https://github.com/jbevain/cecil/pull/914)"}'
+  assetStore:
+    productId: 
+  fingerprint: d78732e851eb42273c8e4d97993d3a94b207e570
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.11.5
+    minimumUnityVersion: 2019.4.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.test-framework.performance@3.1.0
+  testable: 0
+  isDirectDependency: 0
+  version: 3.1.0
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.test-framework.performance@92d1d09a72ed
+  assetPath: Packages/com.unity.test-framework.performance
+  name: com.unity.test-framework.performance
+  displayName: Performance testing API
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Package that extends Unity Test Framework package. Adds performance
+    testing capabilities and collects configuration metadata.
+  errors: []
+  versions:
+    all:
+    - 0.1.27-preview
+    - 0.1.29-preview
+    - 0.1.31-preview
+    - 0.1.33-preview
+    - 0.1.34-preview
+    - 0.1.36-preview
+    - 0.1.37-preview
+    - 0.1.39-preview
+    - 0.1.40-preview
+    - 0.1.41-preview
+    - 0.1.42-preview
+    - 0.1.44-preview
+    - 0.1.45-preview
+    - 0.1.47-preview
+    - 0.1.48-preview
+    - 0.1.49-preview
+    - 0.1.50-preview
+    - 1.0.4-preview
+    - 1.0.6-preview
+    - 1.0.9-preview
+    - 1.1.2-preview
+    - 1.2.0-preview
+    - 1.2.1-preview
+    - 1.2.3-preview
+    - 1.2.5-preview
+    - 1.2.6-preview
+    - 1.3.0-preview
+    - 1.3.1-preview
+    - 1.3.2-preview
+    - 1.3.3-preview
+    - 2.0.1-preview
+    - 2.0.2-preview
+    - 2.0.3-preview
+    - 2.0.6-preview
+    - 2.0.7-preview
+    - 2.0.8-preview
+    - 2.0.9-preview
+    - 2.1.0-preview
+    - 2.2.0-preview
+    - 2.3.1-preview
+    - 2.4.1-preview
+    - 2.5.1-preview
+    - 2.6.0-preview
+    - 2.7.0-preview
+    - 2.8.0-preview
+    - 2.8.1-preview
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.1
+    - 3.0.2
+    - 3.0.3
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
+    compatible:
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
+    recommended: 3.1.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.test-framework
+    version: 1.1.33
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.test-framework
+    version: 1.5.1
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   keywords:
-  - nunit
-  - unittest
+  - performance
   - test
   registry:
     id: main
@@ -11502,18 +10596,523 @@ m_ResolvedPackages:
       violations: []
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ext.nunit@2.0/manual/index.html
-  hasRepository: 0
+  datePublishedTicks: 638792643567670000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework.performance@3.1/manual/index.html
+  hasRepository: 1
   repository:
-    type: 
-    url: 
-    revision: 
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.test-framework.performance.git
+    revision: 6126c0ee357019ed762100ffeca520029274e869
     path: 
   unityLifecycle:
-    version: 2.0.5
+    version: 3.1.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Added\n- Added an optional command-line argument
+    \"perfTestResults\" to control the target location of performance test run results
+    file.\n### Fixed\n- Warmup cycles no longer record GC measurements.\n- Setup
+    and Cleanup cycles no longer contribute to GC measurements."}'
+  assetStore:
+    productId: 
+  fingerprint: 92d1d09a72ed696fa23fd76c675b29d211664b50
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 3.1.0
+    minimumUnityVersion: 2020.3.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.splines@2.8.1
+  testable: 0
+  isDirectDependency: 0
+  version: 2.8.1
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.splines@b909627b5095
+  assetPath: Packages/com.unity.splines
+  name: com.unity.splines
+  displayName: Splines
+  author:
+    name: 
+    email: 
+    url: 
+  category: Tool
+  type: 
+  description: Work with curves and paths. Use the Splines package to generate objects
+    and behaviors along paths, create trajectories, and draw shapes.
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.1
+    - 1.0.0-pre.5
+    - 1.0.0-pre.7
+    - 1.0.0-pre.8
+    - 1.0.0-pre.9
+    - 1.0.0
+    - 1.0.1
+    - 2.0.0-pre.2
+    - 2.0.0-pre.4
+    - 2.0.0
+    - 2.1.0
+    - 2.2.0
+    - 2.2.1
+    - 2.3.0
+    - 2.4.0
+    - 2.5.1
+    - 2.5.2
+    - 2.6.0
+    - 2.6.1
+    - 2.7.1
+    - 2.7.2
+    - 2.8.0
+    - 2.8.1
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    compatible:
+    - 2.8.1
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    recommended: 2.8.4
+    deprecated: []
+  dependencies:
+  - name: com.unity.mathematics
+    version: 1.2.1
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 1.0.3
+  resolvedDependencies:
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 2.1.0
+  keywords:
+  - spline
+  - curve
+  - path
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638822348021470000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.splines@2.8/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.splines.git
+    revision: ae2c33950924058f2912683d16e02268813ce44a
+    path: 
+  unityLifecycle:
+    version: 2.8.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Bug Fixes\n- [SPLB-345] Fixed a bug which was causing
+    null reference exceptions during shutdown in IL2CPP builds.\n- [SPLB-337] Fixed
+    a bug where `JoinSplinesOnKnots` would throw a null reference exception when
+    one of the splines was linked with another spline.\n- [SPLB-341] Fixed a bug
+    where changing the tangent mode on a knot on a prefab would not persist when
+    entering play mode.\n\n### Changed\n- Internal code cleanup to align with release
+    standards."}'
+  assetStore:
+    productId: 
+  fingerprint: b909627b5095061d48761597bbb8384d6f04e510
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.8.1
+    minimumUnityVersion: 2022.3.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.dt.app-ui@1.3.3
+  testable: 0
+  isDirectDependency: 0
+  version: 1.3.3
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.dt.app-ui@874541faca7e
+  assetPath: Packages/com.unity.dt.app-ui
+  name: com.unity.dt.app-ui
+  displayName: App UI
+  author:
+    name: 
+    email: 
+    url: 
+  category: UI
+  type: 
+  description: App UI is a versatile and customizable UI library for Unity that provides
+    essential building blocks for creating beautiful and responsive user interfaces.
+    With support for MVVM architecture, state management, and localization, App UI
+    simplifies app development while maintaining flexibility and extensibility. The
+    library includes a wide range of UI components, design tokens, and symbols, all
+    of which can be easily customized to fit your app's unique style and branding.
+  errors: []
+  versions:
+    all:
+    - 0.2.7
+    - 0.2.9
+    - 0.2.11
+    - 0.2.12
+    - 0.3.1
+    - 0.3.2
+    - 0.3.3
+    - 0.3.4
+    - 0.3.5
+    - 0.3.8
+    - 0.3.9
+    - 0.4.0
+    - 0.4.1
+    - 0.4.2
+    - 0.5.0
+    - 0.5.1
+    - 0.5.2
+    - 0.5.3
+    - 0.5.4
+    - 0.5.5
+    - 0.6.0
+    - 0.6.1
+    - 0.6.2
+    - 0.6.3
+    - 0.6.4
+    - 0.6.5
+    - 1.0.0-pre.1
+    - 1.0.0-pre.2
+    - 1.0.0-pre.3
+    - 1.0.0-pre.4
+    - 1.0.0-pre.5
+    - 1.0.0-pre.6
+    - 1.0.0-pre.7
+    - 1.0.0-pre.8
+    - 1.0.0-pre.9
+    - 1.0.0-pre.10
+    - 1.0.0-pre.11
+    - 1.0.0-pre.12
+    - 1.0.0-pre.13
+    - 1.0.0-pre.14
+    - 1.0.0-pre.15
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 1.0.4
+    - 1.0.5
+    - 1.0.6
+    - 1.1.0
+    - 1.1.1
+    - 1.2.0
+    - 1.2.1
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.6
+    - 2.0.0-pre.2
+    - 2.0.0-pre.3
+    - 2.0.0-pre.4
+    - 2.0.0-pre.5
+    - 2.0.0-pre.6
+    - 2.0.0-pre.7
+    - 2.0.0-pre.8
+    - 2.0.0-pre.9
+    - 2.0.0-pre.10
+    - 2.0.0-pre.11
+    - 2.0.0-pre.12
+    - 2.0.0-pre.13
+    - 2.0.0-pre.14
+    - 2.0.0-pre.15
+    - 2.0.0-pre.16
+    - 2.0.0-pre.17
+    - 2.0.0-pre.18
+    - 2.0.0-pre.19
+    - 2.0.0-pre.20
+    - 2.0.0-pre.21
+    - 2.0.0-pre.22
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.1.0-pre.1
+    - 2.1.0-pre.2
+    - 2.1.0-pre.3
+    - 2.1.0
+    - 2.1.1-pre.1
+    - 2.1.1
+    - 2.1.2
+    - 2.1.3
+    - 2.1.4
+    - 2.1.5
+    - 2.1.6
+    - 2.2.0-pre.1
+    - 2.2.0-pre.2
+    - 2.2.0-pre.3
+    - 2.2.0-pre.4
+    - 2.2.0-pre.5
+    - 2.2.0-pre.6
+    compatible:
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.6
+    - 2.0.0-pre.2
+    - 2.0.0-pre.3
+    - 2.0.0-pre.4
+    - 2.0.0-pre.5
+    - 2.0.0-pre.6
+    - 2.0.0-pre.7
+    - 2.0.0-pre.8
+    - 2.0.0-pre.9
+    - 2.0.0-pre.10
+    - 2.0.0-pre.11
+    - 2.0.0-pre.12
+    - 2.0.0-pre.13
+    - 2.0.0-pre.14
+    - 2.0.0-pre.15
+    - 2.0.0-pre.16
+    - 2.0.0-pre.17
+    - 2.0.0-pre.18
+    - 2.0.0-pre.19
+    - 2.0.0-pre.20
+    - 2.0.0-pre.21
+    - 2.0.0-pre.22
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.1.0-pre.1
+    - 2.1.0-pre.2
+    - 2.1.0-pre.3
+    - 2.1.0
+    - 2.1.1-pre.1
+    - 2.1.1
+    - 2.1.2
+    - 2.1.3
+    - 2.1.4
+    - 2.1.5
+    - 2.1.6
+    - 2.2.0-pre.1
+    - 2.2.0-pre.2
+    - 2.2.0-pre.3
+    - 2.2.0-pre.4
+    - 2.2.0-pre.5
+    - 2.2.0-pre.6
+    recommended: 1.3.6
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.screencapture
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.screencapture
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  keywords:
+  - app
+  - ui
+  - components
+  - runtime
+  - framework
+  - navigation
+  - dependency-injection
+  - mvvm
+  - undostack
+  - redux
+  - state-management
+  - dark-theme
+  - data-binding
+  - cloud
+  - unity
+  - app-ui
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639009924599820000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.dt.app-ui@1.3/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/unity-app-ui.git
+    revision: af4fd5d813f0874e7ca330625217c32bbff636b3
+    path: 
+  unityLifecycle:
+    version: 1.3.1
+    nextVersion: 2.1.0-pre.2
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n\n- Fixed columns size and added more info
+    in Storybook window.\n- Fixed the AppUI settings assets search and auto-assignation
+    before building a project.\n- Fixed code path activation for native plugins depending
+    on target platform\n\n### Added\n\n- Added support of CoreCLR for the migration
+    from Mono scripting backend for Unity 6.5+"}'
+  assetStore:
+    productId: 
+  fingerprint: 874541faca7e04c9245c1d454bf249d1c709c48c
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.3.1
+    minimumUnityVersion: 2021.3.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.nuget.newtonsoft-json@3.2.1
+  testable: 0
+  isDirectDependency: 0
+  version: 3.2.1
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.nuget.newtonsoft-json@74deb55db2a0
+  assetPath: Packages/com.unity.nuget.newtonsoft-json
+  name: com.unity.nuget.newtonsoft-json
+  displayName: Newtonsoft Json
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
+    synced to version 13.0.2.
+
+
+    This package is used for advanced json serialization
+    and deserialization. Most Unity users will be better suited using the existing
+    json tools built into Unity.
+
+    To avoid assembly clashes, please use this
+    package if you intend to use Newtonsoft Json.'
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.1-preview.1
+    - 1.1.2
+    - 2.0.0-preview
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
+    - 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
+    - 3.0.1
+    - 3.0.2
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
+    - 3.2.2
+    compatible:
+    - 3.2.1
+    - 3.2.2
+    recommended: 3.2.2
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638186318800000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+    revision: d8e49aef8979bef617144382052ec2f479645eaf
+    path: 
+  unityLifecycle:
+    version: 3.2.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -11524,37 +11123,219 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: 
+  upmReserved: '{"changelog":"* Fixed Newtonsoft DLL when compiling with netstandard
+    2.0."}'
   assetStore:
     productId: 
-  fingerprint: 031a54704bffe39e6a0324909f8eaa4565bdebf2
+  fingerprint: 74deb55db2a0c29ddfda576608bcb86abbd13ee6
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.0.5
-    minimumUnityVersion: 2019.4.0a1
+    minimumPackageVersion: 3.2.1
+    minimumUnityVersion: 2018.4.0a1
   compliance:
     status: 0
     violation:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.ai.toolkit@1.0.0-pre.12
+- packageId: com.unity.2d.common@11.0.1
+  testable: 0
+  isDirectDependency: 0
+  version: 11.0.1
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.2d.common@dd402daace1b
+  assetPath: Packages/com.unity.2d.common
+  name: com.unity.2d.common
+  displayName: 2D Common
+  author:
+    name: 
+    email: 
+    url: 
+  category: 2D
+  type: 
+  description: 2D Common is a package that contains shared functionalities that are
+    used by most of the other 2D packages.
+  errors: []
+  versions:
+    all:
+    - 1.0.9-preview.1
+    - 1.0.9-preview.2
+    - 1.0.10-preview
+    - 1.0.11-preview.1
+    - 1.1.0-preview.1
+    - 1.1.0-preview.2
+    - 1.2.0-preview.1
+    - 2.0.1
+    - 2.0.2
+    - 2.1.0
+    - 2.1.1
+    - 2.1.2
+    - 3.0.0
+    - 3.0.1
+    - 4.0.0
+    - 4.0.1
+    - 4.0.2
+    - 4.0.3
+    - 4.0.4
+    - 4.1.0
+    - 4.2.0
+    - 4.2.1
+    - 5.0.0-pre.1
+    - 5.0.0-pre.2
+    - 5.0.0
+    - 6.0.0-pre.2
+    - 6.0.0-pre.3
+    - 6.0.0-pre.4
+    - 6.0.0
+    - 6.0.1
+    - 6.0.2
+    - 6.0.3
+    - 6.0.4
+    - 6.0.5
+    - 6.0.6
+    - 6.0.7
+    - 6.0.8
+    - 6.1.0
+    - 7.0.0-pre.3
+    - 7.0.0-pre.4
+    - 7.0.0
+    - 7.0.1
+    - 7.0.2
+    - 7.0.3
+    - 8.0.0-pre.1
+    - 8.0.0-pre.2
+    - 8.0.0
+    - 8.0.1
+    - 8.0.2
+    - 8.0.3
+    - 8.0.4
+    - 8.1.0
+    - 8.1.1
+    - 9.0.0-pre.1
+    - 9.0.0-pre.2
+    - 9.0.0
+    - 9.0.1
+    - 9.0.2
+    - 9.0.3
+    - 9.0.4
+    - 9.0.5
+    - 9.0.6
+    - 9.0.7
+    - 9.1.0
+    - 9.1.1
+    - 10.0.0
+    - 11.0.0
+    - 11.0.1
+    - 12.0.0
+    - 12.0.1
+    - 12.0.2
+    - 13.0.0
+    - 13.0.1
+    - 14.0.0
+    compatible:
+    - 11.0.1
+    recommended: 11.0.1
+    deprecated: []
+  dependencies:
+  - name: com.unity.burst
+    version: 1.8.4
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.1.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 1.8.27
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  keywords:
+  - 2d
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638840901264720000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.common@11.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/2d.git
+    revision: 98a4faf22484a3679f8d6a3b60b5d07f5e652cd7
+    path: 
+  unityLifecycle:
+    version: 11.0.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Changed\n- Added support code for PolySpatial."}'
+  assetStore:
+    productId: 
+  fingerprint: dd402daace1b7dbeb70cb9e7ae044cc4b10f989a
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 11.0.1
+    minimumUnityVersion: 6000.2.0a9
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.ai.generators@1.0.0-pre.12
   testable: 0
   isDirectDependency: 0
   version: 1.0.0-pre.12
   source: 1
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.ai.toolkit@97783faabe3b
-  assetPath: Packages/com.unity.ai.toolkit
-  name: com.unity.ai.toolkit
-  displayName: AI Toolkit
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.ai.generators@bf6bfb1a644e
+  assetPath: Packages/com.unity.ai.generators
+  name: com.unity.ai.generators
+  displayName: Generators
   author:
     name: 
     email: 
     url: 
   category: 
   type: 
-  description: AI Toolkit is a package that provides tools for adding generative
-    AI to Unity.
+  description: Unity AI Generators is a package that provides tools for adding generative
+    AI to Unity asset workflows.
   errors: []
   versions:
     all:
@@ -11609,11 +11390,19 @@ m_ResolvedPackages:
     recommended: 
     deprecated: []
   dependencies:
+  - name: com.unity.ai.toolkit
+    version: 1.0.0-pre.12
+  - name: com.unity.mathematics
+    version: 1.3.2
   - name: com.unity.nuget.newtonsoft-json
     version: 3.2.1
   resolvedDependencies:
+  - name: com.unity.ai.toolkit
+    version: 1.0.0-pre.12
   - name: com.unity.nuget.newtonsoft-json
     version: 3.2.1
+  - name: com.unity.mathematics
+    version: 1.3.3
   keywords: []
   registry:
     id: main
@@ -11630,8 +11419,8 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638842133875740000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ai.toolkit@1.0/manual/index.html
+  datePublishedTicks: 638842133890420000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ai.generators@1.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
@@ -11644,16 +11433,18 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
-    isDiscoverable: 0
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed internal account environment."}'
+  upmReserved: '{"changelog":"### Fixed\n\n- Fixed image generators not showing all
+    available aspect ratios.\n- Fixed clear reference button being active with nothing
+    to clear.\n- Fixed reference image dropdown style."}'
   assetStore:
     productId: 
-  fingerprint: 97783faabe3beeedf68a8597ddf10892043eaaab
+  fingerprint: bf6bfb1a644e9f27dcf426aaf0a8de2d10517aa7
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0-pre.2
@@ -11664,37 +11455,44 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.2d.sprite@1.0.0
+- packageId: com.unity.settings-manager@2.1.0
   testable: 0
   isDirectDependency: 0
-  version: 1.0.0
-  source: 2
-  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.2d.sprite@28296e5d02fb
-  assetPath: Packages/com.unity.2d.sprite
-  name: com.unity.2d.sprite
-  displayName: 2D Sprite
+  version: 2.1.0
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.settings-manager@41738c275190
+  assetPath: Packages/com.unity.settings-manager
+  name: com.unity.settings-manager
+  displayName: Settings Manager
   author:
     name: 
     email: 
     url: 
-  category: 2D
+  category: 
   type: 
-  description: Use Unity Sprite Editor Window to create and edit Sprite asset properties
-    like pivot, borders and Physics shape
+  description: A framework for making any serializable field a setting, complete
+    with a pre-built settings interface.
   errors: []
   versions:
     all:
+    - 0.1.0-preview.4
+    - 0.1.0-preview.8
     - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 2.0.0
+    - 2.0.1
+    - 2.1.0
+    - 2.1.1
     compatible:
-    - 1.0.0
-    recommended: 1.0.0
+    - 2.1.0
+    - 2.1.1
+    recommended: 2.1.1
     deprecated: []
   dependencies: []
   resolvedDependencies: []
-  keywords:
-  - 2d
-  - sprite
-  - sprite editor window
+  keywords: []
   registry:
     id: main
     name: 
@@ -11708,36 +11506,38 @@ m_ResolvedPackages:
       violations: []
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
+  datePublishedTicks: 638792046006940000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.settings-manager@2.1/manual/index.html
+  hasRepository: 1
   repository:
-    type: 
-    url: 
-    revision: 
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
+    revision: 6eb5ed85eaf3276cc09f0cc4fc3311c72f0fc196
     path: 
   unityLifecycle:
-    version: 1.0.0
+    version: 2.1.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
-    isDiscoverable: 1
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: 
+  upmReserved: '{"changelog":"### Changes\n\n- Enable Auto Reference on main assembly.\n\n###
+    Bug Fixes\n\n- [case: PBLD-56] Added tooltip to \"Options\" gear icon to specify
+    that context menu items are relevant only to the selected category."}'
   assetStore:
     productId: 
-  fingerprint: 28296e5d02fbf3ac81cc11ab1b39667f16a80778
+  fingerprint: 41738c27519039c335849eb78949382f4d7a3544
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 2019.2.0a1
+    minimumPackageVersion: 2.1.0
+    minimumUnityVersion: 2022.3.0a1
   compliance:
     status: 0
     violation:
@@ -16502,6 +16302,605 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 2019.1.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.ext.nunit@2.0.5
+  testable: 0
+  isDirectDependency: 0
+  version: 2.0.5
+  source: 2
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.ext.nunit@031a54704bff
+  assetPath: Packages/com.unity.ext.nunit
+  name: com.unity.ext.nunit
+  displayName: Custom NUnit
+  author:
+    name: 
+    email: 
+    url: 
+  category: Libraries
+  type: 
+  description: A custom version of NUnit used by Unity Test Framework. Based on NUnit
+    version 3.5 and works with all platforms, il2cpp and Mono AOT.
+  errors: []
+  versions:
+    all:
+    - 2.0.5
+    compatible:
+    - 2.0.5
+    recommended: 2.0.5
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - nunit
+  - unittest
+  - test
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ext.nunit@2.0/manual/index.html
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 2.0.5
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
+  fingerprint: 031a54704bffe39e6a0324909f8eaa4565bdebf2
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.0.5
+    minimumUnityVersion: 2019.4.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.autodesk.fbx@5.1.1
+  testable: 0
+  isDirectDependency: 0
+  version: 5.1.1
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.autodesk.fbx@5797ff6b31c7
+  assetPath: Packages/com.autodesk.fbx
+  name: com.autodesk.fbx
+  displayName: Autodesk FBX SDK for Unity
+  author:
+    name: Unity
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: "This package provides Unity C# bindings to the Autodesk\xAE FBX\xAE
+    SDK."
+  errors: []
+  versions:
+    all:
+    - 2.0.0-preview
+    - 2.0.0-preview.4
+    - 2.0.0-preview.5
+    - 2.0.0-preview.6
+    - 2.0.0-preview.7
+    - 2.0.1-preview.1
+    - 3.0.0-preview.1
+    - 3.0.1-preview.1
+    - 3.1.0-preview.1
+    - 3.1.0-preview.2
+    - 4.0.0-pre.1
+    - 4.0.0-pre.2
+    - 4.0.1
+    - 4.1.0-pre.1
+    - 4.1.0
+    - 4.1.1
+    - 4.1.2
+    - 4.2.0-pre.1
+    - 4.2.0
+    - 4.2.1
+    - 5.0.0-pre.1
+    - 5.0.0
+    - 5.1.0-pre.1
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
+    compatible:
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
+    recommended: 5.1.3
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - fbx
+  - animation
+  - modeling
+  - maya
+  - max
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638464332400000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.autodesk.fbx@5.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.autodesk.fbx.git
+    revision: dccfc2a79ac7abfe7bd6f91f713f990f2fedd141
+    path: 
+  unityLifecycle:
+    version: 5.1.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"* Update FBX SDK to 2020.3.4.\n* Add support for Windows
+    ARM64."}'
+  assetStore:
+    productId: 
+  fingerprint: 5797ff6b31c7c66189bffe1adc9cbf0ad5a9cbbf
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 5.1.1
+    minimumUnityVersion: 2020.3.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.timeline@1.8.7
+  testable: 0
+  isDirectDependency: 0
+  version: 1.8.7
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.timeline@c58b4ee65782
+  assetPath: Packages/com.unity.timeline
+  name: com.unity.timeline
+  displayName: Timeline
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: Use Unity Timeline to create cinematic content, game-play sequences,
+    audio sequences, and complex particle effects.
+  errors: []
+  versions:
+    all:
+    - 1.2.0
+    - 1.2.1
+    - 1.2.2
+    - 1.2.3
+    - 1.2.4
+    - 1.2.5
+    - 1.2.6
+    - 1.2.7
+    - 1.2.9
+    - 1.2.10
+    - 1.2.11
+    - 1.2.12
+    - 1.2.13
+    - 1.2.14
+    - 1.2.15
+    - 1.2.16
+    - 1.2.17
+    - 1.2.18
+    - 1.3.0-preview.2
+    - 1.3.0-preview.3
+    - 1.3.0-preview.5
+    - 1.3.0-preview.6
+    - 1.3.0-preview.7
+    - 1.3.0
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.6
+    - 1.3.7
+    - 1.4.0-preview.1
+    - 1.4.0-preview.2
+    - 1.4.0-preview.3
+    - 1.4.0-preview.5
+    - 1.4.0-preview.6
+    - 1.4.0-preview.7
+    - 1.4.0
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.4.4
+    - 1.4.5
+    - 1.4.6
+    - 1.4.7
+    - 1.4.8
+    - 1.5.0-pre.2
+    - 1.5.0-preview.1
+    - 1.5.0-preview.2
+    - 1.5.0-preview.3
+    - 1.5.0-preview.4
+    - 1.5.0-preview.5
+    - 1.5.1-pre.1
+    - 1.5.1-pre.2
+    - 1.5.1-pre.3
+    - 1.5.2
+    - 1.5.4
+    - 1.5.5
+    - 1.5.6
+    - 1.5.7
+    - 1.6.0-pre.1
+    - 1.6.0-pre.3
+    - 1.6.0-pre.4
+    - 1.6.0-pre.5
+    - 1.6.1
+    - 1.6.2
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+    - 1.7.0-pre.1
+    - 1.7.0-pre.2
+    - 1.7.0
+    - 1.7.1
+    - 1.7.2
+    - 1.7.3
+    - 1.7.4
+    - 1.7.5
+    - 1.7.6
+    - 1.7.7
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.5
+    - 1.8.6
+    - 1.8.7
+    - 1.8.8
+    - 1.8.9
+    - 1.8.10
+    - 1.8.11
+    compatible:
+    - 1.8.7
+    - 1.8.8
+    - 1.8.9
+    - 1.8.10
+    - 1.8.11
+    recommended: 1.8.11
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  keywords:
+  - unity
+  - animation
+  - editor
+  - timeline
+  - tools
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638524833900000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
+    revision: d6432ca638481c3d0e4c01f87f9cdbe3c4b1d529
+    path: 
+  unityLifecycle:
+    version: 1.8.7
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Added\n\n- Released ronl-workflow-custom-marker.md
+    Added a new workflow to the Timeline Workflows documentation:\n- Released ronl-workflow-custom-marker.md
+    The `Create a custom Notes marker` workflow demonstrates how to create a custom
+    marker for adding notes to Timeline instances. This workflow also demonstrates
+    how to change the default appearance of a custom marker with scripting and a
+    Unity Style Sheet (USS).\n\n### Fixed\n\n- Fixed bug where using , and . (<>)
+    to step frames in the Animation Window while the Timeline Window was linked would
+    sometimes not work. [IN-56667](https://unity3d.atlassian.net/servicedesk/customer/portal/2/IN-56667)\n-
+    When the Timeline and Animation windows are linked and the Timeline Window is
+    active, moving the playhead in the Timeline Window will cause the animation window
+    to repaint immediately."}'
+  assetStore:
+    productId: 
+  fingerprint: c58b4ee65782ad38338e29f7ee67787cb6998f04
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.8.7
+    minimumUnityVersion: 2019.3.0a1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.ai.toolkit@1.0.0-pre.12
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.0-pre.12
+  source: 1
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.ai.toolkit@97783faabe3b
+  assetPath: Packages/com.unity.ai.toolkit
+  name: com.unity.ai.toolkit
+  displayName: AI Toolkit
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: AI Toolkit is a package that provides tools for adding generative
+    AI to Unity.
+  errors: []
+  versions:
+    all:
+    - 1.0.0-pre.2
+    - 1.0.0-pre.3
+    - 1.0.0-pre.4
+    - 1.0.0-pre.5
+    - 1.0.0-pre.6
+    - 1.0.0-pre.7
+    - 1.0.0-pre.8
+    - 1.0.0-pre.9
+    - 1.0.0-pre.10
+    - 1.0.0-pre.11
+    - 1.0.0-pre.12
+    - 1.0.0-pre.13
+    - 1.0.0-pre.14
+    - 1.0.0-pre.15
+    - 1.0.0-pre.16
+    - 1.0.0-pre.17
+    - 1.0.0-pre.18
+    - 1.0.0-pre.19
+    - 1.0.0-pre.20
+    - 1.5.0-pre.1
+    - 1.5.0-pre.2
+    - 1.6.0-pre.1
+    - 1.6.0-pre.2
+    - 1.6.0-pre.3
+    - 1.7.0-pre.1
+    compatible:
+    - 1.0.0-pre.2
+    - 1.0.0-pre.3
+    - 1.0.0-pre.4
+    - 1.0.0-pre.5
+    - 1.0.0-pre.6
+    - 1.0.0-pre.7
+    - 1.0.0-pre.8
+    - 1.0.0-pre.9
+    - 1.0.0-pre.10
+    - 1.0.0-pre.11
+    - 1.0.0-pre.12
+    - 1.0.0-pre.13
+    - 1.0.0-pre.14
+    - 1.0.0-pre.15
+    - 1.0.0-pre.16
+    - 1.0.0-pre.17
+    - 1.0.0-pre.18
+    - 1.0.0-pre.19
+    - 1.0.0-pre.20
+    - 1.6.0-pre.2
+    - 1.6.0-pre.3
+    - 1.7.0-pre.1
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  resolvedDependencies:
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638842133875740000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ai.toolkit@1.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/UnityAIWorkflows.git
+    revision: c93aa122b88641251cbb8a94f553cd3299e2e2ea
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 1.0.0-pre.8
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n\n- Fixed internal account environment."}'
+  assetStore:
+    productId: 
+  fingerprint: 97783faabe3beeedf68a8597ddf10892043eaaab
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.0.0-pre.2
+    minimumUnityVersion: 6000.2.0a9
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.2d.sprite@1.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.0
+  source: 2
+  resolvedPath: D:\UnityProjects\Zelda\NostalgiaGame\Library\PackageCache\com.unity.2d.sprite@28296e5d02fb
+  assetPath: Packages/com.unity.2d.sprite
+  name: com.unity.2d.sprite
+  displayName: 2D Sprite
+  author:
+    name: 
+    email: 
+    url: 
+  category: 2D
+  type: 
+  description: Use Unity Sprite Editor Window to create and edit Sprite asset properties
+    like pivot, borders and Physics shape
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    recommended: 1.0.0
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - 2d
+  - sprite
+  - sprite editor window
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 1.0.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
+  fingerprint: 28296e5d02fbf3ac81cc11ab1b39667f16a80778
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.0.0
+    minimumUnityVersion: 2019.2.0a1
   compliance:
     status: 0
     violation:
