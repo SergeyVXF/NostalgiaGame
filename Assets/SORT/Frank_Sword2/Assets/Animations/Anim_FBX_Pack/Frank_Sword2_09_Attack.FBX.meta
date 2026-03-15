@@ -1,0 +1,3616 @@
+fileFormatVersion: 2
+guid: 2357d3c7907b21a4ca15ef2f86fba340
+AssetOrigin:
+  serializedVersion: 1
+  productId: 229349
+  packageName: Frank Sword 2
+  packageVersion: 1.1
+  assetPath: Assets/Frank_Sword2/Assets/Animations/Anim_FBX_Pack/Frank_Sword2_09_Attack.FBX
+  uploadId: 828162
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Frank_Sword2@Attack01
+  - first:
+      74: -7595129629809702704
+    second: Frank_Sword2@Attack02
+  - first:
+      74: 4210451034918089024
+    second: Frank_Sword2@Attack03
+  - first:
+      74: -4642748221334018410
+    second: Frank_Sword2@Attack04
+  - first:
+      74: -262750322328922987
+    second: Frank_Sword2@Attack05
+  - first:
+      74: 6518587152687520680
+    second: Frank_Sword2@Attack06
+  - first:
+      74: -6793399914912014836
+    second: Frank_Sword2@Attack07
+  - first:
+      74: 3488322828380735634
+    second: Frank_Sword2@Attack08
+  - first:
+      74: -8611928309633644602
+    second: Frank_Sword2@Attack09
+  - first:
+      74: -6551926159625178275
+    second: Frank_Sword2@Attack10
+  - first:
+      74: 6733422321397836080
+    second: Frank_Sword2@Attack11
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: root
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'thigh_l' has translation animation that
+      will be discarded.\n\t'calf_l' has translation animation that will be discarded.\n\t'foot_l'
+      has translation animation that will be discarded.\n\t'ball_l' has translation
+      animation that will be discarded.\n\t'thigh_r' has translation animation that
+      will be discarded.\n\t'calf_r' has translation animation that will be discarded.\n\t'foot_r'
+      has translation animation that will be discarded.\n\t'ball_r' has translation
+      animation that will be discarded.\n\t'spine_01' has translation animation that
+      will be discarded.\n\t'spine_02' has translation animation that will be discarded.\n\t'spine_03'
+      has translation animation that will be discarded.\n\t'upperarm_l' has translation
+      animation that will be discarded.\n\t'lowerarm_l' has translation animation
+      that will be discarded.\n\t'hand_l' has translation animation that will be
+      discarded.\n\t'index_01_l' has translation animation that will be discarded.\n\t'index_02_l'
+      has translation animation that will be discarded.\n\t'index_03_l' has translation
+      animation that will be discarded.\n\t'middle_01_l' has translation animation
+      that will be discarded.\n\t'middle_02_l' has translation animation that will
+      be discarded.\n\t'middle_03_l' has translation animation that will be discarded.\n\t'ring_02_l'
+      has translation animation that will be discarded.\n\t'ring_03_l' has translation
+      animation that will be discarded.\n\t'pinky_01_l' has translation animation
+      that will be discarded.\n\t'pinky_02_l' has translation animation that will
+      be discarded.\n\t'upperarm_r' has translation animation that will be discarded.\n\t'lowerarm_r'
+      has translation animation that will be discarded.\n\t'hand_r' has translation
+      animation that will be discarded.\n\t'head' has translation animation that
+      will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Frank_Sword2@Attack01
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 100
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cape
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/ik_foot_root
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_l
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_r
+        weight: 1
+      - path: root/ik_hand_root
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_l
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_r
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/Cam01
+        weight: 1
+      - path: root/pelvis/Cam03
+        weight: 1
+      - path: root/pelvis/spine_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07/Bone002
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06/Bone003
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05/Bone001
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon/Shield_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/lowerarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/upperarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon/Sword_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/lowerarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/upperarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: root/pelvis/thigh_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/calf_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: root/pelvis/thigh_l/thigh_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/calf_twist_01_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: root/pelvis/thigh_r/thigh_twist_01_r
+        weight: 1
+      - path: Shield_Mesh001
+        weight: 1
+      - path: SK_Mannequin_Female_LOD
+        weight: 1
+      - path: Sword_Mesh001
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: a22ec8dd6d84886488dae4d36c03ad37, type: 2}
+      additiveReferencePoseFrame: 100
+    - serializedVersion: 16
+      name: Frank_Sword2@Attack02
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 190
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cape
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/ik_foot_root
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_l
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_r
+        weight: 1
+      - path: root/ik_hand_root
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_l
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_r
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/Cam01
+        weight: 1
+      - path: root/pelvis/Cam03
+        weight: 1
+      - path: root/pelvis/spine_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07/Bone002
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06/Bone003
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05/Bone001
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon/Shield_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/lowerarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/upperarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon/Sword_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/lowerarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/upperarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: root/pelvis/thigh_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/calf_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: root/pelvis/thigh_l/thigh_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/calf_twist_01_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: root/pelvis/thigh_r/thigh_twist_01_r
+        weight: 1
+      - path: Shield_Mesh001
+        weight: 1
+      - path: SK_Mannequin_Female_LOD
+        weight: 1
+      - path: Sword_Mesh001
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: a22ec8dd6d84886488dae4d36c03ad37, type: 2}
+      additiveReferencePoseFrame: 100
+    - serializedVersion: 16
+      name: Frank_Sword2@Attack03
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 290
+      lastFrame: 380
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cape
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/ik_foot_root
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_l
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_r
+        weight: 1
+      - path: root/ik_hand_root
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_l
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_r
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/Cam01
+        weight: 1
+      - path: root/pelvis/Cam03
+        weight: 1
+      - path: root/pelvis/spine_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07/Bone002
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06/Bone003
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05/Bone001
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon/Shield_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/lowerarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/upperarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon/Sword_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/lowerarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/upperarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: root/pelvis/thigh_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/calf_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: root/pelvis/thigh_l/thigh_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/calf_twist_01_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: root/pelvis/thigh_r/thigh_twist_01_r
+        weight: 1
+      - path: Shield_Mesh001
+        weight: 1
+      - path: SK_Mannequin_Female_LOD
+        weight: 1
+      - path: Sword_Mesh001
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: a22ec8dd6d84886488dae4d36c03ad37, type: 2}
+      additiveReferencePoseFrame: 100
+    - serializedVersion: 16
+      name: Frank_Sword2@Attack04
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 430
+      lastFrame: 500
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cape
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/ik_foot_root
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_l
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_r
+        weight: 1
+      - path: root/ik_hand_root
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_l
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_r
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/Cam01
+        weight: 1
+      - path: root/pelvis/Cam03
+        weight: 1
+      - path: root/pelvis/spine_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07/Bone002
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06/Bone003
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05/Bone001
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon/Shield_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/lowerarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/upperarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon/Sword_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/lowerarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/upperarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: root/pelvis/thigh_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/calf_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: root/pelvis/thigh_l/thigh_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/calf_twist_01_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: root/pelvis/thigh_r/thigh_twist_01_r
+        weight: 1
+      - path: Shield_Mesh001
+        weight: 1
+      - path: SK_Mannequin_Female_LOD
+        weight: 1
+      - path: Sword_Mesh001
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: a22ec8dd6d84886488dae4d36c03ad37, type: 2}
+      additiveReferencePoseFrame: 100
+    - serializedVersion: 16
+      name: Frank_Sword2@Attack05
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 550
+      lastFrame: 615
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cape
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/ik_foot_root
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_l
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_r
+        weight: 1
+      - path: root/ik_hand_root
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_l
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_r
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/Cam01
+        weight: 1
+      - path: root/pelvis/Cam03
+        weight: 1
+      - path: root/pelvis/spine_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07/Bone002
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06/Bone003
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05/Bone001
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon/Shield_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/lowerarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/upperarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon/Sword_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/lowerarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/upperarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: root/pelvis/thigh_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/calf_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: root/pelvis/thigh_l/thigh_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/calf_twist_01_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: root/pelvis/thigh_r/thigh_twist_01_r
+        weight: 1
+      - path: Shield_Mesh001
+        weight: 1
+      - path: SK_Mannequin_Female_LOD
+        weight: 1
+      - path: Sword_Mesh001
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: a22ec8dd6d84886488dae4d36c03ad37, type: 2}
+      additiveReferencePoseFrame: 100
+    - serializedVersion: 16
+      name: Frank_Sword2@Attack06
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 660
+      lastFrame: 715
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cape
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/ik_foot_root
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_l
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_r
+        weight: 1
+      - path: root/ik_hand_root
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_l
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_r
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/Cam01
+        weight: 1
+      - path: root/pelvis/Cam03
+        weight: 1
+      - path: root/pelvis/spine_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07/Bone002
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06/Bone003
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05/Bone001
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon/Shield_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/lowerarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/upperarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon/Sword_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/lowerarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/upperarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: root/pelvis/thigh_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/calf_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: root/pelvis/thigh_l/thigh_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/calf_twist_01_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: root/pelvis/thigh_r/thigh_twist_01_r
+        weight: 1
+      - path: Shield_Mesh001
+        weight: 1
+      - path: SK_Mannequin_Female_LOD
+        weight: 1
+      - path: Sword_Mesh001
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: a22ec8dd6d84886488dae4d36c03ad37, type: 2}
+      additiveReferencePoseFrame: 100
+    - serializedVersion: 16
+      name: Frank_Sword2@Attack07
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 800
+      lastFrame: 860
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cape
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/ik_foot_root
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_l
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_r
+        weight: 1
+      - path: root/ik_hand_root
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_l
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_r
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/Cam01
+        weight: 1
+      - path: root/pelvis/Cam03
+        weight: 1
+      - path: root/pelvis/spine_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07/Bone002
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06/Bone003
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05/Bone001
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon/Shield_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/lowerarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/upperarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon/Sword_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/lowerarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/upperarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: root/pelvis/thigh_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/calf_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: root/pelvis/thigh_l/thigh_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/calf_twist_01_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: root/pelvis/thigh_r/thigh_twist_01_r
+        weight: 1
+      - path: Shield_Mesh001
+        weight: 1
+      - path: SK_Mannequin_Female_LOD
+        weight: 1
+      - path: Sword_Mesh001
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: a22ec8dd6d84886488dae4d36c03ad37, type: 2}
+      additiveReferencePoseFrame: 100
+    - serializedVersion: 16
+      name: Frank_Sword2@Attack08
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 900
+      lastFrame: 960
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cape
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/ik_foot_root
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_l
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_r
+        weight: 1
+      - path: root/ik_hand_root
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_l
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_r
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/Cam01
+        weight: 1
+      - path: root/pelvis/Cam03
+        weight: 1
+      - path: root/pelvis/spine_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07/Bone002
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06/Bone003
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05/Bone001
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon/Shield_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/lowerarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/upperarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon/Sword_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/lowerarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/upperarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: root/pelvis/thigh_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/calf_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: root/pelvis/thigh_l/thigh_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/calf_twist_01_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: root/pelvis/thigh_r/thigh_twist_01_r
+        weight: 1
+      - path: Shield_Mesh001
+        weight: 1
+      - path: SK_Mannequin_Female_LOD
+        weight: 1
+      - path: Sword_Mesh001
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: a22ec8dd6d84886488dae4d36c03ad37, type: 2}
+      additiveReferencePoseFrame: 100
+    - serializedVersion: 16
+      name: Frank_Sword2@Attack09
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1020
+      lastFrame: 1105
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cape
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/ik_foot_root
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_l
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_r
+        weight: 1
+      - path: root/ik_hand_root
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_l
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_r
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/Cam01
+        weight: 1
+      - path: root/pelvis/Cam03
+        weight: 1
+      - path: root/pelvis/spine_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07/Bone002
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06/Bone003
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05/Bone001
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon/Shield_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/lowerarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/upperarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon/Sword_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/lowerarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/upperarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: root/pelvis/thigh_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/calf_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: root/pelvis/thigh_l/thigh_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/calf_twist_01_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: root/pelvis/thigh_r/thigh_twist_01_r
+        weight: 1
+      - path: Shield_Mesh001
+        weight: 1
+      - path: SK_Mannequin_Female_LOD
+        weight: 1
+      - path: Sword_Mesh001
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: a22ec8dd6d84886488dae4d36c03ad37, type: 2}
+      additiveReferencePoseFrame: 100
+    - serializedVersion: 16
+      name: Frank_Sword2@Attack10
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1200
+      lastFrame: 1265
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cape
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/ik_foot_root
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_l
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_r
+        weight: 1
+      - path: root/ik_hand_root
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_l
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_r
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/Cam01
+        weight: 1
+      - path: root/pelvis/Cam03
+        weight: 1
+      - path: root/pelvis/spine_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07/Bone002
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06/Bone003
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05/Bone001
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon/Shield_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/lowerarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/upperarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon/Sword_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/lowerarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/upperarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: root/pelvis/thigh_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/calf_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: root/pelvis/thigh_l/thigh_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/calf_twist_01_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: root/pelvis/thigh_r/thigh_twist_01_r
+        weight: 1
+      - path: Shield_Mesh001
+        weight: 1
+      - path: SK_Mannequin_Female_LOD
+        weight: 1
+      - path: Sword_Mesh001
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: a22ec8dd6d84886488dae4d36c03ad37, type: 2}
+      additiveReferencePoseFrame: 100
+    - serializedVersion: 16
+      name: Frank_Sword2@Attack11
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1320
+      lastFrame: 1400
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cape
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/ik_foot_root
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_l
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_r
+        weight: 1
+      - path: root/ik_hand_root
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_l
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_r
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/Cam01
+        weight: 1
+      - path: root/pelvis/Cam03
+        weight: 1
+      - path: root/pelvis/spine_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_C_01/Cape_C_02/Cape_C_03/Cape_C_04/Cape_C_05/Cape_C_06/Cape_C_07/Bone002
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_L_01/Cape_L_02/Cape_L_03/Cape_L_04/Cape_L_05/Cape_L_06/Bone003
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/Cape_Root/Cape_R_01/Cape_R_02/Cape_R_03/Cape_R_04/Cape_R_05/Bone001
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/L_Hand_Weapon/Shield_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/lowerarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/upperarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/R_Hand_Weapon/Sword_Bone
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/lowerarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/upperarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: root/pelvis/thigh_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/calf_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: root/pelvis/thigh_l/thigh_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/calf_twist_01_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: root/pelvis/thigh_r/thigh_twist_01_r
+        weight: 1
+      - path: Shield_Mesh001
+        weight: 1
+      - path: SK_Mannequin_Female_LOD
+        weight: 1
+      - path: Sword_Mesh001
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: a22ec8dd6d84886488dae4d36c03ad37, type: 2}
+      additiveReferencePoseFrame: 100
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thigh_l
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thigh_r
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: calf_l
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: calf_r
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot_l
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot_r
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine_01
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine_02
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: neck_01
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: clavicle_l
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: clavicle_r
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upperarm_l
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upperarm_r
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lowerarm_l
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lowerarm_r
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand_l
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand_r
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ball_l
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ball_r
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_01_l
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_02_l
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_03_l
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_01_l
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_02_l
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_03_l
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_01_l
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_02_l
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_03_l
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_01_l
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_02_l
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_03_l
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_01_l
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_02_l
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_03_l
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_01_r
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_02_r
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_03_r
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_01_r
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_02_r
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_03_r
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_01_r
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_02_r
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_03_r
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_01_r
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_02_r
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_03_r
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_01_r
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_02_r
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_03_r
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine_03
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Frank_Sword2_09_Attack(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: root
+      parentName: Frank_Sword2_09_Attack(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.00000086552734, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pelvis
+      parentName: root
+      position: {x: -0.0011193821, y: 0.938144, z: -0.0004248465}
+      rotation: {x: 0.4385403, y: -0.48887804, z: 0.48934054, w: -0.5737826}
+      scale: {x: 1, y: 0.9999999, z: 0.9999998}
+    - name: thigh_l
+      parentName: pelvis
+      position: {x: 0.012567825, y: -0.0051918887, z: -0.10440295}
+      rotation: {x: 0.031259388, y: 0.001512887, z: -0.16909009, w: 0.9851036}
+      scale: {x: 1.0000002, y: 1.0000006, z: 1.0000004}
+    - name: calf_l
+      parentName: thigh_l
+      position: {x: 0.426848, y: -0.0011221694, z: 0.00017551899}
+      rotation: {x: -0.051451646, y: 0.022638878, z: 0.32656127, w: 0.9435031}
+      scale: {x: 1, y: 0.99999994, z: 0.9999998}
+    - name: foot_l
+      parentName: calf_l
+      position: {x: 0.3973482, y: -0.0003297138, z: 0.0000063323973}
+      rotation: {x: -0.21214755, y: 0.23736371, z: 0.109268636, w: 0.941654}
+      scale: {x: 0.9999999, y: 0.9999997, z: 1.0000002}
+    - name: ball_l
+      parentName: foot_l
+      position: {x: 0.096351996, y: -0.117424056, z: 0.00020374298}
+      rotation: {x: -0.007952925, y: -0.06563405, z: 0.5072392, w: 0.85926557}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: calf_twist_01_l
+      parentName: calf_l
+      position: {x: 0.20476897, y: 0.0006842756, z: 0.000140872}
+      rotation: {x: 0.0865748, y: 0.0015809726, z: 0.0055504674, w: 0.99622864}
+      scale: {x: 0.99999964, y: 0.9999999, z: 1.0000002}
+    - name: thigh_twist_01_l
+      parentName: thigh_l
+      position: {x: 0.22094329, y: 0.000032844542, z: -0.000017642975}
+      rotation: {x: -0.043833986, y: -0.00007239746, z: 0.00057721545, w: 0.99903864}
+      scale: {x: 0.9999999, y: 0.9999996, z: 1.0000001}
+    - name: thigh_r
+      parentName: pelvis
+      position: {x: 0.015479278, y: -0.0046199798, z: 0.10705686}
+      rotation: {x: 0.026828524, y: 0.29932806, z: 0.9521847, w: -0.05502086}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000004}
+    - name: calf_r
+      parentName: thigh_r
+      position: {x: -0.42752573, y: -0.000002040863, z: -0.000040769577}
+      rotation: {x: -0.04893345, y: -0.01977351, z: 0.054882143, w: 0.9970971}
+      scale: {x: 1.0000004, y: 0.99999994, z: 0.99999994}
+    - name: foot_r
+      parentName: calf_r
+      position: {x: -0.39737707, y: 0.0000056648255, z: -0.00012298583}
+      rotation: {x: -0.0500679, y: 0.057003077, z: -0.06845671, w: 0.9947651}
+      scale: {x: 1, y: 0.9999998, z: 1.0000002}
+    - name: ball_r
+      parentName: foot_r
+      position: {x: -0.09574499, y: 0.11753318, z: -0.00019284248}
+      rotation: {x: 0.018643372, y: -0.028230568, z: 0.7200121, w: 0.6931364}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000002}
+    - name: calf_twist_01_r
+      parentName: calf_r
+      position: {x: -0.20476921, y: 0.00002527237, z: 0.0000029230116}
+      rotation: {x: -0.00024815928, y: 0.0019463726, z: 0.007686811, w: 0.9999685}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: thigh_twist_01_r
+      parentName: thigh_r
+      position: {x: -0.22094306, y: -0.000032954216, z: 0.00001750946}
+      rotation: {x: -0.04383581, y: -0.000073106086, z: 0.00057729596, w: 0.9990386}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1}
+    - name: spine_01
+      parentName: pelvis
+      position: {x: -0.1286949, y: 0.008190617, z: 0.01370872}
+      rotation: {x: -0.07122159, y: -0.009874393, z: 0.12707797, w: 0.98928314}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: spine_02
+      parentName: spine_01
+      position: {x: -0.14337151, y: 0.028910331, z: -0.000044746397}
+      rotation: {x: -0.052301712, y: 0.057397466, z: -0.17245056, w: 0.9819526}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: spine_03
+      parentName: spine_02
+      position: {x: -0.14068283, y: 0.004364605, z: -0.000011181831}
+      rotation: {x: -0.059116222, y: 0.06903078, z: -0.062757045, w: 0.99388206}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: clavicle_l
+      parentName: spine_03
+      position: {x: -0.052053373, y: 0.00063568115, z: -0.010924454}
+      rotation: {x: 0.18291284, y: -0.7370133, z: -0.09457843, w: 0.64374626}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+    - name: upperarm_l
+      parentName: clavicle_l
+      position: {x: -0.1045098, y: -0.00016082764, z: 0.00058288575}
+      rotation: {x: 0.34053966, y: 0.011608512, z: 0.07335026, w: 0.9372928}
+      scale: {x: 1.0000001, y: 0.9999997, z: 0.99999994}
+    - name: upperarm_twist_01_l
+      parentName: upperarm_l
+      position: {x: -0.005, y: 0.000023727416, z: -0.00024814604}
+      rotation: {x: -0.12755743, y: 0.0006056273, z: 0.000112503585, w: 0.991831}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
+    - name: lowerarm_l
+      parentName: upperarm_l
+      position: {x: -0.28362808, y: 0.00026138304, z: -0.00012794495}
+      rotation: {x: -0.062861025, y: 0.021600077, z: 0.024960166, w: 0.9974763}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.9999999}
+    - name: lowerarm_twist_01_l
+      parentName: lowerarm_l
+      position: {x: -0.14000015, y: 0.000000038146972, z: 0.00000015258789}
+      rotation: {x: -0.0000000074505797, y: -1.1102226e-16, z: 0.000000014901158, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000004}
+    - name: hand_l
+      parentName: lowerarm_l
+      position: {x: -0.23655997, y: 0.0029297636, z: -0.00081428525}
+      rotation: {x: -0.79269063, y: -0.05004887, z: 0.01097465, w: 0.6074671}
+      scale: {x: 1.0000005, y: 1.0000004, z: 0.9999998}
+    - name: thumb_01_l
+      parentName: hand_l
+      position: {x: -0.042318456, y: 0.021215323, z: -0.022439193}
+      rotation: {x: 0.6558188, y: -0.20892766, z: 0.21941115, w: 0.69145465}
+      scale: {x: 0.99999964, y: 1.0000002, z: 0.9999998}
+    - name: thumb_02_l
+      parentName: thumb_01_l
+      position: {x: -0.02948986, y: -0.0000030517576, z: 0.0000042915344}
+      rotation: {x: 0.0116465995, y: 0.0025159272, z: -0.03787603, w: 0.99921143}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+    - name: thumb_03_l
+      parentName: thumb_02_l
+      position: {x: -0.034892846, y: 0.0001473236, z: 0.00007139206}
+      rotation: {x: -0.009788773, y: -0.007995825, z: -0.20879386, w: 0.977878}
+      scale: {x: 1, y: 0.99999976, z: 0.9999999}
+    - name: index_01_l
+      parentName: hand_l
+      position: {x: -0.100449406, y: 0.01198555, z: -0.015519599}
+      rotation: {x: -0.038735326, y: 0.11802204, z: -0.070541605, w: 0.9897446}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: index_02_l
+      parentName: index_01_l
+      position: {x: -0.035078276, y: -0.00016090393, z: -0.00018005371}
+      rotation: {x: 0.008756086, y: -0.0014057972, z: -0.03174102, w: 0.9994568}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: index_03_l
+      parentName: index_02_l
+      position: {x: -0.028416976, y: -0.00016038894, z: -0.00005489349}
+      rotation: {x: -0.01630399, y: -0.008956554, z: -0.17523672, w: 0.98435056}
+      scale: {x: 1.0000004, y: 1, z: 1}
+    - name: middle_01_l
+      parentName: hand_l
+      position: {x: -0.1012265, y: 0.009648704, z: 0.0071910094}
+      rotation: {x: -0.031168811, y: 0.10860532, z: -0.092703916, w: 0.9892621}
+      scale: {x: 1.0000001, y: 1.0000002, z: 0.99999994}
+    - name: middle_02_l
+      parentName: middle_01_l
+      position: {x: -0.037536696, y: -0.000662899, z: 0.000000038146972}
+      rotation: {x: -0.023863444, y: 0.0020154186, z: -0.01369243, w: 0.9996194}
+      scale: {x: 1.0000004, y: 0.9999994, z: 0.9999997}
+    - name: middle_03_l
+      parentName: middle_02_l
+      position: {x: -0.030233687, y: -0.00013263703, z: -0.00014579772}
+      rotation: {x: 0.01481022, y: 0.013828577, z: -0.23710549, w: 0.9712726}
+      scale: {x: 0.9999999, y: 0.9999996, z: 1.0000001}
+    - name: ring_01_l
+      parentName: hand_l
+      position: {x: -0.09437252, y: 0.015146827, z: 0.025357971}
+      rotation: {x: -0.025303658, y: 0.0846841, z: -0.103368975, w: 0.9907085}
+      scale: {x: 0.99999994, y: 1.0000004, z: 0.99999976}
+    - name: ring_02_l
+      parentName: ring_01_l
+      position: {x: -0.03475685, y: 0.000815525, z: -0.00024330139}
+      rotation: {x: 0.00018062252, y: -0.0036364188, z: -0.03589025, w: 0.9993491}
+      scale: {x: 1, y: 0.9999998, z: 0.99999976}
+    - name: ring_03_l
+      parentName: ring_02_l
+      position: {x: -0.027498625, y: -0.00004371643, z: 0.00005050659}
+      rotation: {x: -0.0075765434, y: -0.014041797, z: -0.22805235, w: 0.97351813}
+      scale: {x: 0.99999964, y: 0.9999997, z: 0.99999976}
+    - name: pinky_01_l
+      parentName: hand_l
+      position: {x: -0.08366413, y: 0.021130791, z: 0.039939}
+      rotation: {x: -0.023170345, y: 0.111862116, z: -0.0759658, w: 0.9905449}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+    - name: pinky_02_l
+      parentName: pinky_01_l
+      position: {x: -0.029405441, y: 0.00014083862, z: -0.00010570526}
+      rotation: {x: 0.008398482, y: -0.002178221, z: -0.0225561, w: 0.99970794}
+      scale: {x: 1.0000006, y: 0.99999964, z: 0.99999946}
+    - name: pinky_03_l
+      parentName: pinky_02_l
+      position: {x: -0.024798278, y: 0.00015062332, z: 0.000038642884}
+      rotation: {x: -0.016528092, y: -0.04060575, z: -0.2541462, w: 0.9661717}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000005}
+    - name: L_Hand_Weapon
+      parentName: hand_l
+      position: {x: -0.091053315, y: 0.046609953, z: 0.019614562}
+      rotation: {x: -0.6177314, y: 0.72970283, z: 0.2406558, w: -0.16741133}
+      scale: {x: 0.9999995, y: 0.9999992, z: 0.9999988}
+    - name: Shield_Bone
+      parentName: L_Hand_Weapon
+      position: {x: 0.00000015258789, y: -0.000000076293944, z: 0.000000028610229}
+      rotation: {x: -0.8433917, y: -0.00000030220957, z: -0.00000012770641, w: 0.5372992}
+      scale: {x: 1.0000001, y: 3.0697677, z: 3.0697656}
+    - name: clavicle_r
+      parentName: spine_03
+      position: {x: -0.052054442, y: 0.00063560484, z: 0.010924301}
+      rotation: {x: 0.6830921, y: 0.082837336, z: 0.7250826, w: -0.027901892}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: upperarm_r
+      parentName: clavicle_r
+      position: {x: 0.10429144, y: -0.0002466488, z: -0.00032699585}
+      rotation: {x: -0.0062037474, y: 0.046189472, z: 0.15064524, w: 0.98748875}
+      scale: {x: 1.0000002, y: 1.0000002, z: 0.9999999}
+    - name: lowerarm_r
+      parentName: upperarm_r
+      position: {x: 0.28392005, y: 0.00056381227, z: -0.0001285553}
+      rotation: {x: -0.054827254, y: 0.021104274, z: 0.04274939, w: 0.9973571}
+      scale: {x: 1, y: 1, z: 1.0000004}
+    - name: lowerarm_twist_01_r
+      parentName: lowerarm_r
+      position: {x: 0.14000411, y: -0.0006595802, z: 0.00010795593}
+      rotation: {x: -0.2233852, y: -0.000778796, z: -0.0024514997, w: 0.97472686}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: hand_r
+      parentName: lowerarm_r
+      position: {x: 0.23270468, y: -0.0012800598, z: 0.000117034906}
+      rotation: {x: -0.6968028, y: 0.253436, z: -0.14921723, w: 0.6541944}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: thumb_01_r
+      parentName: hand_r
+      position: {x: 0.04231903, y: -0.021215668, z: 0.022438964}
+      rotation: {x: 0.7356228, y: -0.28387052, z: 0.12998156, w: 0.6011502}
+      scale: {x: 0.9999997, y: 0.99999994, z: 0.99999994}
+    - name: thumb_02_r
+      parentName: thumb_01_r
+      position: {x: 0.029488754, y: 0.0000061941146, z: -0.0000035095213}
+      rotation: {x: 0.011347663, y: 0.005565131, z: -0.018607942, w: 0.999747}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000002}
+    - name: thumb_03_r
+      parentName: thumb_02_r
+      position: {x: 0.03485695, y: -0.000029916762, z: -0.00007436752}
+      rotation: {x: -0.011524291, y: -0.005189718, z: 0.05141333, w: 0.9985975}
+      scale: {x: 0.9999998, y: 0.9999997, z: 1.0000004}
+    - name: index_01_r
+      parentName: hand_r
+      position: {x: 0.10089092, y: -0.012185821, z: 0.015327339}
+      rotation: {x: -0.09571144, y: -0.029793896, z: -0.087055, w: 0.99114734}
+      scale: {x: 1.0000004, y: 0.99999994, z: 1.0000001}
+    - name: index_02_r
+      parentName: index_01_r
+      position: {x: 0.0355529, y: 0.00019332886, z: 0.00016776085}
+      rotation: {x: -0.0023952862, y: -0.0016734184, z: -0.011446282, w: 0.9999302}
+      scale: {x: 1.0000002, y: 0.99999976, z: 1.0000002}
+    - name: index_03_r
+      parentName: index_02_r
+      position: {x: 0.028799476, y: 0.00019664764, z: 0.000048818587}
+      rotation: {x: -0.020925775, y: -0.017126787, z: -0.55673593, w: 0.8302493}
+      scale: {x: 1.0000002, y: 0.9999997, z: 0.99999994}
+    - name: middle_01_r
+      parentName: hand_r
+      position: {x: 0.101581186, y: -0.009596481, z: -0.007289467}
+      rotation: {x: -0.03696253, y: 0.046241615, z: -0.12945871, w: 0.9898161}
+      scale: {x: 1.0000005, y: 1, z: 0.99999994}
+    - name: middle_02_r
+      parentName: middle_01_r
+      position: {x: 0.038172685, y: 0.00083390233, z: -0.000000019073486}
+      rotation: {x: -0.028772764, y: 0.0018796208, z: 0.0071676592, w: 0.9995585}
+      scale: {x: 1.0000005, y: 0.99999946, z: 1}
+    - name: middle_03_r
+      parentName: middle_02_r
+      position: {x: 0.030606212, y: -0.00016586304, z: 0.00012784958}
+      rotation: {x: 0.0105771925, y: 0.01728534, z: -0.48804337, w: 0.8725841}
+      scale: {x: 1.0000002, y: 0.9999994, z: 1.0000002}
+    - name: ring_01_r
+      parentName: hand_r
+      position: {x: 0.09481785, y: -0.015234604, z: -0.025434779}
+      rotation: {x: -0.038195804, y: 0.044210553, z: -0.09145692, w: 0.99409366}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: ring_02_r
+      parentName: ring_01_r
+      position: {x: 0.034270782, y: -0.0016868782, z: 0.00026195525}
+      rotation: {x: -0.007036104, y: -0.004281107, z: -0.023353944, w: 0.99969333}
+      scale: {x: 1, y: 0.9999997, z: 0.9999995}
+    - name: ring_03_r
+      parentName: ring_02_r
+      position: {x: 0.028040428, y: -0.00033523559, z: -0.00003978729}
+      rotation: {x: -0.008235813, y: -0.016334638, z: -0.57257915, w: 0.8196454}
+      scale: {x: 1.0000005, y: 0.9999999, z: 1.0000004}
+    - name: pinky_01_r
+      parentName: hand_r
+      position: {x: 0.084174804, y: -0.021416016, z: -0.04006298}
+      rotation: {x: -0.06465155, y: 0.05198942, z: -0.098419815, w: 0.9916808}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: pinky_02_r
+      parentName: pinky_01_r
+      position: {x: 0.029757002, y: -0.00074794766, z: 0.00010204315}
+      rotation: {x: 0.0040281103, y: -0.0025057336, z: -0.0075505716, w: 0.9999603}
+      scale: {x: 1.0000004, y: 0.9999994, z: 1.0000001}
+    - name: pinky_03_r
+      parentName: pinky_02_r
+      position: {x: 0.024868354, y: -0.00024902343, z: -0.0000358963}
+      rotation: {x: -0.024040343, y: -0.04060945, z: -0.5403878, w: 0.84009165}
+      scale: {x: 1.0000007, y: 0.99999994, z: 1.0000005}
+    - name: R_Hand_Weapon
+      parentName: hand_r
+      position: {x: 0.103728674, y: -0.040042493, z: 0.008268585}
+      rotation: {x: 0.24353565, y: 0.20239057, z: 0.61972433, w: 0.71810186}
+      scale: {x: 0.999999, y: 0.9999988, z: 0.9999985}
+    - name: Sword_Bone
+      parentName: R_Hand_Weapon
+      position: {x: 0.00000015258789, y: 0, z: -0.000000114440915}
+      rotation: {x: -0.000000044703462, y: 0.000000059604634, z: 0.00000004470348, w: 1}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000008}
+    - name: upperarm_twist_01_r
+      parentName: upperarm_r
+      position: {x: 0.0050001526, y: -0.000023851395, z: 0.00024848938}
+      rotation: {x: -0.29744887, y: 0.0005766293, z: 0.00021571919, w: 0.9547376}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
+    - name: neck_01
+      parentName: spine_03
+      position: {x: -0.10686294, y: -0.0024111557, z: 0.00001680374}
+      rotation: {x: 0.20834884, y: -0.057544455, z: 0.2550094, w: 0.94246995}
+      scale: {x: 1, y: 0.9999999, z: 0.9999998}
+    - name: head
+      parentName: neck_01
+      position: {x: -0.10937668, y: -0.00094284053, z: 0.00018728255}
+      rotation: {x: 0.24772237, y: -0.10180493, z: -0.059364647, w: 0.9616367}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999976}
+    - name: Cape_Root
+      parentName: spine_03
+      position: {x: 0.00007088501, y: -0.000088901535, z: 2.2078457e-11}
+      rotation: {x: 1, y: -0.0000003994742, z: 0.00000013315795, w: 0.00000026631616}
+      scale: {x: 0.99999964, y: 0.9999994, z: 0.9999999}
+    - name: Cape_L_01
+      parentName: Cape_Root
+      position: {x: -0.09944446, y: -0.07712845, z: 0.106659085}
+      rotation: {x: 0.31013504, y: 0.93882394, z: -0.1414363, w: -0.049211144}
+      scale: {x: 0.99999994, y: 0.99999976, z: 1.0000001}
+    - name: Cape_L_02
+      parentName: Cape_L_01
+      position: {x: -0.19749145, y: 0.000000076293944, z: -0.000000023465182}
+      rotation: {x: 0.055818718, y: 0.00015809786, z: -0.01985689, w: 0.99824345}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Cape_L_03
+      parentName: Cape_L_02
+      position: {x: -0.20110977, y: 0, z: 0}
+      rotation: {x: 0.043596618, y: 0.017713148, z: -0.0023539998, w: 0.9988894}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Cape_L_04
+      parentName: Cape_L_03
+      position: {x: -0.20359275, y: -0.0000062561035, z: 0.0000000021985034}
+      rotation: {x: 0.033625178, y: 0.014644578, z: 0.05092294, w: 0.99802893}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Cape_L_05
+      parentName: Cape_L_04
+      position: {x: -0.20225395, y: 0, z: 0.000000004775302}
+      rotation: {x: -0.000103944905, y: 0.0045385472, z: 0.09779134, w: 0.9951966}
+      scale: {x: 0.9999998, y: 0.9999998, z: 1}
+    - name: Cape_L_06
+      parentName: Cape_L_05
+      position: {x: -0.18903334, y: -0.00000022888183, z: 0.000000006769114}
+      rotation: {x: 0.000031841973, y: -0.0009428322, z: 0.018023832, w: 0.99983716}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Bone003
+      parentName: Cape_L_06
+      position: {x: -0.16956288, y: -0.000000076293944, z: 0.00000010967254}
+      rotation: {x: -0.04229608, y: 0.06606944, z: 0.105234765, w: 0.9913483}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cape_C_01
+      parentName: Cape_Root
+      position: {x: -0.10145127, y: -0.089144334, z: -0.00000015258789}
+      rotation: {x: 0.23130217, y: 0.9664506, z: -0.037283428, w: -0.10527372}
+      scale: {x: 0.99999994, y: 0.9999997, z: 1.0000001}
+    - name: Cape_C_02
+      parentName: Cape_C_01
+      position: {x: -0.19749145, y: 0.000000076293944, z: -0.000000023465182}
+      rotation: {x: -0.00064466946, y: -0.0007275411, z: -0.004068039, w: 0.9999913}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Cape_C_03
+      parentName: Cape_C_02
+      position: {x: -0.20110977, y: 0, z: 0}
+      rotation: {x: -0.00036670882, y: -0.0023775722, z: 0.0024924227, w: 0.99999404}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Cape_C_04
+      parentName: Cape_C_03
+      position: {x: -0.20359275, y: -0.0000062561035, z: 0.0000000021985034}
+      rotation: {x: 0.00001932273, y: 0.0022212358, z: 0.014115659, w: 0.9998979}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Cape_C_05
+      parentName: Cape_C_04
+      position: {x: -0.20225395, y: 0, z: 0.000000004775302}
+      rotation: {x: -0.0020419229, y: -0.004978676, z: 0.14349052, w: 0.9896371}
+      scale: {x: 0.9999998, y: 0.9999998, z: 1}
+    - name: Cape_C_06
+      parentName: Cape_C_05
+      position: {x: -0.18903334, y: -0.00000022888183, z: 0.000000006769114}
+      rotation: {x: 0.0016157475, y: 0.008017609, z: 0.06801957, w: 0.99765044}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Cape_C_07
+      parentName: Cape_C_06
+      position: {x: -0.1695629, y: 0, z: 0.000000006956561}
+      rotation: {x: 0.00018338418, y: -0.0010379817, z: 0.005774223, w: 0.9999828}
+      scale: {x: 0.9999997, y: 0.9999997, z: 1}
+    - name: Bone002
+      parentName: Cape_C_07
+      position: {x: -0.20591593, y: 0.000000114440915, z: 0.0000000047683715}
+      rotation: {x: -0.0076872306, y: 0.11571879, z: 0.034456205, w: 0.9926545}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cape_R_01
+      parentName: Cape_Root
+      position: {x: -0.099479824, y: -0.07733973, z: -0.10666016}
+      rotation: {x: 0.21978426, y: 0.9387594, z: 0.20421878, w: -0.16947106}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: Cape_R_02
+      parentName: Cape_R_01
+      position: {x: -0.19749145, y: 0.000000076293944, z: -0.000000023465182}
+      rotation: {x: -0.026518187, y: -0.008463916, z: -0.008478331, w: 0.99957657}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Cape_R_03
+      parentName: Cape_R_02
+      position: {x: -0.20110977, y: 0, z: 0}
+      rotation: {x: -0.007854355, y: -0.018303271, z: 0.004524816, w: 0.9997914}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Cape_R_04
+      parentName: Cape_R_03
+      position: {x: -0.20359275, y: -0.0000062561035, z: 0.0000000021985034}
+      rotation: {x: 0.010011678, y: 0.00063758035, z: 0.07487381, w: 0.99714255}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Cape_R_05
+      parentName: Cape_R_04
+      position: {x: -0.20225395, y: 0, z: 0.000000004775302}
+      rotation: {x: 0.00033675524, y: -0.0010395498, z: 0.01930316, w: 0.9998131}
+      scale: {x: 0.9999998, y: 0.9999998, z: 1}
+    - name: Bone001
+      parentName: Cape_R_05
+      position: {x: -0.18903337, y: 0.000000076293944, z: 0.000000076293944}
+      rotation: {x: -0.04302168, y: -0.021537608, z: 0.054583788, w: 0.99734944}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cam03
+      parentName: pelvis
+      position: {x: 0.3375005, y: -7.385682, z: -9.4209385}
+      rotation: {x: 0.7267603, y: -0.67322385, z: 0.08796038, w: 0.10417297}
+      scale: {x: 1.0000023, y: 0.99999994, z: 0.9999987}
+    - name: Cam01
+      parentName: pelvis
+      position: {x: 0.5599298, y: -4.6551285, z: 0.026924033}
+      rotation: {x: 0.50312775, y: -0.43338963, z: 0.54537827, w: 0.511467}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000007}
+    - name: ik_foot_root
+      parentName: root
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ik_foot_r
+      parentName: ik_foot_root
+      position: {x: -0.065645404, y: 0.12014744, z: -0.09576648}
+      rotation: {x: 0.6878273, y: 0.68660635, z: 0.17629127, w: 0.15616293}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000005}
+    - name: ik_foot_l
+      parentName: ik_foot_root
+      position: {x: -0.06254676, y: 0.17008728, z: 0.05501034}
+      rotation: {x: -0.37821797, y: 0.73238266, z: -0.3074924, w: 0.4754106}
+      scale: {x: 0.9999999, y: 1.0000005, z: 1.0000002}
+    - name: ik_hand_root
+      parentName: root
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ik_hand_gun
+      parentName: ik_hand_root
+      position: {x: 0.11120919, y: 0.8766048, z: -0.21423797}
+      rotation: {x: -0.23360981, y: 0.56287485, z: -0.5091143, w: 0.6077837}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: ik_hand_r
+      parentName: ik_hand_gun
+      position: {x: -0.000000076293944, y: 0, z: 0.000000019073486}
+      rotation: {x: 0.0000000074505797, y: 1.1102232e-16, z: 0.000000014901165, w: 1}
+      scale: {x: 0.9999998, y: 1.0000001, z: 0.99999976}
+    - name: ik_hand_l
+      parentName: ik_hand_gun
+      position: {x: -0.22039649, y: -0.44085157, z: -0.19478495}
+      rotation: {x: 0.3074996, y: 0.8193278, z: 0.059499305, w: 0.48021448}
+      scale: {x: 1.0000004, y: 0.9999998, z: 0.9999998}
+    armTwist: 0.498
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.063
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
