@@ -12,10 +12,11 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - IS_ADD
+  - IS_SNOW
   - IS_T
+  - IS_UNLIT
   - USE_AL
-  - USE_FOG
-  - USE_LS
   - USE_RT
   - USE_WC
   - _TESSELLATION_EDGE
@@ -285,11 +286,11 @@ Material:
     - _GlossyReflections: 1
     - _HeightMultiplier: 0.5
     - _HeightScale: 0.45
-    - _ISADD: 0
+    - _ISADD: 1
     - _ISICE: 0
-    - _ISSNOW: 0
+    - _ISSNOW: 1
     - _IST: 1
-    - _ISUNLIT: 0
+    - _ISUNLIT: 1
     - _IceScale: 1
     - _IndentDepth: 0.25
     - _IndentStrength: 1.5
@@ -352,7 +353,7 @@ Material:
     - _TransitionScale: 13.7
     - _TransparencyValue: 1
     - _USEDECAL: 0
-    - _USEFOG: 1
+    - _USEFOG: 0
     - _USEINTER: 0
     - _USELOW: 0
     - _USERT: 1
@@ -362,7 +363,7 @@ Material:
     - _UpVector: 1
     - _UseAmbientLight: 1
     - _UsePR: 0
-    - _UseSunReflection: 1
+    - _UseSunReflection: 0
     - _UseVR: 0
     - _WireframeSmoothing: 1
     - _WireframeThickness: 1
