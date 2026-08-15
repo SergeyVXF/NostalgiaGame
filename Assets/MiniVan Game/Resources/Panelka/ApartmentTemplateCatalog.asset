@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b79cd722db4d1174b96e0b67474255fb, type: 3}
+  m_Name: ApartmentTemplateCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::MiniVanGame.MiniVanPanelkaApartmentTemplateCatalog
+  templates:
+  - TemplateIndex: 1
+    Prefab: {fileID: 4269722002500080846, guid: 9aaca5242b571ea42a5e6f6bcb4cbb76, type: 3}
+  - TemplateIndex: 2
+    Prefab: {fileID: 8458957750565197533, guid: 09ffa91ece7ef7f4fae30a010535ec15, type: 3}
+  - TemplateIndex: 3
+    Prefab: {fileID: 1507230326917292385, guid: 8fc3b176528da5244a288c2d544d54c3, type: 3}
+  - TemplateIndex: 4
+    Prefab: {fileID: 8378802908847578083, guid: c9a5792a983ac1748a750d676ee4e98f, type: 3}
+  - TemplateIndex: 5
+    Prefab: {fileID: 4241926722534666158, guid: 766f97bb1183b674fb60b3e46db91ebe, type: 3}
+  cornerLeftTemplates:
+  - TemplateIndex: 1
+    Prefab: {fileID: 3613018765993655435, guid: 497357d27c296f8449c42710b521770c, type: 3}
+  - TemplateIndex: 2
+    Prefab: {fileID: 7770892553112922556, guid: 37b23f4d17e01694181fbc865bc07112, type: 3}
+  - TemplateIndex: 3
+    Prefab: {fileID: 3840967147639547956, guid: 3b4a0ee0cc122b043ab893a5d310b6bf, type: 3}
+  - TemplateIndex: 4
+    Prefab: {fileID: 6227604347499286591, guid: 6aafcd770e1c7b1459af047faf22245a, type: 3}
+  - TemplateIndex: 5
+    Prefab: {fileID: 8979562224361734833, guid: 4f777fc0b4a7bed43b1344d4519066b2, type: 3}
+  cornerRightTemplates:
+  - TemplateIndex: 1
+    Prefab: {fileID: 2756619073559456485, guid: 3863d9a043c9db142a6e3c42026dfea0, type: 3}
+  - TemplateIndex: 2
+    Prefab: {fileID: 2943770229458489477, guid: dfad21d327dcf074fbea85a262812f74, type: 3}
+  - TemplateIndex: 3
+    Prefab: {fileID: 6313818806790027447, guid: 6fc056b4a06c9cd438fc95c1683d38fb, type: 3}
+  - TemplateIndex: 4
+    Prefab: {fileID: 8611815130418379979, guid: 43186800e86152543816fec8cbf3d394, type: 3}
+  - TemplateIndex: 5
+    Prefab: {fileID: 7722773065490934738, guid: 4a1437d735dc3bc4b876dbdb4eca8786, type: 3}
+  exteriorOnlyPrefab: {fileID: 3152130958888400565, guid: ab37fa7ead9751843a494937866a3369, type: 3}

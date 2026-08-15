@@ -14,6 +14,8 @@ Material:
   m_ValidKeywords:
   - AMBIENT
   - ANIME_SOFT
+  - BASE_CONTRAST
+  - BASE_SATURATION
   - DIFFUSE
   - FOG
   - MATCAP_PERSPECTIVE
@@ -98,7 +100,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 56c0f75ce390f8a4283db47f4890d587, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 0.2, y: 0.2}
         m_Offset: {x: 0, y: 0}
     - _MatCapTex:
         m_Texture: {fileID: 0}
@@ -148,12 +150,12 @@ Material:
     - _AnimeThreshold1: 0.45
     - _AnimeThreshold2: 0.85
     - _BlendOp: 0
-    - _Brightness: 1
+    - _Brightness: 0.58
     - _BumpScale: 1
     - _CameraFadeEnd: 0
     - _CameraFadeInvert: 0
     - _CameraFadeStart: 0
-    - _Contrast: 1
+    - _Contrast: 0.93
     - _Cull: 2
     - _Cutoff: 0.5
     - _Cutout: 0
@@ -167,8 +169,8 @@ Material:
     - _DetailUV: 0
     - _DetailVertexColors: 0
     - _Diffuse: 1
-    - _DiffuseBrightness: 1
-    - _DiffuseContrast: 1
+    - _DiffuseBrightness: 1.79
+    - _DiffuseContrast: 6.91
     - _DiffusePerPixel: 0
     - _DiffuseWrap: 0
     - _DstBlend: 0
@@ -240,7 +242,7 @@ Material:
     - _RimBlend: 1
     - _RimContrast: 5
     - _RimInverse: 0
-    - _Saturation: 1
+    - _Saturation: 0.963
     - _ShadowOverlayAnimation: 0
     - _ShadowOverlayBrightness: 1
     - _ShadowOverlaySpeedU: 0.1

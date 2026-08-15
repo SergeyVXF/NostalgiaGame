@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9042396870303459914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047848344945401599}
+  - component: {fileID: 6295997002327979953}
+  - component: {fileID: 4169033596893765717}
+  - component: {fileID: 7965908693539026655}
+  m_Layer: 0
+  m_Name: Vampire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2047848344945401599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042396870303459914}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &6295997002327979953
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042396870303459914}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.9
+  m_Radius: 0.32
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.95, z: 0}
+--- !u!114 &4169033596893765717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042396870303459914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 2132895231
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 0
+  <InScenePlaced>k__BackingField: 0
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &7965908693539026655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042396870303459914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2c1298db977654b8b3d14efdc89c4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MiniVanGame::MiniVanGame.MiniVanVampire
+  ShowTopMostFoldoutHeaderGroup: 1
+  DetectionRange: 22.5
+  HearingRange: 1.5
+  AttackRange: 1.45
+  AttackStopDistance: 1.22
+  PersonalSpaceDistance: 0.95
+  BackOffSpeedKph: 4
+  AttackInterval: 1
+  MaxHealth: 7
+  DamagePerHit: 1
+  ExtraSpeedKph: -2.4
+  TurnSharpness: 9
+  Gravity: -18
+  PatrolRadius: 6
+  PatrolSpeedKph: 3
+  PatrolWaitSeconds: 1.2
+  PatrolPointReachDistance: 0.75
+  ChaseMemorySeconds: 6
+  FieldOfViewDegrees: 150
+  ObstacleProbeDistance: 2.4
+  ObstacleProbeRadius: 0.32
+  ObstacleAvoidanceStrength: 1.35
+  UseNavMeshWhenAvailable: 1
+  NavMeshSampleDistance: 2
+  DetectReachablePlayersThroughNavigation: 0
+  NavigationDetectionRange: 27.5
+  OpenPanelkaDoorsWhenChasing: 1
+  VehicleAttackDurationSeconds: 15
+  VehicleAttackStandOffDistance: 1.25
+  DebugVehicleAttack: 1
+  VehicleAttackDebugInterval: 1
+  AiUpdateRate: 20
+  NetworkTransformRate: 10
+  NetworkPositionThreshold: 0.035
+  NetworkRotationThreshold: 2
+  TargetScanInterval: 0.2
+  NavPathRefreshInterval: 0.25
+  NavTargetMoveThreshold: 1.5
+  DoorOpenProbeRadius: 0.85
+  StuckCheckSeconds: 0.35
+  StuckSidestepSeconds: 1.1
+  KnockbackDistance: 2.15
+  KnockbackSeconds: 0.2
+  MovementRecoverSeconds: 0.7
+  MovementRecoverStartScale: 0.22
+  HitFlashSeconds: 0.15
+  HumanVisualPrefab: {fileID: 953996201328990607, guid: 21141aa54653df648a4c4a539fb42520, type: 3}
+  BatWingOutTexture: {fileID: 2800000, guid: e55137fba77763e428f5578fb36c7a35, type: 3}
+  BatWingUpTexture: {fileID: 2800000, guid: 949afcae6cd8c304d912644d76e1855c, type: 3}
+  DeathFallSeconds: 0.35
+  DeathLieSeconds: 0.2
+  DeathLieGroundHeight: 0.42
+  DeathParticlePrefab: {fileID: 405595560596039914, guid: 3711be679858b134c998367f2a95da71, type: 3}
+  DeathPowderPrefab: {fileID: 7252487959103721891, guid: db857a8359ad7fa469c6ffa67d1d8786, type: 3}
+  ShieldAuraMaterial: {fileID: 2100000, guid: f562d79a67753c94996fd3b5eea3c327, type: 2}
+  ShieldBreakParticlePrefabs:
+  - {fileID: 3487815051444121162, guid: 5f28ba370576a0e448a60720303acdba, type: 3}
+  ShieldDamageTakenScale: 0.03
+  BatHitsToKillWhenExposed: 7
+  TransformToHumanDistance: 4
+  TransformToBatDistance: 10
+  BatFlySpeedMps: 7.5
+  BatFlapSeconds: 0.12
+  HitsBeforeStagger: 3
+  StaggerSecondsMin: 1
+  StaggerSecondsMax: 1.5
+  StaggerSpeedScale: 0.6
+  BatBodyRadius: 0.35
+  BatWorldHeight: 0.48
+  BatEyeHeightFallback: 1.6
+  WalkSwingDegrees: 42
+  WalkAnimSpeed: 7.5
+  AttackWindupSeconds: 0.18
+  AttackStrikeSeconds: 0.08
+  AttackRecoverSeconds: 0.16
+  AttackRaiseAngle: -75
+  AttackSlamAngle: 40

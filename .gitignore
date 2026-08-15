@@ -72,6 +72,41 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # End of https://www.toptal.com/developers/gitignore/api/unity
+
+# Local backups and Unity crash recovery (too large for GitHub)
+*.bak
+*.bak_*
+*_Recovery/
+/Assets/_Recovery/
+/Assets/SORT/_Recovery/
+Game_v01.unity.bak_before_autoservice
+
+# Official Unity terrain demos (~5.8 GB, files over GitHub's 100 MB limit)
+/Assets/TerrainSampleAssets/
+/Assets/TerrainSampleAssets.meta
+/Assets/TerrainDemoScene_URP/
+/Assets/TerrainDemoScene_URP.meta
+
+# Blender autosave backups
+*.blend1
+*.blend1.meta
+
+# Local captures and editor-only noise
+/Screenshots/
+/SKILLS/
+/.cursor/
+/.claude/
+.DS_Store
+Thumbs.db
+
+# Git internals accidentally copied into the project root
+/COMMIT_EDITMSG
+/FETCH_HEAD
+/HEAD
+/config
+/description
+/index
+
 Assets/SORT/HQ Modular Russian Building/Models/Window and balconies/Materials/window in the entrance-Windows_Atlas.mat.meta
 Assets/SORT/HQ Modular Russian Building/Models/Window and balconies/Materials/window in the entrance-Windows_Atlas.mat
 Assets/SORT/HQ Modular Russian Building/Models/Window and balconies/Materials/window in the entrance-Glass.mat.meta

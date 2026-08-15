@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-539842914872336463
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Editor::UnityEditor.Rendering.Universal.AssetVersion
+  version: 10
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -8,25 +21,29 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Light
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _ALPHAPREMULTIPLY_ON
   - _EMISSION
   m_InvalidKeywords:
   - _MAINTEX_R_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap:
-    RenderType: Transparent
-  disabledShaderPasses: []
+    RenderType: Opaque
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: c813697cedc48974692cb42f9c76ef94, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Base_Tex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -69,8 +86,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: c813697cedc48974692cb42f9c76ef94, type: 3}
-        m_Scale: {x: 0.56, y: 0.85}
-        m_Offset: {x: 0.13, y: 0.06}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Mask_Tex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -84,6 +101,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -105,16 +126,25 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AddPrecomputedVelocity: 0
     - _AllPower: 1
+    - _AlphaClip: 0
     - _AlphaCutoff: 0.5
+    - _AlphaToMask: 0
     - _BaseColor_Smoothness: 1
     - _BaseColor_Transition: 0
+    - _Blend: 0
     - _Blend1: 1
+    - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
     - _ColorTextureSettings: 0
     - _Color_Hue: 0
+    - _Cull: 2
     - _Cutoff: 0.5
     - _DepthFadeDistance: 1
+    - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DissolveTex_Smoothness: 1
     - _DissolveTex_Transition: 0
@@ -123,8 +153,10 @@ Material:
     - _DistortPower: 0.2
     - _DistortTextureSetting: 0
     - _Dst: 10
-    - _DstBlend: 10
+    - _DstBlend: 0
+    - _DstBlendAlpha: 0
     - _EdgeHighlight: 1
+    - _EnvironmentReflections: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -143,20 +175,26 @@ Material:
     - _QueueControl: -1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SoftParticleActivate: 0
     - _SpecularHighlights: 1
     - _Src: 5
     - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
+    - _Surface: 0
     - _UVSec: 0
     - _Use_Custom1_zw_Mask_zwOffset: 0
     - _Use_Custom2_x_DissolveSmoothness_x: 0
+    - _WorkflowMode: 1
+    - _XRMotionVectorsPass: 1
     - _ZTestMode: 4
-    - _ZWrite: 0
+    - _ZWrite: 1
     - _use_custom1_xy_base_zwOffset: 0
     - _use_custom2_y_distortPower: 0
     m_Colors:
     - _AllColor: {r: 1, g: 1, b: 1, a: 0}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseTexxyTilingzwOffset: {r: 1, g: 1, b: 0, a: 0}
     - _BaseTexxydirzSpeedwPolarC1: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
@@ -173,6 +211,7 @@ Material:
     - _MaskTex_xydirzSpeedwPolarC1: {r: 1, g: 1, b: 0, a: 0}
     - _R_Light_Color: {r: 1, g: 1, b: 1, a: 0}
     - _R_dark_Color: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _TintColor: {r: 1, g: 0.91987383, b: 0.4481132, a: 0.5}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

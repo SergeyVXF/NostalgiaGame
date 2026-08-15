@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3831324501085268324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5171383743949969422}
+  - component: {fileID: 5104510777647101750}
+  - component: {fileID: 143592958141121361}
+  - component: {fileID: 3347643205399089789}
+  m_Layer: 0
+  m_Name: AcidZombie
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5171383743949969422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3831324501085268324}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &5104510777647101750
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3831324501085268324}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.9
+  m_Radius: 0.32
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.95, z: 0}
+--- !u!114 &143592958141121361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3831324501085268324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 1465607933
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 0
+  <InScenePlaced>k__BackingField: 0
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &3347643205399089789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3831324501085268324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b1f16195a927f8418b956db17eb6f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MiniVanGame::MiniVanGame.MiniVanAcidZombie
+  ShowTopMostFoldoutHeaderGroup: 1
+  DetectionRange: 22.5
+  HearingRange: 1.5
+  AttackRange: 1.45
+  AttackStopDistance: 1.22
+  PersonalSpaceDistance: 0.95
+  BackOffSpeedKph: 4
+  AttackInterval: 1
+  MaxHealth: 5
+  DamagePerHit: 1
+  ExtraSpeedKph: -1.2
+  TurnSharpness: 9
+  Gravity: -18
+  PatrolRadius: 6
+  PatrolSpeedKph: 3
+  PatrolWaitSeconds: 1.2
+  PatrolPointReachDistance: 0.75
+  ChaseMemorySeconds: 6
+  FieldOfViewDegrees: 150
+  ObstacleProbeDistance: 2.4
+  ObstacleProbeRadius: 0.32
+  ObstacleAvoidanceStrength: 1.35
+  UseNavMeshWhenAvailable: 1
+  NavMeshSampleDistance: 2
+  DetectReachablePlayersThroughNavigation: 0
+  NavigationDetectionRange: 55
+  OpenPanelkaDoorsWhenChasing: 1
+  VehicleAttackDurationSeconds: 15
+  VehicleAttackStandOffDistance: 1.25
+  DebugVehicleAttack: 1
+  VehicleAttackDebugInterval: 1
+  AiUpdateRate: 20
+  NetworkTransformRate: 10
+  NetworkPositionThreshold: 0.035
+  NetworkRotationThreshold: 2
+  TargetScanInterval: 0.2
+  NavPathRefreshInterval: 0.25
+  NavTargetMoveThreshold: 1.5
+  DoorOpenProbeRadius: 0.85
+  StuckCheckSeconds: 0.35
+  StuckSidestepSeconds: 1.1
+  KnockbackDistance: 2.15
+  KnockbackSeconds: 0.2
+  MovementRecoverSeconds: 0.7
+  MovementRecoverStartScale: 0.22
+  HitFlashSeconds: 0.15
+  VisualPrefab: {fileID: 7354277342966925960, guid: 45c7c699ac3b6f647b863231d1898724, type: 3}
+  PreferredRange: 3
+  SpitIntervalMin: 0.75
+  SpitIntervalMax: 1
+  SpitSpeed: 16
+  SpitMaxRange: 14
+  AimLockSeconds: 0.55
+  MaxAimWaitSeconds: 1.2
+  StrafeSpeedToWait: 4.6
+  LeadGain: 1.15
+  MaxLeadDistance: 3.4
+  SpitPrefab: {fileID: 4266520396940609788, guid: 4eac10b15bd5a7e4cb2cab771a9fecc3, type: 3}
+  SplashPrefab: {fileID: 5491759874716188958, guid: dd7a55fc1cf006e44941b8f87fc1fcad, type: 3}
+  DripParticlePrefab: {fileID: 690885658324556226, guid: ae850b4443d444f4aa682c88762264a6, type: 3}
+  PuddlePrefab: {fileID: 666930838338027603, guid: 27cc5f47d00a4fa4caa35cb9b03fe708, type: 3}
+  DeathFallSeconds: 0.35
+  DeathLieSeconds: 1
+  DeathLieGroundHeight: 0.42
+  SpitFastMultiplier: 3
+  SpitFastEveryN: 5

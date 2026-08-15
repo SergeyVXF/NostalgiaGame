@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3993313889443190116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6269346471169547686}
+  - component: {fileID: 4909764210679123804}
+  - component: {fileID: 153139661408630714}
+  - component: {fileID: 4385829211486285510}
+  m_Layer: 0
+  m_Name: TraceZombie
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6269346471169547686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3993313889443190116}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &4909764210679123804
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3993313889443190116}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 0.55
+  m_Radius: 0.38
+  m_SlopeLimit: 80
+  m_StepOffset: 0.2
+  m_SkinWidth: 0.06
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.28, z: 0}
+--- !u!114 &153139661408630714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3993313889443190116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 972070986
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 0
+  <InScenePlaced>k__BackingField: 0
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &4385829211486285510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3993313889443190116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66cc2187a3591ad4584674deff5a33b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MiniVanGame::MiniVanGame.MiniVanTraceZombie
+  ShowTopMostFoldoutHeaderGroup: 1
+  DetectionRange: 18
+  HearingRange: 1.5
+  AttackRange: 1.45
+  AttackStopDistance: 1.22
+  PersonalSpaceDistance: 0.95
+  BackOffSpeedKph: 4
+  AttackInterval: 1
+  MaxHealth: 2
+  DamagePerHit: 2
+  ExtraSpeedKph: 1
+  TurnSharpness: 9
+  Gravity: -18
+  PatrolRadius: 6
+  PatrolSpeedKph: 3
+  PatrolWaitSeconds: 1.2
+  PatrolPointReachDistance: 0.75
+  ChaseMemorySeconds: 6
+  FieldOfViewDegrees: 150
+  ObstacleProbeDistance: 2.4
+  ObstacleProbeRadius: 0.32
+  ObstacleAvoidanceStrength: 1.35
+  UseNavMeshWhenAvailable: 1
+  NavMeshSampleDistance: 2
+  DetectReachablePlayersThroughNavigation: 0
+  NavigationDetectionRange: 55
+  OpenPanelkaDoorsWhenChasing: 1
+  VehicleAttackDurationSeconds: 15
+  VehicleAttackStandOffDistance: 1.25
+  DebugVehicleAttack: 1
+  VehicleAttackDebugInterval: 1
+  AiUpdateRate: 20
+  NetworkTransformRate: 10
+  NetworkPositionThreshold: 0.035
+  NetworkRotationThreshold: 2
+  TargetScanInterval: 0.2
+  NavPathRefreshInterval: 0.25
+  NavTargetMoveThreshold: 1.5
+  DoorOpenProbeRadius: 0.85
+  StuckCheckSeconds: 0.35
+  StuckSidestepSeconds: 1.1
+  KnockbackDistance: 2.15
+  KnockbackSeconds: 0.2
+  MovementRecoverSeconds: 0.7
+  MovementRecoverStartScale: 0.22
+  HitFlashSeconds: 0.15
+  VisualPrefab: {fileID: 7180607457912701135, guid: 519c512543b317c4e97c0ca7d4b1c84a, type: 3}
+  PounceRange: 12
+  AimSeconds: 1
+  LandVulnerableSeconds: 0.85
+  ClimbSpeed: 5.2
+  SurfaceStickDistance: 0.2
+  SurfaceSearchRadius: 18
+  HideRespawnSeconds: 20
+  HideFromPlayersDistance: 16
+  DeathFallSeconds: 0.35
+  DeathLieSeconds: 1

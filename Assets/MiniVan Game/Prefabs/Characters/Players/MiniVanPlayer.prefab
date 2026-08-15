@@ -1,0 +1,460 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1069889572443556981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3409450469060995533}
+  - component: {fileID: 8152513646124770946}
+  - component: {fileID: 3916541289601153930}
+  - component: {fileID: 797991021068375094}
+  m_Layer: 0
+  m_Name: First Person Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3409450469060995533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069889572443556981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 962945220858704454}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &8152513646124770946
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069889572443556981}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.04
+  far clip plane: 15000
+  field of view: 72
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &3916541289601153930
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069889572443556981}
+  m_Enabled: 1
+--- !u!114 &797991021068375094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069889572443556981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
+--- !u!1 &8470434282480340525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962945220858704454}
+  m_Layer: 0
+  m_Name: Camera Root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &962945220858704454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8470434282480340525}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.565, z: 0.26}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3409450469060995533}
+  m_Father: {fileID: 468146089884799147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9211162971171754475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 468146089884799147}
+  - component: {fileID: 3846832013328059867}
+  - component: {fileID: 5622409542641768915}
+  - component: {fileID: 1343549069122306712}
+  - component: {fileID: 8310450887481613301}
+  - component: {fileID: 1496219735823982766}
+  - component: {fileID: 7103412179065289787}
+  m_Layer: 0
+  m_Name: MiniVanPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &468146089884799147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211162971171754475}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 962945220858704454}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3846832013328059867
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211162971171754475}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &5622409542641768915
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211162971171754475}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 43e871a0a9a3f2243b39b45edad309ea, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!143 &1343549069122306712
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211162971171754475}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.8
+  m_Radius: 0.32
+  m_SlopeLimit: 65
+  m_StepOffset: 0.42
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: -0.09, z: 0}
+--- !u!114 &8310450887481613301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211162971171754475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 692755242
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  <InScenePlaced>k__BackingField: 0
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &1496219735823982766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211162971171754475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a14e439520d0b4c8863dfa707d3b7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MiniVanGame.MiniVanPlayer
+  ShowTopMostFoldoutHeaderGroup: 1
+  PlayerCamera: {fileID: 8152513646124770946}
+  CameraRoot: {fileID: 962945220858704454}
+  CharacterController: {fileID: 1343549069122306712}
+  WalkSpeed: 4.4
+  LookSensitivity: 2.2
+  Gravity: -18
+  JumpHeight: 1.6
+  InteractDistance: 4.5
+  NearbySeatRadius: 1.65
+  GroundedGraceTime: 0.12
+  GroundProbeDistance: 0.22
+  MaxWalkableSlopeAngle: 65
+  SlopeSlideStartAngle: 50
+  SlopeSoftZoneDegrees: 3
+  SteepSlopeSlideSpeed: 6.5
+  SteepSlopeSlideAcceleration: 14
+  SteepSlopeProbeDistance: 0.75
+  SlopeLookAheadDistance: 1.1
+  PostJumpSlideSpeedMultiplier: 1.4
+  PostJumpSlideBoostDuration: 0.55
+  CrouchHeight: 0.7
+  CrouchCameraDrop: 0.92
+  CrouchTransitionSpeed: 8
+  CrouchSpeedMultiplier: 0.62
+  GearDragSensitivity: 0.13
+  NetworkTransformRate: 15
+  NetworkPositionThreshold: 0.02
+  NetworkRotationThreshold: 1
+  CoffeeBoostDuration: 30
+  CoffeeSpeedMultiplier: 2
+  CoffeePickupRadius: 2.25
+  CoffeeMugPrefab: {fileID: 3356004415167135642, guid: 3025969f590041e4f8ce1e55932fbdca, type: 3}
+  BatAttackInterval: 0.5
+  BatAttackRange: 2.25
+  BatAttackRadius: 0.55
+  BatHitboxStart: 0.32
+  BatHitboxDuration: 0.35
+  BatAttackFacingDot: 0.35
+  BatDamage: 1
+  BatZombieKnockbackDistance: 3
+  BatZombieKnockbackSeconds: 0.3
+  BatRestPosition: {x: 0.46, y: -0.48, z: 0.86}
+  BatRestRotation: {x: 16, y: 63.5, z: -4.3}
+  RemoteBatRestPosition: {x: 0.46, y: -0.48, z: 0.86}
+  RemoteBatRestRotation: {x: 16, y: 63.5, z: -4.3}
+  RemoteBatScale: 1
+  BatWindupPositionOffset: {x: 0, y: 0.06, z: 0.02}
+  BatWindupRotationOffset: {x: 0, y: 0, z: -50}
+  BatStrikePositionOffset: {x: 0, y: -0.08, z: -0.1}
+  BatStrikeRotationOffset: {x: -8, y: -10, z: 75}
+  BatWindupEnd: 0.22
+  BatStrikeEnd: 0.52
+  HotPotatoPickupRadius: 2.4
+  HotPotatoPoopSeconds: 20
+  HotPotatoSpeedMultiplier: 1.4
+  HotPotatoPoopPrefab: {fileID: 7483116190895891289, guid: a95c4bc879459bc4baf973a2deb4d00a, type: 3}
+  WinchPickupPrefab: {fileID: 55093791595418945, guid: 3404d75ec667f994d9d3fbd2181e0f44, type: 3}
+  StretcherPickupPrefab: {fileID: 7499295740361831554, guid: 68e2f84eccc7f584abc5cbb8a794d4ac, type: 3}
+  MiniVanHealthIconImage: {fileID: 2800000, guid: e0031a94dcf39f845b0f47bba50e53bf, type: 3}
+  MiniVanHudBodyIcon: {fileID: 0}
+  MiniVanHudWheelIcon: {fileID: 0}
+  MiniVanHealthBarOffset: {x: 0, y: 0}
+  MiniVanHealthIconOffset: {x: 0, y: 0}
+  MiniVanHealthIconSize: {x: 89, y: 42}
+  MiniVanHealthIconGap: 23
+  MiniVanHudIconOkColor: {r: 1, g: 1, b: 1, a: 1}
+  MiniVanHudIconLostWheelColor: {r: 0.92, g: 0.08, b: 0.06, a: 1}
+  SkateboardCameraDistance: 4.3
+  SkateboardCameraHeight: 1.55
+  SkateboardCameraLookHeight: 1.05
+  SkateboardCameraPitchMin: -18
+  SkateboardCameraPitchMax: 58
+  AspenStakeAttackInterval: 0.42
+  AspenStakeAttackRange: 2.1
+  AspenStakeAttackRadius: 0.35
+  AspenStakeHitboxStart: 0.28
+  AspenStakeHitboxDuration: 0.12
+  AspenStakeKnockbackDistance: 1.6
+  AspenStakeKnockbackSeconds: 0.16
+  AspenStakeRestPosition: {x: 0.42, y: -0.4, z: 0.78}
+  AspenStakeRestRotation: {x: 12, y: -18, z: 70}
+  AspenStakeWindupPosition: {x: 0.28, y: -0.2, z: 0.38}
+  AspenStakeThrustPosition: {x: 0.12, y: -0.18, z: 1.05}
+  AspenStakeThrustRotation: {x: 8, y: -8, z: 88}
+  AspenStakeHeldPrefab: {fileID: 3411926357782136275, guid: 445ca477b8767254f9e1f7acb0b5fb68, type: 3}
+  HolyCrossKeepDistance: 5
+  HolyCrossConeRange: 12
+  HolyCrossConeHalfAngle: 35
+  ShowHolyCrossConeDebug: 0
+  HolyCrossRestPosition: {x: 0.38, y: -0.32, z: 0.72}
+  HolyCrossRestRotation: {x: 18, y: -12, z: 8}
+  HolyCrossActivePosition: {x: 0.18, y: -0.12, z: 0.92}
+  HolyCrossActiveRotation: {x: -12, y: -6, z: 4}
+  HolyCrossHeldPrefab: {fileID: 5337740752751599765, guid: c9d017a760e03ce4a8c42c6c86467c4e, type: 3}
+  HolyCrossParticlesPrefab: {fileID: 2672116051821155377, guid: e78838bdfb72fe046bb19005e3eecc0e, type: 3}
+  HolyCrossConePrefab: {fileID: 2110308820472730801, guid: d8d5fc899701d3d498219345bf4ace20, type: 3}
+  PlayerVisualPrefab: {fileID: 2073070178190280833, guid: 08815b8416f878342a3a7d4571b12ea0, type: 3}
+  PlayerVisualLocalPosition: {x: 0, y: -0.99, z: 0}
+  PlayerSitVisualOffset: {x: 0, y: -0.18, z: 0.08}
+  PlayerVisualUniformScale: 1.2345679
+  BatHandLocalPosition: {x: 0, y: 0.01, z: -0.1}
+  BatHandLocalRotation: {x: 35.9, y: -86.5, z: -80.8}
+  StakeHandLocalPosition: {x: 0, y: 0.16, z: -0.06}
+  StakeHandLocalRotation: {x: 52.51, y: 0, z: 0}
+  CrossHandLocalPosition: {x: 0.03, y: -0.09, z: 0}
+  CrossHandLocalRotation: {x: 38.52, y: 0, z: 0}
+  CrossHandRaisedPosition: {x: -0.01, y: 0, z: -0.2}
+  CrossHandRaisedRotation: {x: 84.32, y: 0, z: 0}
+--- !u!114 &7103412179065289787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211162971171754475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47728079edb2c34f8d85eda1a0d935b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MiniVanGame.MiniVanFirstPersonCameraCollision
+  CameraRoot: {fileID: 962945220858704454}
+  CharacterController: {fileID: 1343549069122306712}
+  FirstPersonLocalPosition: {x: 0, y: 0.565, z: 0.26}
+  ProbeRadius: 0.08
+  WallPadding: 0.035
+  NearClipPlane: 0.04
+  FirstPersonPoseThreshold: 0.9
+  CollisionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295

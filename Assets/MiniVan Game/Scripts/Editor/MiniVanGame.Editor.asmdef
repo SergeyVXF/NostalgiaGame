@@ -1,0 +1,25 @@
+{
+    "name": "MiniVanGame.Editor",
+    "rootNamespace": "MiniVanGame.EditorTools",
+    "references": [
+        "MiniVanGame",
+        "Unity.Netcode.Runtime",
+        "Unity.Netcode.Editor",
+        "UnityEngine.UI",
+        "Unity.Splines",
+        "Unity.Mathematics",
+        "SK.Libretro",
+        "SK.Libretro.Unity"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

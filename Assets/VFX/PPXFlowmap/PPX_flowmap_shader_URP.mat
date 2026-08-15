@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PPX_flowmap_shader_URP
+  m_Shader: {fileID: 4800000, guid: 7f4738c81e5e1ff46a6d54e46a47d86a, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _USE_CURVE_DISSOLVE_ON
+  - _USE_CUSTOM1_Z_FLOW_ON
+  - _USE_DISSOLVE_ON
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3003
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Distort_mask:
+        m_Texture: {fileID: 2800000, guid: c04b705f7e375fc4ba85031deecb9043, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Distort_tex:
+        m_Texture: {fileID: 2800000, guid: e1aced086b8c1fb45858e1b07f8b55ec, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _base_texture:
+        m_Texture: {fileID: 2800000, guid: 679a7d570229ae6419f58bf0572dbd75, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _dissolve_texture:
+        m_Texture: {fileID: 2800000, guid: e1aced086b8c1fb45858e1b07f8b55ec, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _emissive_map:
+        m_Texture: {fileID: 2800000, guid: 94bfac2dd11d809429744f5c202f3c3e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _flowmap:
+        m_Texture: {fileID: 2800000, guid: 765b3b56a09dd0f469ac6fd3c467a9f3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Cull: 0
+    - _Distort_power: 0.01
+    - _Emissive_power: 3
+    - _Glow: 1
+    - _HUE: 0.029
+    - _Saturation: -0.224
+    - _Time_scale: 1
+    - _Value: 0
+    - _X_speed: 0
+    - _Y_speed: -1
+    - _Zwrite: 1
+    - _add_or_blend: 1
+    - _alpha_power: 1
+    - _dissolve: 1
+    - _edge_hardness: 3.19
+    - _flow: 1.5
+    - _use_curve_dissolve: 1
+    - _use_custom1_z_flow: 1
+    - _use_dissolve: 1
+    m_Colors:
+    - _Base_color: {r: 1, g: 1, b: 1, a: 0}
+    - _Distort_iv: {r: 1, g: 1, b: 0, a: 0}
+    - _Distort_mask_uv: {r: 1, g: 1, b: 0, a: 0}
+    - _Distort_uv: {r: 2, g: 1, b: 0, a: 0}
+    - _Emissive_color: {r: 0.28987038, g: 1, b: 0.06132078, a: 0}
+  m_BuildTextureStacks: []
